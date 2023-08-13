@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full top-0 left-0 z-20 bg-white">
       <div className="">
-        <div className=" py-2 md:py-0 flex justify-between items-center md:px-12  px-5">
+        <div className=" py-2 md:py-0 flex justify-between items-center md:px-9 px-5 w-full ">
           <div className="flex gap-x-5 h-[85px] justify-center items-center">
             <img
               src={image.logo}
@@ -30,7 +30,7 @@ const Navbar = () => {
               className="sm:w-[160px] w-[200px] md:w-[285px] md:h-[70px] cursor-pointer"
             />
 
-            <ul className="list-none sm:flex hidden justify-end items-center h-full ">
+            <ul className="list-none lg:flex hidden justify-end items-center h-full ">
               {links.map((nav, index) => (
                 <li
                   key={nav.id}
@@ -92,7 +92,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="sm:hidden flex  justify-end items-center">
+          <div className="lg:hidden flex  justify-end items-center">
             {toggle ? (
               <AiOutlineClose
                 alt="menu-icon"
