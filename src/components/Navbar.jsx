@@ -21,26 +21,26 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="fixed w-full top-0 left-0 z-20 bg-white">
-      <div className="border-2 border-red-600">
-        <div className=" py-4 flex justify-between  mx-auto   items-center md:px-12  px-5">
-          <div className="flex gap-x-5">
+      <div className="">
+        <div className=" py-2 md:py-0 flex justify-between items-center md:px-12  px-5">
+          <div className="flex gap-x-5 h-[85px] justify-center items-center">
             <img
               src={image.logo}
               alt="logo-icon"
               className="sm:w-[160px] w-[200px] md:w-[285px] md:h-[70px] cursor-pointer"
             />
 
-            <ul className="list-none sm:flex hidden justify-end items-center  ">
+            <ul className="list-none sm:flex hidden justify-end items-center h-full ">
               {links.map((nav, index) => (
                 <li
                   key={nav.id}
-                  className={`  cursor-pointer  ${
+                  className={`  cursor-pointer  h-full  ${
                     index === links.length - 1 ? "mr-0" : " mr-7"
                   }`}
                 >
                   <a
                     href={`#${nav.url}`}
-                    className=" text-black hover:text-Blue text-[17px] font-medium"
+                    className=" text-black h-full flex flex-col justify-center items-center link text-[17px] font-medium"
                   >
                     {nav.text}
                   </a>
@@ -49,28 +49,28 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="md:block hidden">
-            <ul className=" list-none  flex ">
-              <li className=" mr-7">
+          <div className="lg:block hidden  h-[85px]">
+            <ul className=" list-none  flex  h-full">
+              <li className="h-full mr-7">
                 <a
                   href=""
-                  className="text-black hover:text-Blue text-[17px] font-medium"
+                  className="text-black hover:text-Blue text-[17px] font-medium h-full flex flex-col justify-center items-center link"
                 >
                   Careers
                 </a>
               </li>
-              <li className=" mr-7">
+              <li className="h-full mr-7">
                 <a
                   href=""
-                  className="text-black hover:text-Blue text-[17px] font-medium"
+                  className="text-black hover:text-Blue text-[17px] font-medium h-full flex flex-col justify-center items-center link"
                 >
                   Blog
                 </a>
               </li>
-              <li>
+              <li className="h-full">
                 <a
                   href=""
-                  className="text-black hover:text-Blue text-[17px] font-medium"
+                  className="text-black hover:text-Blue text-[17px] font-medium h-full flex flex-col justify-center items-center link"
                 >
                   Contact
                 </a>
@@ -78,16 +78,18 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="flex gap-[30px] items-center justify-center md:block hidden">
-            <div>
-              <AiOutlineSearch className="text-[30px]" />
+          <div className=" hidden lg:block ">
+            <div className="flex justify-center items-center  gap-[30px]">
+              <div>
+                <AiOutlineSearch className="text-[30px] cursor-pointer" />
+              </div>
+              <Button
+                text={"Let's Talk "}
+                styles={
+                  "  bg-Blue  rounded-[150px] text-[18px] uppercase py-[13px] px-[5px] w-[150px] text-center text-white"
+                }
+              />
             </div>
-            <Button
-              text={"Let's Talk"}
-              styles={
-                "  bg-Blue  rounded-[150px] text-[20px] uppercase py-[13px] px-[5px] w-[150px] text-center text-white"
-              }
-            />
           </div>
 
           <div className="sm:hidden flex  justify-end items-center">
@@ -112,7 +114,7 @@ const Navbar = () => {
                 animate="visible"
                 className={`${
                   toggle ? "block" : "hidden"
-                } bg-white p-6 bg-DarkBlueMb z-50 absolute top-[70px] left-0 right-0  w-full `}
+                } bg-white p-3 bg-DarkBlueMb z-50 absolute top-24 left-0 right-0  w-full `}
               >
                 <ul className="list-none  flex justify-end items-start flex-1 flex-col ">
                   {links.map((nav, index) => (
@@ -120,8 +122,8 @@ const Navbar = () => {
                       key={nav.id}
                       className={`font-poppins font-medium cursor-pointer text-[18px] w-full  ${
                         index === links.length - 1
-                          ? "mb-0"
-                          : "mb-4 border-b-2 border-Dark pb-4"
+                          ? "mb-4  border-b-[1px] border-Dark pb-4"
+                          : "mb-4  border-b-[1px] border-Dark pb-4"
                       }`}
                     >
                       <a href={`#${nav.url}`} className="">
@@ -131,10 +133,39 @@ const Navbar = () => {
                   ))}
                 </ul>
 
+                <div className="">
+                  <ul className=" list-none  flex flex-col items-start ">
+                    <li className=" mb-4  border-b-[1px] border-Dark pb-4 w-full">
+                      <a
+                        href=""
+                        className="text-black  text-[17px] font-medium  "
+                      >
+                        Careers
+                      </a>
+                    </li>
+                    <li className="mb-4 border-b-[1px] border-Dark pb-4 w-full">
+                      <a
+                        href=""
+                        className="text-black hover:text-Blue text-[17px] font-medium  "
+                      >
+                        Blog
+                      </a>
+                    </li>
+                    <li className="">
+                      <a
+                        href=""
+                        className="text-black  text-[17px] font-medium  "
+                      >
+                        Contact
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
                 <Button
                   text={"Let's Talk"}
                   styles={
-                    " bg-Blue mt-6 rounded-[150px] text-[20px] uppercase p-[18px] w-full text-center text-white"
+                    " bg-Blue mt-6 rounded-[150px] text-[20px] uppercase px-[18px] py-[14px] w-full text-center text-white"
                   }
                 />
               </motion.div>

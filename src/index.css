@@ -9,3 +9,20 @@
   background-size: cover;
   background-position: center;
 }
+
+.link {
+  transition: color 0.1s ease-out, border-bottom 0.1s ease-in;
+}
+
+.link:hover {
+  border-bottom: 3px solid hsl(211, 53%, 56%);
+  color: hsl(211, 53%, 56%);
+}
+
+@media screen and (max-width: 1440px) {
+  .app__bg {
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+  }
+}
