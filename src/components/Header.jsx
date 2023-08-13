@@ -13,7 +13,7 @@ const Header = () => {
 
       {/* Your content */}
       <div className="text-white text-center sm:text-left  absolute top-44 md:top-[350px]  sm:left-[15%] md:left-[30%] md:transform md:-translate-x-1/2 md:-translate-y-1/2  ">
-        <div className=" px-3 md:py-3 flex flex-col gap-y-4 md:gap-y-6 justify-center md:items-start items-center w-full  sm:w-[554px]   ">
+        <div className=" px-3 md:py-3 flex flex-col gap-y-4 md:gap-y-2 justify-center md:items-start items-center w-full  sm:w-[554px]   ">
           <h1 className="text-[40px] font-bold text-white  leading-[57px] text-focus-in">
             Data quotient for business sense
           </h1>

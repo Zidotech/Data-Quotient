@@ -19,14 +19,7 @@
   color: hsl(211, 53%, 56%);
 }
 
-@media screen and (max-width: 1440px) {
-  .app__bg {
-    height: 75vh;
-    background-size: cover;
-    background-position: center;
-  }
-}
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 1300px) {
   .app__bg {
     height: 85vh;
     background-size: cover;
