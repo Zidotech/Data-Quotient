@@ -1,11 +1,10 @@
+import Header from "./components/Header";
+
 function App() {
   return (
-    <>
-      <p className=" text-center text-yellow-500">
-        Click on the Vite and React logos to learn more
-        <span>rebeca</span>
-      </p>
-    </>
+    <div className=" overflow-x-hidden">
+      <Header />
+    </div>
   );
 }
 

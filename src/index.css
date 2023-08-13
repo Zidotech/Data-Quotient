@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.app__bg {
+  position: relative;
+  height: 100vh; /* Make the container take the full viewport height */
+  background-image: url("./assets/20945567.jpg");
+  background-size: cover;
+  background-position: center;
+}

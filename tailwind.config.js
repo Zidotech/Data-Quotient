@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        Dark: "hsl(0, 0%, 81%)",
-        Blue: "hsl(205, 82%, 47%)",
+        Dark: "hsl(208, 11%, 30%)",
+        Blue: "hsl(211, 53%, 56%)",
       },
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],
