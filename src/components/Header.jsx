@@ -19,7 +19,7 @@ const Header = () => {
           </h1>
           <p className="mt-4 text-[23px] text-focus-in ">
             We have a number of different teams within our company that
-            specialise in different areas of technology and business so you can
+            specialize in different areas of technology and business so you can
             be rest assured of quality.
           </p>
         </div>
