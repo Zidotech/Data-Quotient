@@ -31,23 +31,23 @@ export const serviceCard = [
     title: "End-to-End Development",
     icon: image.end,
     description:
-      " 'We deliver world-class projects from initial discovery all the way to deployment and maintenance.' ",
-    stack: " LEARN MORE ",
+      "   Full development team taking your project all the way from discovery to deployment ",
+    more: " LEARN MORE ",
   },
   {
     id: "2",
-    title: "Team Extension",
+    title: "Training",
     icon: image.team,
     description:
-      " 'If you’re short on tech specialists, missing deadlines, or going over budget—we’re here for you.' ",
-    stack: " LEARN MORE ",
+      " If you’re short on tech specialists, missing deadlines, or going over budget—we’re here for you. ",
+    more: " LEARN MORE ",
   },
   {
     id: "3",
     title: "Expert Consulting",
     icon: image.consult,
     description:
-      " 'We can use our nearly 20 years of experience to plug into your business and help you grow faster.' ",
-    stack: " LEARN MORE ",
+      " Solving your problems or improving your product with the help of subject matter experts ",
+    more: " LEARN MORE ",
   },
 ];

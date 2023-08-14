@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --transition: all 0.3s linear;
+}
+
 .app__bg {
   position: relative;
   height: 100vh; /* Make the container take the full viewport height */
@@ -57,3 +61,36 @@
     opacity: 1;
   }
 }
+
+/* slider css start */
+article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98vw;
+  height: 100%;
+  opacity: 0;
+  transition: var(--transition);
+}
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+article.lastSlide {
+  transform: translateX(-100%);
+}
+article.nextSlide {
+  transform: translateX(100%);
+}
+
+.section-center {
+  margin: 0 auto;
+  width: 100vw;
+  /* have to have a height */
+  height: 310px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+/* slider css end */

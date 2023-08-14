@@ -19,10 +19,28 @@ const containerVariants = {
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [active, setActive] = useState(null);
+
+  useEffect(() => {
+    const scrollActive = () => {
+      setActive(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", scrollActive);
+    return () => window.removeEventListener("scroll", scrollActive);
+  }, [active]);
+
   return (
-    <nav className="fixed w-full top-0 left-0 z-20 bg-white">
+    <nav
+      className={`fixed w-full top-0 left-0 z-20  ${
+        active ? "shadow-lg bg-Dark4 " : "bg-white"
+      }`}
+    >
       <div className="">
-        <div className=" py-2 md:py-0 flex justify-between items-center md:px-9 px-5 w-full ">
+        <div
+          className={`py-2 md:py-0 flex justify-between items-center md:px-9 px-5 w-full ${
+            active ? "" : ""
+          }`}
+        >
           <div className="flex gap-x-5 h-[85px] justify-center items-center">
             <img
               src={image.logo}
@@ -40,7 +58,9 @@ const Navbar = () => {
                 >
                   <a
                     href={`#${nav.url}`}
-                    className=" text-black h-full flex flex-col justify-center items-center link text-[17px] font-medium"
+                    className={`text-black h-full flex flex-col justify-center items-center link text-[17px] font-medium ${
+                      active ? "text-white" : ""
+                    } `}
                   >
                     {nav.text}
                   </a>
@@ -54,7 +74,9 @@ const Navbar = () => {
               <li className="h-full mr-7">
                 <a
                   href=""
-                  className="text-black hover:text-Blue text-[17px] font-medium h-full flex flex-col justify-center items-center link"
+                  className={`text-black text-[17px] font-medium h-full flex flex-col justify-center items-center link ${
+                    active ? "text-white" : ""
+                  }`}
                 >
                   Careers
                 </a>
@@ -62,7 +84,9 @@ const Navbar = () => {
               <li className="h-full mr-7">
                 <a
                   href=""
-                  className="text-black hover:text-Blue text-[17px] font-medium h-full flex flex-col justify-center items-center link"
+                  className={`text-black text-[17px] font-medium h-full flex flex-col justify-center items-center link ${
+                    active ? "text-white" : ""
+                  }`}
                 >
                   Blog
                 </a>
@@ -70,7 +94,9 @@ const Navbar = () => {
               <li className="h-full">
                 <a
                   href=""
-                  className="text-black hover:text-Blue text-[17px] font-medium h-full flex flex-col justify-center items-center link"
+                  className={`text-black text-[17px] font-medium h-full flex flex-col justify-center items-center link ${
+                    active ? "text-white" : ""
+                  }`}
                 >
                   Contact
                 </a>
@@ -81,7 +107,11 @@ const Navbar = () => {
           <div className=" hidden lg:block ">
             <div className="flex justify-center items-center  gap-[30px]">
               <div>
-                <AiOutlineSearch className="text-[30px] cursor-pointer" />
+                <AiOutlineSearch
+                  className={`text-[30px] cursor-pointer ${
+                    active ? "text-white" : ""
+                  }`}
+                />
               </div>
               <Button
                 text={"Let's Talk "}
@@ -96,13 +126,17 @@ const Navbar = () => {
             {toggle ? (
               <AiOutlineClose
                 alt="menu-icon"
-                className="w-[38px]  h-[38px] object-contain "
+                className={`w-[38px]  h-[38px] object-contain ${
+                  active ? "text-white" : ""
+                }`}
                 onClick={() => setToggle(false)}
               />
             ) : (
               <HiMenuAlt3
                 alt="menu-icon"
-                className="w-[38px]  h-[38px] object-contain"
+                className={`w-[38px]  h-[38px] object-contain ${
+                  active ? "text-white" : ""
+                }`}
                 onClick={() => setToggle((prev) => !prev)}
               />
             )}

@@ -6,6 +6,9 @@ export default {
       colors: {
         Dark: "hsl(208, 11%, 30%)",
         Blue: "hsl(211, 53%, 56%)",
+        Dark2: "hsl(180, 2%, 9%)",
+        Dark3: "hsl(220, 5%, 31%)",
+        Dark4: "hsl(0, 0%, 12%)",
       },
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],
