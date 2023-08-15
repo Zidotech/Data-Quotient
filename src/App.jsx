@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Clients from "./pages/Clients";
 import Services from "./pages/Services";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <Header />
 
       <Services />
+      <Clients />
     </div>
   );
 }
