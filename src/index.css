@@ -6,6 +6,10 @@
   --transition: all 0.3s linear;
 }
 
+body {
+  background-color: #f5f8fa;
+}
+
 .app__bg {
   position: relative;
   height: 100vh; /* Make the container take the full viewport height */
@@ -25,7 +29,14 @@
 
 @media screen and (max-width: 1300px) {
   .app__bg {
-    height: 85vh;
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .app__bg {
+    height: 75vh;
     background-size: cover;
     background-position: center;
   }
