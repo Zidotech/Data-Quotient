@@ -91,18 +91,56 @@ export const numbers2 = [
 export const client = [
   {
     id: 1,
-    icon: image.forbes,
-  },
-  {
-    id: 2,
-    icon: image.sunday,
-  },
-  {
-    id: 3,
     icon: image.tech,
   },
   {
-    id: 4,
+    id: 2,
+    icon: image.forbes,
+  },
+];
+
+export const client1 = [
+  {
+    id: 1,
     icon: image.telegraph,
+  },
+  {
+    id: 2,
+    icon: image.fortune,
+  },
+];
+
+export const client2 = [
+  {
+    id: 5,
+    icon: image.sunday,
+  },
+];
+
+export const hiring = [
+  {
+    id: 1,
+    icon: image.room,
+    title:
+      "Onboard an exclusive team for your project: one team, one room, one client—full focus",
+    text: "We believe teams work best when they’re single-tasking. And you can always visit our offices and meet your team in person.",
+  },
+  {
+    id: 2,
+    icon: image.framework,
+    title: "Get the tech stack you need, not the tech stack we like",
+    text: "We’ll use the exact tools and frameworks your project requires without forcing our favorites.",
+  },
+  {
+    id: 3,
+    icon: image.perfect,
+    title: "Scale up and down easily with a tech partner that cares",
+    text: "We’re large enough to support ambitious projects, yet small enough to still care about personal relationships.",
+  },
+  {
+    id: 4,
+    icon: image.speak,
+    title: "Ridiculously easy cooperation",
+    text: "We’ll help you clarify and prioritize features, we report on progress constantly, and we speak flawless English.",
   },
 ];

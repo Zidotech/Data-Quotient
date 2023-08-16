@@ -8,6 +8,12 @@ import tech from "../assets/logo-techcrunch.png";
 import forbes from "../assets/forbes.png";
 import telegraph from "../assets/the-telegraph-logo.webp";
 import sunday from "../assets/the-sunday-times-logo.png";
+import fortune from "../assets/fortune-logo.webp";
+import kitchen from "../assets/photo-kitchen.jpg";
+import speak from "../assets/icon-speak.svg";
+import perfect from "../assets/icon-perfect-size.svg";
+import framework from "../assets/icon-framework-all.svg";
+import room from "../assets/icon-one-room.svg";
 
 export default {
   logo,
@@ -20,4 +26,10 @@ export default {
   forbes,
   telegraph,
   sunday,
+  fortune,
+  kitchen,
+  room,
+  framework,
+  speak,
+  perfect,
 };

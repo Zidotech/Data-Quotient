@@ -10,6 +10,7 @@ export default {
         Dark3: "hsl(220, 5%, 31%)",
         Dark4: "hsl(0, 0%, 12%)",
         Dark5: "hsl(202, 24%, 93%)",
+        white1: "hsl(0, 0%, 100%)",
       },
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],
