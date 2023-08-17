@@ -34,7 +34,7 @@ const Clients = () => {
                       <p className=" font-bold text-[36px] leading-[54px]">
                         {card.title}{" "}
                       </p>
-                      <span className="text-[16px] leading-[25px]">
+                      <span className="text-[16px] leading-[25px] ">
                         {card.span}{" "}
                       </span>
                     </div>

@@ -4,6 +4,7 @@ import team from "../assets/icon-team-extension-3.svg";
 import consult from "../assets/icon-consulting-expertise-3.svg";
 import client from "../assets/background2.jpg";
 import client2 from "../assets/stx-main-page- photo-collage.webp";
+import django from "../assets/stx-next-django-services-outsourcing-2.webp";
 import tech from "../assets/logo-techcrunch.png";
 import forbes from "../assets/forbes.png";
 import telegraph from "../assets/the-telegraph-logo.webp";
@@ -32,4 +33,5 @@ export default {
   framework,
   speak,
   perfect,
+  django,
 };

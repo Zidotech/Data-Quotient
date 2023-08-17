@@ -11,13 +11,15 @@ export default {
         Dark4: "hsl(0, 0%, 12%)",
         Dark5: "hsl(202, 24%, 93%)",
         white1: "hsl(0, 0%, 100%)",
+        white2: "hsl(204, 33%, 97%)",
+        Ash: "hsl(196, 5%, 55%)",
       },
       fontFamily: {
-        raleway: ["Raleway", "sans-serif"],
+        Montserrat: ["Montserrat", "sans - serif"],
         shadow: ["Shadows Into Light", "cursive"],
         great: ["Great Vibes", "cursive"],
         amatic: ["Amatic SC", "cursive"],
-        kelly: ["Kelly Slab", "cursive"],
+        Lato: ["Lato", "sans - serif"],
       },
     },
     screens: {

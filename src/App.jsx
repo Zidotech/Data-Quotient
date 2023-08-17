@@ -1,6 +1,8 @@
 import Header from "./components/Header";
 import Clients from "./pages/Clients";
+import Hiring from "./pages/Hiring";
 import Services from "./pages/Services";
+import Sourcing from "./pages/Sourcing";
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
 
       <Services />
       <Clients />
+      <Hiring />
+      <Sourcing />
     </div>
   );
 }

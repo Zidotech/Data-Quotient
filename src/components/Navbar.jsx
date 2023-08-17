@@ -58,7 +58,7 @@ const Navbar = () => {
                 >
                   <a
                     href={`#${nav.url}`}
-                    className={`text-black h-full flex flex-col justify-center items-center link text-[17px] font-medium ${
+                    className={`text-black h-full flex flex-col justify-center items-center link text-[17px] font-semibold ${
                       active ? "text-white" : ""
                     } `}
                   >
@@ -74,7 +74,7 @@ const Navbar = () => {
               <li className="h-full mr-7">
                 <a
                   href=""
-                  className={`text-black text-[17px] font-medium h-full flex flex-col justify-center items-center link ${
+                  className={`text-black text-[17px] font-semibold h-full flex flex-col justify-center items-center link ${
                     active ? "text-white" : ""
                   }`}
                 >
@@ -84,7 +84,7 @@ const Navbar = () => {
               <li className="h-full mr-7">
                 <a
                   href=""
-                  className={`text-black text-[17px] font-medium h-full flex flex-col justify-center items-center link ${
+                  className={`text-black text-[17px] font-semibold h-full flex flex-col justify-center items-center link ${
                     active ? "text-white" : ""
                   }`}
                 >
@@ -94,7 +94,7 @@ const Navbar = () => {
               <li className="h-full">
                 <a
                   href=""
-                  className={`text-black text-[17px] font-medium h-full flex flex-col justify-center items-center link ${
+                  className={`text-black text-[17px] font-semibold h-full flex flex-col justify-center items-center link ${
                     active ? "text-white" : ""
                   }`}
                 >
@@ -154,7 +154,7 @@ const Navbar = () => {
                   {links.map((nav, index) => (
                     <li
                       key={nav.id}
-                      className={`font-poppins font-medium cursor-pointer text-[18px] w-full  ${
+                      className={`font-poppins font-semibold cursor-pointer text-[18px] w-full  ${
                         index === links.length - 1
                           ? "mb-4  border-b-[1px] border-Dark pb-4"
                           : "mb-4  border-b-[1px] border-Dark pb-4"
@@ -172,7 +172,7 @@ const Navbar = () => {
                     <li className=" mb-4  border-b-[1px] border-Dark pb-4 w-full">
                       <a
                         href=""
-                        className="text-black  text-[17px] font-medium  "
+                        className="text-black  text-[17px] font-semibold  "
                       >
                         Careers
                       </a>
@@ -180,7 +180,7 @@ const Navbar = () => {
                     <li className="mb-4 border-b-[1px] border-Dark pb-4 w-full">
                       <a
                         href=""
-                        className="text-black hover:text-Blue text-[17px] font-medium  "
+                        className="text-black hover:text-Blue text-[17px] font-semibold  "
                       >
                         Blog
                       </a>
@@ -188,7 +188,7 @@ const Navbar = () => {
                     <li className="">
                       <a
                         href=""
-                        className="text-black  text-[17px] font-medium  "
+                        className="text-black  text-[17px] font-semibold  "
                       >
                         Contact
                       </a>
