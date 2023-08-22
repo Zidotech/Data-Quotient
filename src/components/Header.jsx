@@ -1,16 +1,10 @@
 import React from "react";
-import Navbar from "./Navbar";
 
 const Header = () => {
   return (
     <div className=" app__bg ">
       {/* Black color overlay */}
       <div className="absolute inset-0 bg-black opacity-60"></div>
-
-      <div>
-        <Navbar />
-      </div>
-
       {/* Your content */}
       <div className="text-white text-center sm:text-left  absolute top-44 md:top-[350px]  sm:left-[15%] md:left-[30%] md:transform md:-translate-x-1/2 md:-translate-y-1/2  ">
         <div className=" px-3 md:py-3 flex flex-col gap-y-4 md:gap-y-2 justify-center md:items-start items-center w-full  sm:w-[554px]   ">

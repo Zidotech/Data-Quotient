@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 import end from "../assets/icon-end-to-end-3.svg";
 import team from "../assets/icon-team-extension-3.svg";
 import consult from "../assets/icon-consulting-expertise-3.svg";
-import client from "../assets/background2.jpg";
+import client from "../assets/background23.jpg";
 import client2 from "../assets/stx-main-page- photo-collage.webp";
 import django from "../assets/stx-next-django-services-outsourcing-2.webp";
 import tech from "../assets/logo-techcrunch.png";
@@ -15,6 +15,8 @@ import speak from "../assets/icon-speak.svg";
 import perfect from "../assets/icon-perfect-size.svg";
 import framework from "../assets/icon-framework-all.svg";
 import room from "../assets/icon-one-room.svg";
+import section_bg from "../assets/pexels-lukas-669612.jpg";
+import why from "../assets/why.png";
 
 export default {
   logo,
@@ -34,4 +36,6 @@ export default {
   speak,
   perfect,
   django,
+  section_bg,
+  why,
 };

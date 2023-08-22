@@ -21,6 +21,14 @@ body {
   background-position: center;
 }
 
+.section__bg {
+  position: relative;
+  height: 100vh; /* Make the container take the full viewport height */
+  background-image: url("./assets/pexels-lukas-669612.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .link {
   transition: color 0.1s ease-out, border-bottom 0.1s ease-in;
 }
@@ -30,6 +38,17 @@ body {
   color: hsl(211, 53%, 56%);
 }
 
+.section {
+  width: 95%;
+  margin: 0 auto;
+  border: 2px solid green;
+}
+
+@media screen and (min-width: 1400px) {
+  .section {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 1300px) {
   .app__bg {
     height: 65vh;
@@ -42,6 +61,10 @@ body {
     height: 85vh;
     background-size: cover;
     background-position: center;
+  }
+
+  .section {
+    width: 95%;
   }
 }
 

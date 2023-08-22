@@ -1,18 +1,17 @@
-import Header from "./components/Header";
-import Clients from "./pages/Clients";
-import Hiring from "./pages/Hiring";
+import { Routes, Route } from "react-router-dom";
 import Services from "./pages/Services";
-import Sourcing from "./pages/Sourcing";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className=" overflow-x-hidden">
-      <Header />
+      <Navbar />
 
-      <Services />
-      <Clients />
-      <Hiring />
-      <Sourcing />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
     </div>
   );
 }

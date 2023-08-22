@@ -10,18 +10,13 @@ export const links = [
   },
   {
     id: 2,
-    url: "/portfolio",
-    text: "Portfolio",
-  },
-  {
-    id: 3,
     url: "/team",
     text: "Team",
   },
   {
-    id: 4,
-    url: "/resources",
-    text: "Resources",
+    id: 3,
+    url: "/ydq",
+    text: "YDQ",
   },
 ];
 

@@ -11,50 +11,62 @@ import {
 const Clients = () => {
   return (
     <section className="mt-5 ">
-      <div>
+      <div className="section border-2 border-red-600">
         <div className="flex flex-col">
           <div className=" mt-10">
             <img
               src={image.client}
               alt="client_Bg"
-              className="w-[85vw] mx-auto rounded-lg"
+              className="w-auto max-w-[85vw] mx-auto h-auto max-h-[50vh] rounded-lg"
             />
           </div>
 
           {/*section of numbers */}
           <div className="flex justify-between mt-20 gap-5">
-            <div className="flex gap-3  lg:justify-start lg:gap-[10px] sm:gap-10 px-[10px] sm:pl-[43px] w-[100vw] md:w-[642.857px] ">
-              <ul className=" w-[50%]">
-                {numbers.map((card) => (
+            <div className="flex gap-3 md:pl-5 w-[100%] md:w-[70%] ">
+              <ul className="w-[50%]">
+                {numbers.map((card, index) => (
                   <li
                     key={card.id}
-                    className=" pb-[30px] md:pr-[30px]  w-[100%]  md:w-[300.926px] h-fit sm:h-[129.97px] "
+                    className={`w-[100%] pl-[10px] ${
+                      index === 1 ? "" : ""
+                    } border-b border-gray-300`}
                   >
-                    <div className="pb-[20px] border-b-[2px] border-Dark5 w-[100%] md:w-[263px] ">
-                      <p className=" font-bold text-[36px] leading-[54px]">
-                        {card.title}{" "}
-                      </p>
-                      <span className="text-[16px] leading-[25px] ">
-                        {card.span}{" "}
-                      </span>
+                    <div className="h-[130px] md:h-[120px] flex flex-col justify-between ">
+                      <div className=" h-[90%]">
+                        <p
+                          className={`font-bold md:text-[36px] text-[25px] leading-[54px] ${
+                            index === 2 ? "md:mt-[5px]" : ""
+                          }`}
+                        >
+                          {card.title}
+                        </p>
+                        <span
+                          className={`text-[16px] ${index === 2 ? "" : ""}`}
+                        >
+                          {card.span}
+                        </span>
+                      </div>
                     </div>
                   </li>
                 ))}
               </ul>
 
-              <ul className=" w-[50%]">
-                {numbers2.map((card) => (
+              <ul className="w-[50%]">
+                {numbers2.map((card, index) => (
                   <li
                     key={card.id}
-                    className="pb-[30px] md:pr-[30px]  w-[100%] md:w-[299.926px] h-fit sm:h-[125.97px]  "
+                    className={`pl-[10px] w-[100%] ${
+                      index === 1 ? "" : ""
+                    } border-b border-gray-300`}
                   >
-                    <div className="pb-[20px] border-b-[2px] border-Dark5 w-[100%] md:w-[263px] ">
-                      <p className=" font-bold text-[36px] leading-[54px]">
-                        {card.title}{" "}
-                      </p>
-                      <span className="text-[16px] leading-[25px]">
-                        {card.span}{" "}
-                      </span>
+                    <div className="h-[130px] md:h-[120px] flex flex-col justify-between ">
+                      <div className=" h-[90%]">
+                        <p className="font-bold md:text-[36px] text-[25px] leading-[54px]">
+                          {card.title}
+                        </p>
+                        <span className="text-[16px] ">{card.span}</span>
+                      </div>
                     </div>
                   </li>
                 ))}
@@ -67,25 +79,25 @@ const Clients = () => {
           </div>
 
           {/* section of company featured */}
-          <div className="md:-mt-[100px] mt-[10px]">
-            <div className=" pt-[52px] pb-[40px] lg:px-[40px] px-[10px] rounded-lg w-[92vw] mx-auto flex flex-col items-center bg-white1">
+          <div className="md:-mt-[100px] mt-[40px]">
+            <div className=" pt-[52px] pb-[40px] lg:px-[20px] px-[10px] rounded-lg w-[95%] mx-auto flex flex-col items-center bg-white1">
               <div className="pb-[40px]">
                 <h2 className=" font-bold text-[22px] leading-8 text-center">
-                  Our clients were featured in
+                  Our clients
                 </h2>
               </div>
-              <div className=" flex flex-wrap justify-center  w-[100%]  ">
-                <div className=" flex">
+              <div className=" flex flex-wrap justify-center sm:justify-around w-[100%] ">
+                <div className=" flex  ">
                   {client.map((card) => (
                     <div
                       key={card.id}
-                      className=" lg:py-10 lg:px-5 px-4 py-4 block text-center   "
+                      className=" lg:py-10  px-4 py-4 block text-center   "
                     >
                       <img src={card.icon} alt="" className="w-[full]" />
                     </div>
                   ))}
                 </div>
-                <div className=" flex">
+                <div className=" flex ">
                   {client1.map((card) => (
                     <div
                       key={card.id}
@@ -95,11 +107,11 @@ const Clients = () => {
                     </div>
                   ))}
                 </div>
-                <div className=" flex">
+                <div className=" flex justify-center">
                   {client2.map((card) => (
                     <div
                       key={card.id}
-                      className=" lg:py-7 lg:px-5 px-4 py-4 block text-center   "
+                      className=" lg:py-7  py-4 block text-center   "
                     >
                       <img src={card.icon} alt="" className="w-[full]" />
                     </div>
@@ -115,3 +127,55 @@ const Clients = () => {
 };
 
 export default Clients;
+
+{
+  /* <div className="flex gap-3 md:pl-5  w-[100%] md:w-[70%] border-2 border-yellow-500">
+              <ul className=" w-[50%]">
+                {numbers.map((card, index) => (
+                  <li
+                    key={card.id}
+                    className={`w-[100%] pl-[10px]   ${
+                      index === 1 ? "" : ""
+                    }  `}
+                  >
+                    <div className="border-2 border-green-500">
+                      <div className={` border-b-2 border-red-600 `}>
+                        <p
+                          className={`font-bold md:text-[36px] text-[25px] leading-[54px] ${
+                            index === 2 ? " md:mt-[5px] " : ""
+                          } `}
+                        >
+                          {card.title}{" "}
+                        </p>
+                        <span
+                          className={`text-[16px]  ${index === 2 ? "  " : ""}`}
+                        >
+                          {card.span}{" "}
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+
+              <ul className=" w-[50%]">
+                {numbers2.map((card, index) => (
+                  <li
+                    key={card.id}
+                    className={`pl-[10px] w-[100%]  ${index === 1 ? "" : ""}  `}
+                  >
+                    <div className=" border-2 border-green-500">
+                      <div className={` border-b-2 border-red-600 `}>
+                        <p className=" font-bold md:text-[36px] text-[25px] leading-[54px]">
+                          {card.title}{" "}
+                        </p>
+                        <span className="text-[16px] leading-[25px]">
+                          {card.span}{" "}
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div> */
+}

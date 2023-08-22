@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose, AiOutlineSearch } from "react-icons/ai";
 import { image, links } from "../constants";
@@ -35,18 +36,20 @@ const Navbar = () => {
         active ? "shadow-lg bg-Dark4 " : "bg-white"
       }`}
     >
-      <div className="">
+      <div className=" section">
         <div
-          className={`py-2 md:py-0 flex justify-between items-center md:px-9 px-5 w-full ${
+          className={`py-2 md:py-0 flex justify-between items-center  w-full ${
             active ? "" : ""
           }`}
         >
           <div className="flex gap-x-5 h-[85px] justify-center items-center">
-            <img
-              src={image.logo}
-              alt="logo-icon"
-              className="sm:w-[160px] w-[200px] md:w-[285px] md:h-[70px] cursor-pointer"
-            />
+            <Link to="/">
+              <img
+                src={image.logo}
+                alt="logo-icon"
+                className="sm:w-[160px] w-[200px] md:w-[285px] md:h-[70px] cursor-pointer"
+              />
+            </Link>
 
             <ul className="list-none lg:flex hidden justify-end items-center h-full ">
               {links.map((nav, index) => (
@@ -56,14 +59,14 @@ const Navbar = () => {
                     index === links.length - 1 ? "mr-0" : " mr-7"
                   }`}
                 >
-                  <a
-                    href={`#${nav.url}`}
+                  <Link
+                    to={nav.url}
                     className={`text-black h-full flex flex-col justify-center items-center link text-[17px] font-semibold ${
                       active ? "text-white" : ""
                     } `}
                   >
                     {nav.text}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -81,16 +84,7 @@ const Navbar = () => {
                   Careers
                 </a>
               </li>
-              <li className="h-full mr-7">
-                <a
-                  href=""
-                  className={`text-black text-[17px] font-semibold h-full flex flex-col justify-center items-center link ${
-                    active ? "text-white" : ""
-                  }`}
-                >
-                  Blog
-                </a>
-              </li>
+
               <li className="h-full">
                 <a
                   href=""
@@ -121,6 +115,8 @@ const Navbar = () => {
               />
             </div>
           </div>
+
+          {/* mobile navbar */}
 
           <div className="lg:hidden flex  justify-end items-center">
             {toggle ? (

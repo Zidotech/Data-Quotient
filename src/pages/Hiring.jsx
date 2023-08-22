@@ -4,8 +4,8 @@ import { hiring, image } from "../constants";
 const Hiring = () => {
   return (
     <section className="pt-[50px] bg-white2 ">
-      <div>
-        <div className="flex justify-between w-[92vw] mx-auto">
+      <div className="section">
+        <div className="flex justify-between w-[100%] mx-auto">
           <h2 className="lg:text-[60px] text-[35px] lg:leading-[75px] leading-[40px] font-bold lg:w-[500px] w-[100%]">
             What you’ll get from hiring us
           </h2>
@@ -13,9 +13,9 @@ const Hiring = () => {
           <hr className=" mt-5 border-black w-[55%] hidden lg:block" />
         </div>
 
-        <div className=" flex flex-col-reverse lg:flex-row mt-5">
+        <div className=" flex flex-col-reverse md:flex-row mt-5 ">
           {/* left item */}
-          <div className="w-[100vw] md:w-[771.429px] lg:h-[738.958px]  flex flex-wrap gap-y-3 lg:gap-y-0  lg:pl-[43px]">
+          <div className="w-[100%] lg:w-[70%] flex flex-wrap gap-y-3 lg:gap-y-0  lg:pl-[43px]">
             {hiring.map((card) => (
               <div
                 className="lg:w-[346px] w-[100%]  lg:pt-[48px] pt-[25px] px-[30px] flex gap-y-4 flex-col items-center text-center lg:h-[350px] h-[290px]"
@@ -39,7 +39,7 @@ const Hiring = () => {
           </div>
 
           {/* right item */}
-          <div className=" lg:w-[514.286px] w-[95vw] lg:mx-0 mx-auto">
+          <div className=" lg:w-[514.286px] w-[100%] lg:mx-0 mx-auto">
             <img
               src={image.kitchen}
               alt=""
