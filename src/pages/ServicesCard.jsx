@@ -27,11 +27,15 @@ const ServicesCard = () => {
   }, [index]);
 
   return (
-    <section className=" bg-Dark2 border-2 border-Dark3 flex flex-col justify-center items-center">
+    <section className=" bg-Dark2 border-t-[1px] border-Dark3 flex flex-col justify-center items-center">
       <div className="sm:block hidden section">
         <div className=" flex ">
-          {serviceCard.map((card) => (
-            <div className="border-r-[1px] border-Dark3 pb-[40px] pt-[28px] px-[20px]">
+          {serviceCard.map((card, index) => (
+            <div
+              className={` border-Dark3 pb-[40px] pt-[28px] px-[20px] ${
+                index === 2 ? "border-r-[0px] " : "border-r-[1px]"
+              }`}
+            >
               <div className="flex items-center">
                 <img src={card.icon} alt={card.title} />
                 <h5 className=" text-Blue text-[22px] font-bold leading-8 pl-[32px] ">

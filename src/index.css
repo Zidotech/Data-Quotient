@@ -39,9 +39,9 @@ body {
 }
 
 .section {
-  width: 95%;
+  width: 94%;
   margin: 0 auto;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 @media screen and (min-width: 1400px) {
@@ -51,11 +51,12 @@ body {
 }
 @media screen and (max-width: 1300px) {
   .app__bg {
-    height: 65vh;
+    height: 80vh;
     background-size: cover;
     background-position: center;
   }
 }
+
 @media screen and (max-width: 600px) {
   .app__bg {
     height: 85vh;
@@ -131,3 +132,8 @@ article.nextSlide {
 }
 
 /* slider css end */
+
+/* footer list color */
+.marker::marker {
+  color: hsl(211, 53%, 56%);
+}

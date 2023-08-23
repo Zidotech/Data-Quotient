@@ -16,7 +16,8 @@ import perfect from "../assets/icon-perfect-size.svg";
 import framework from "../assets/icon-framework-all.svg";
 import room from "../assets/icon-one-room.svg";
 import section_bg from "../assets/pexels-lukas-669612.jpg";
-import why from "../assets/why.png";
+import join from "../assets/joinpython.png";
+import group from "../assets/group.svg";
 
 export default {
   logo,
@@ -37,5 +38,6 @@ export default {
   perfect,
   django,
   section_bg,
-  why,
+  join,
+  group,
 };

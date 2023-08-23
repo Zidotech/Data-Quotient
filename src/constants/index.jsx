@@ -16,7 +16,20 @@ export const links = [
   {
     id: 3,
     url: "/ydq",
-    text: "YDQ",
+    text: "Why DQ",
+  },
+];
+
+export const links1 = [
+  {
+    id: 1,
+    url: "/careers",
+    text: "Careers",
+  },
+  {
+    id: 2,
+    url: "/contact",
+    text: "Contact",
   },
 ];
 
@@ -137,5 +150,95 @@ export const hiring = [
     icon: image.speak,
     title: "Ridiculously easy cooperation",
     text: "We’ll help you clarify and prioritize features, we report on progress constantly, and we speak flawless English.",
+  },
+];
+
+export const footers = [
+  {
+    title: "Expert Consulting",
+    links: [
+      {
+        name: "DevOps",
+        url: "",
+      },
+      {
+        name: "SecOps",
+        url: "",
+      },
+      {
+        name: "DevSecOps",
+        url: "",
+      },
+      {
+        name: "Cloud Solutions",
+        url: "",
+      },
+      {
+        name: "Machine Learning",
+        url: "",
+      },
+      {
+        name: "Data Engineering",
+        url: "",
+      },
+      {
+        name: "Data Analysis",
+        url: "",
+      },
+      {
+        name: "IT manage Services",
+        url: "",
+      },
+      {
+        name: "Team Extension",
+        url: "",
+      },
+    ],
+  },
+  {
+    title: "End-to-End Development",
+    links: [
+      {
+        name: "Discovery workshops",
+        url: "",
+      },
+      {
+        name: "System Analysis",
+        url: "",
+      },
+      {
+        name: "Mobile Development",
+        url: "",
+      },
+      {
+        name: "Web Development",
+        url: "",
+      },
+      {
+        name: "API Development",
+        url: "",
+      },
+      {
+        name: "Quality Assurance and Testing",
+        url: "",
+      },
+    ],
+  },
+  {
+    title: "Training",
+    links: [
+      {
+        name: "Corporate Trainings",
+        url: "",
+      },
+      {
+        name: "Hands-on training",
+        url: "",
+      },
+      {
+        name: "Coaching or mentoring",
+        url: "",
+      },
+    ],
   },
 ];

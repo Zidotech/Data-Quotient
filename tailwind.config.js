@@ -13,6 +13,7 @@ export default {
         white1: "hsl(0, 0%, 100%)",
         white2: "hsl(204, 33%, 97%)",
         Ash: "hsl(196, 5%, 55%)",
+        Footer: "hsl(204, 33%, 97%)",
       },
       fontFamily: {
         Montserrat: ["Montserrat", "sans - serif"],
@@ -25,7 +26,7 @@ export default {
     screens: {
       xs: "480px",
       ss: "620px",
-      sm: "768px",
+      sm: "767px",
       md: "1060px",
       lg: "1081px",
       xl: "1700px",

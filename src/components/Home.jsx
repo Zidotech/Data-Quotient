@@ -3,7 +3,7 @@ import ServicesCard from "../pages/ServicesCard";
 import Header from "../components/Header";
 import Clients from "../pages/Clients";
 import Hiring from "../pages/Hiring";
-import Why from "../pages/Why";
+import Join from "../pages/Join";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <ServicesCard />
       <Clients />
       <Hiring />
-      <Why />
+      <Join />
     </div>
   );
 };

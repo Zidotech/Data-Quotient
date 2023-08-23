@@ -11,13 +11,14 @@ import {
 const Clients = () => {
   return (
     <section className="mt-5 ">
-      <div className="section border-2 border-red-600">
+      <div className="section ">
         <div className="flex flex-col">
-          <div className=" mt-10">
+          <div className="">
             <img
               src={image.client}
               alt="client_Bg"
-              className="w-auto max-w-[85vw] mx-auto h-auto max-h-[50vh] rounded-lg"
+              className="w-full sm:h-[60vh] mx-auto rounded-lg object-cover"
+              style={{ maxWidth: "80vw" }}
             />
           </div>
 
