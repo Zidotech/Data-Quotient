@@ -1,4 +1,10 @@
 import image from "./images";
+import {
+  BiLogoFacebook,
+  BiLogoLinkedin,
+  BiLogoTwitter,
+  BiLogoYoutube,
+} from "react-icons/bi";
 
 export { image };
 
@@ -41,6 +47,7 @@ export const serviceCard = [
     description:
       " Solving your problems or improving your product with the help of subject matter experts ",
     more: " LEARN MORE ",
+    url: "",
   },
   {
     id: 2,
@@ -49,6 +56,7 @@ export const serviceCard = [
     description:
       "   Full development team taking your project all the way from discovery to deployment ",
     more: " LEARN MORE ",
+    url: "",
   },
   {
     id: 3,
@@ -57,6 +65,7 @@ export const serviceCard = [
     description:
       " If you’re short on tech specialists, missing deadlines, or going over budget—we’re here for you. ",
     more: " LEARN MORE ",
+    url: "",
   },
 ];
 
@@ -240,5 +249,61 @@ export const footers = [
         url: "",
       },
     ],
+  },
+];
+
+export const socials = [
+  {
+    id: 1,
+    icon: <BiLogoLinkedin />,
+    url: "https://linkedin.com/company/data-quotient-hq",
+  },
+  {
+    id: 2,
+    icon: <BiLogoTwitter />,
+    url: "https://twitter.com/_dataquotient",
+  },
+  {
+    id: 3,
+    icon: <BiLogoFacebook />,
+    url: "https://facebook.com/dataquotient",
+  },
+  {
+    id: 4,
+    icon: <BiLogoYoutube />,
+    url: "https://www.youtube.com/channel/UCgJ9NVI6Y92gzuE6YW7EubQ ",
+  },
+];
+
+export const team = [
+  {
+    id: 1,
+    icon: image.js,
+    title: "Javascript",
+    url: "",
+  },
+  {
+    id: 2,
+    icon: image.react,
+    title: "React Native",
+    url: "",
+  },
+  {
+    id: 3,
+    icon: image.devOps,
+    title: "DevOps",
+    url: "",
+  },
+  {
+    id: 4,
+    icon: image.product,
+    title: "Product Design",
+    url: "",
+  },
+  {
+    id: 5,
+    icon: image.python,
+    title: "Python",
+    url: "",
   },
 ];

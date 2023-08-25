@@ -1,17 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { footers, links, links1 } from "../constants";
+import { footers, links, links1, socials, image } from "../constants";
 
 const Footer = () => {
   return (
-    <section className=" bg-black pb-[35px]">
+    <footer className="-mt-3 bg-black pb-[35px]">
       <div className="section">
         <div className="flex md:flex-row justify-between flex-col ">
-          <div className=" md:w-[30%] w-[100%] pt-10 text-Ash">
-            <h2 className="text-[25px]">Locations</h2>
-            <p>38 61-854 Poznań,</p>
-            <p>ul. Mostowa</p>
-            <p> Poland tel: +48 61 610 01 92</p>
+          <div className="md:w-[30%] w-[100%] md:pt-10  flex justify-between flex-col gap-7 md:gap-0 px-2 md:px-0">
+            <div className="text-Ash">
+              <h2 className="text-[25px]">Locations</h2>
+              <p>38 61-854 Poznań,</p>
+              <p>ul. Mostowa</p>
+              <p> Poland tel: +48 61 610 01 92</p>
+            </div>
+
+            <div className="">
+              <ul className="flex md:justify-around justify-between">
+                {socials.map((social) => (
+                  <li
+                    key={social.id}
+                    className="border-2 border-Ash hover:bg-Blue hover:text-white text-Blue text-[30px]  rounded-full p-2"
+                  >
+                    <Link to={social.url}>{social.icon}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* left item start */}
@@ -85,7 +100,7 @@ const Footer = () => {
           {/* left item end */}
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

@@ -18,6 +18,13 @@ import room from "../assets/icon-one-room.svg";
 import section_bg from "../assets/pexels-lukas-669612.jpg";
 import join from "../assets/joinpython.png";
 import group from "../assets/group.svg";
+import mouse from "../assets/mouse.svg";
+import serviceT from "../assets/stx-next-services-team-extension-main-photo.png";
+import python from "../assets/big-icon-python.svg";
+import js from "../assets/icon-js.svg";
+import react from "../assets/icon-react.svg";
+import product from "../assets/icon-product-design.svg";
+import devOps from "../assets/icon-devops.svg";
 
 export default {
   logo,
@@ -40,4 +47,11 @@ export default {
   section_bg,
   join,
   group,
+  mouse,
+  serviceT,
+  python,
+  js,
+  react,
+  product,
+  devOps,
 };

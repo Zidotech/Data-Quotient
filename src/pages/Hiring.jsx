@@ -5,7 +5,7 @@ const Hiring = () => {
   return (
     <section className="pt-[50px] bg-white2 ">
       <div className="section">
-        <div className="flex justify-between w-[100%] mx-auto">
+        <div className="flex justify-between w-[100%] ">
           <h2 className="lg:text-[60px] text-[35px] lg:leading-[75px] leading-[40px] font-bold lg:w-[500px] w-[100%]">
             What you’ll get from hiring us
           </h2>

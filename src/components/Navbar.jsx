@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose, AiOutlineSearch } from "react-icons/ai";
-import { image, links, links1 } from "../constants";
+import { image, links, links1, footers } from "../constants";
 import { motion } from "framer-motion";
 import Button from "./Button";
 
@@ -22,6 +22,19 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [active, setActive] = useState(null);
 
+  // ? Mouse over effect start //
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const handleMouseOver = (index) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseOut = () => {
+    setHoveredIndex(null);
+  };
+  // ? Mouse over effect ends //
+
+  // scroll effect
   useEffect(() => {
     const scrollActive = () => {
       setActive(window.scrollY > 20);
@@ -50,23 +63,56 @@ const Navbar = () => {
                 className="sm:w-[160px] w-[200px] md:w-[295px]  cursor-pointer object-cover "
               />
             </Link>
-
-            <ul className="list-none lg:flex hidden justify-end items-center h-full ">
+            <ul className="list-none lg:flex hidden justify-end items-center h-full">
               {links.map((nav, index) => (
                 <li
                   key={nav.id}
-                  className={`  cursor-pointer  h-full  ${
-                    index === links.length - 1 ? "mr-0" : " mr-7"
+                  className={`cursor-pointer h-full ${
+                    index === links.length - 1 ? "mr-0" : "mr-7"
                   }`}
+                  onMouseOver={() => handleMouseOver(index)}
+                  onMouseOut={() => handleMouseOut(index)}
                 >
                   <Link
                     to={nav.url}
-                    className={`text-black h-full flex flex-col justify-center items-center link text-[17px] font-semibold ${
+                    className={`text-black h-full flex flex-col justify-center items-center link text-[17px] font-semibold transition-colors duration-300 ${
                       active ? "text-white" : ""
-                    } `}
+                    }`}
                   >
                     {nav.text}
                   </Link>
+                  {nav.text === "Services" && hoveredIndex === index && (
+                    <div className="services-hover-content">
+                      <div className="w-full md:mt-0 mt-5">
+                        <div className=" flex flex-row justify-around  gap-2 mt-5 ">
+                          {footers.map((footerlink) => (
+                            <div
+                              key={footerlink.title}
+                              className={`flex flex-col   text-left`}
+                            >
+                              <h4 className="text-[18px] leading-[27px] font-semibold font-Lato text-Blue">
+                                {footerlink.title}
+                              </h4>
+                              <ul className="list-disc mt-4 pl-5 flex md:flex-col flex-wrap gap-x-[30px] md:gap-x-0">
+                                {footerlink.links.map((link, index) => (
+                                  <li
+                                    key={link.name}
+                                    className={` text-[16px] leading-[24px] font-Lato marker text-Ash  hover:text-Blue ${
+                                      index !== footerlink.links.length - 1
+                                        ? "mb-4"
+                                        : "mb-0"
+                                    }`}
+                                  >
+                                    <Link to={link.url}>{link.name}</Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>
@@ -141,6 +187,7 @@ const Navbar = () => {
                   {links.map((nav, index) => (
                     <li
                       key={nav.id}
+                      onClick={() => setToggle(false)}
                       className={`font-poppins font-semibold cursor-pointer text-[18px] w-full mb-4 border-b-[1px] border-Dark pb-4  `}
                     >
                       <Link to={nav.url}>{nav.text}</Link>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { serviceCard } from "../constants";
 import { BsArrowRight } from "react-icons/bs";
 import ServicesSlider from "../components/ServicesSlider";
+import { Link } from "react-router-dom";
 
 const ServicesCard = () => {
   const [people, setPeople] = useState(serviceCard);
@@ -50,12 +51,12 @@ const ServicesCard = () => {
               </div>
 
               <div className="mt-[30px]">
-                <a
-                  href=""
+                <Link
+                  to={card.url}
                   className="flex items-center text-[12px] font-bold leading-5 text-Blue gap-2"
                 >
                   {card.more} <BsArrowRight />
-                </a>
+                </Link>
               </div>
             </div>
           ))}
