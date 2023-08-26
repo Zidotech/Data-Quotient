@@ -1,14 +1,14 @@
 import React from "react";
-import { image, team } from "../constants";
+import { image, training } from "../constants";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 
-const TeamExtension = () => {
+const Training = () => {
   return (
     <section className="pb-5">
       <div className="flex justify-between items-end w-[100%] ">
         <h2 className="lg:text-[60px] text-[25px] lg:leading-[75px] leading-[20px] font-bold w-[65%] sm:w-[50%] ">
-          Team Extension
+          Training
         </h2>
 
         <hr className="  border-black sm:w-[55%] w-[35%] " />
@@ -54,11 +54,11 @@ const TeamExtension = () => {
 
           <div>
             <ul className="flex flex-wrap">
-              {team.map((card) => (
-                <li key={card.id} className="p-[12px]">
+              {training.map((card) => (
+                <li key={card.id} className="p-[12px] w-[100%] md:w-fit">
                   <Link
                     to={card.url}
-                    className=" hover:scale-105 hover:shadow-lg flex items-center justify-between px-4 border rounded-md border-Ash w-[250px] h-[80px]"
+                    className=" hover:scale-105 hover:shadow-lg flex items-center justify-between px-4 border rounded-md border-Ash md:w-[250px] w-[100%] h-[80px]"
                   >
                     <div className="flex items-center">
                       <img src={card.icon} alt="" className="mr-3 w-[50px]" />
@@ -78,4 +78,4 @@ const TeamExtension = () => {
   );
 };
 
-export default TeamExtension;
+export default Training;

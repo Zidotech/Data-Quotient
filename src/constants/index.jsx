@@ -6,6 +6,8 @@ import {
   BiLogoYoutube,
 } from "react-icons/bi";
 
+import { VscAzureDevops } from "react-icons/vsc";
+
 export { image };
 
 export const links = [
@@ -275,7 +277,28 @@ export const socials = [
   },
 ];
 
-export const team = [
+export const training = [
+  {
+    id: 1,
+    icon: image.js,
+    title: "Corporate Trainings",
+    url: "",
+  },
+  {
+    id: 2,
+    icon: image.react,
+    title: "Hands-on training",
+    url: "",
+  },
+  {
+    id: 3,
+    icon: image.devOps,
+    title: "Coaching or mentoring",
+    url: "",
+  },
+];
+
+export const end = [
   {
     id: 1,
     icon: image.js,
@@ -285,7 +308,7 @@ export const team = [
   {
     id: 2,
     icon: image.react,
-    title: "React Native",
+    title: "Java",
     url: "",
   },
   {
@@ -297,13 +320,112 @@ export const team = [
   {
     id: 4,
     icon: image.product,
-    title: "Product Design",
+    title: "SecOps",
     url: "",
   },
   {
     id: 5,
     icon: image.python,
     title: "Python",
+    url: "",
+  },
+  {
+    id: 6,
+    icon: image.devOps,
+    title: "DevSecOps",
+    url: "",
+  },
+  {
+    id: 7,
+    icon: image.product,
+    title: "Discovery workshops ",
+    url: "",
+  },
+  {
+    id: 8,
+    icon: image.python,
+    title: "System Architect ",
+    url: "",
+  },
+  {
+    id: 9,
+    icon: image.python,
+    title: "Mobile Development",
+    url: "",
+  },
+  {
+    id: 10,
+    icon: image.devOps,
+    title: "Web Development",
+    url: "",
+  },
+  {
+    id: 11,
+    icon: image.product,
+    title: "API Development",
+    url: "",
+  },
+  {
+    id: 12,
+    icon: image.python,
+    title: "Quality Assurance and Testing",
+    url: "",
+  },
+];
+
+export const expertConsultCard = [
+  {
+    id: 1,
+    title: "Machine Learning",
+    icon: image.machine,
+    description:
+      " Unlock new possibilities, boost productivity, and automate your business processes. Regardless of what industry you operate in, our machine learning solutions can help you achieve higher levels of efficiency and keep ahead of your competition. ",
+    more: "LEARN MORE",
+    url: "",
+  },
+  {
+    id: 2,
+    title: "Cloud Solutions",
+    icon: image.products,
+    description:
+      " A lot of day-to-day development separates your initial vision from the finished product. Using the lessons we’ve learned working on similar projects in your business vertical, we’ll come up with a high-level plan to achieve your goals. ",
+    more: " CONTACT US",
+    url: "",
+  },
+  {
+    id: 3,
+    title: "Data Engineering",
+    icon: image.fintech,
+    description:
+      " The financial industry often struggles with challenges such as quantitative problem-solving for pricing or risk and trade management. We’ll look at analytics, compliance, and regulation to come up with the best solutions tailored to your fintech business. ",
+    more: " LEARN MORE ",
+    url: "",
+  },
+  {
+    id: 4,
+    title: "Data Analysis",
+    icon: image.machine,
+    description:
+      " Unlock new possibilities, boost productivity, and automate your business processes. Regardless of what industry you operate in, our machine learning solutions can help you achieve higher levels of efficiency and keep ahead of your competition. ",
+    more: "LEARN MORE",
+    url: "",
+  },
+  {
+    id: 5,
+    title: "IT manage Services",
+    icon: image.products,
+    description:
+      " A lot of day-to-day development separates your initial vision from the finished product. Using the lessons we’ve learned working on similar projects in your business vertical, we’ll come up with a high-level plan to achieve your goals. ",
+    more: " CONTACT US",
+    url: "",
+  },
+  {
+    id: 6,
+    title: "Team Extension",
+    icon: image.fintech,
+    description:
+      " The financial industry often struggles with challenges such as quantitative problem-solving for pricing or risk and trade management. We’ll look at analytics, compliance, and regulation to come up with the best solutions tailored to your fintech business. ",
+    more: " LEARN MORE ",
     url: "",
   },
 ];

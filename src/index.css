@@ -13,6 +13,14 @@ body {
   font-family: Montserrat;
 }
 
+.image_wrapper {
+  margin: 0px 20px;
+}
+
+.image_wrapper img {
+  width: 70%;
+}
+
 .app__bg {
   position: relative;
   height: 100vh; /* Make the container take the full viewport height */
@@ -24,7 +32,7 @@ body {
 .section__bg {
   position: relative;
   height: 100vh; /* Make the container take the full viewport height */
-  background-image: url("./assets/pexels-lukas-669612.jpg");
+  background-image: url("./assets/service.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -37,7 +45,7 @@ body {
 .section {
   width: 94%;
   margin: 0 auto;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 @media screen and (min-width: 1400px) {

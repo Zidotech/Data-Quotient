@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="-mt-3 bg-black pb-[35px]">
       <div className="section">
         <div className="flex md:flex-row justify-between flex-col ">
-          <div className="md:w-[30%] w-[100%] md:pt-10  flex justify-between flex-col gap-7 md:gap-0 px-2 md:px-0">
+          <div className="md:w-[30%] w-[100%] pt-10  flex justify-between flex-col gap-7 md:gap-0 px-2 md:px-0">
             <div className="text-Ash">
               <h2 className="text-[25px]">Locations</h2>
               <p>38 61-854 Poznań,</p>

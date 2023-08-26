@@ -20,11 +20,16 @@ import join from "../assets/joinpython.png";
 import group from "../assets/group.svg";
 import mouse from "../assets/mouse.svg";
 import serviceT from "../assets/stx-next-services-team-extension-main-photo.png";
+import endT from "../assets/stx-next-end-to-end-servies-photo-2.png";
+import consultT from "../assets/stx-next-services-counslting-main-photo.png";
 import python from "../assets/big-icon-python.svg";
 import js from "../assets/icon-js.svg";
 import react from "../assets/icon-react.svg";
 import product from "../assets/icon-product-design.svg";
 import devOps from "../assets/icon-devops.svg";
+import fintech from "../assets/icon-fintech.svg";
+import machine from "../assets/icon-machine-learning.svg";
+import products from "../assets/icon-product-strategy.svg";
 
 export default {
   logo,
@@ -54,4 +59,9 @@ export default {
   react,
   product,
   devOps,
+  endT,
+  consultT,
+  fintech,
+  machine,
+  products,
 };

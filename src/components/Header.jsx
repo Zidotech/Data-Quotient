@@ -1,5 +1,6 @@
 import React from "react";
 import { image } from "../constants";
+import MarqueeSlider from "./MarqueeSlider";
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
       {/* Black color overlay */}
       <div className="absolute inset-0 bg-black opacity-80"></div>
       {/* Your content */}
-      <div className="absolute top-44 md:top-[350px]  sm:left-[15%] md:left-[30%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 flex gap-3">
+      <div className="absolute top-44 md:top-1/2  sm:left-[15%] md:left-[30%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 flex gap-3">
         <div className="md:block hidden">
           <img src={image.mouse} alt="" />
         </div>
@@ -24,6 +25,8 @@ const Header = () => {
           </div>
         </div>
       </div>
+
+      <MarqueeSlider />
     </div>
   );
 };
