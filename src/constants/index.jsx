@@ -170,39 +170,39 @@ export const footers = [
     links: [
       {
         name: "DevOps",
-        url: "",
+        url: "/devops",
       },
       {
         name: "SecOps",
-        url: "",
+        url: "/sec-ops",
       },
       {
         name: "DevSecOps",
-        url: "",
+        url: "/dev-sec-ops",
       },
       {
         name: "Cloud Solutions",
-        url: "",
+        url: "/cloud-solutions",
       },
       {
         name: "Machine Learning",
-        url: "",
+        url: "/machine-learning",
       },
       {
         name: "Data Engineering",
-        url: "",
+        url: "/data-engineering",
       },
       {
         name: "Data Analysis",
-        url: "",
+        url: "/data-analysis",
       },
       {
         name: "IT manage Services",
-        url: "",
+        url: "/IT-manage-services",
       },
       {
         name: "Team Extension",
-        url: "",
+        url: "/team-extension",
       },
     ],
   },
@@ -211,27 +211,27 @@ export const footers = [
     links: [
       {
         name: "Discovery workshops",
-        url: "",
+        url: "/discovery-workshops",
       },
       {
         name: "System Analysis",
-        url: "",
+        url: "/system-analysis",
       },
       {
         name: "Mobile Development",
-        url: "",
+        url: "/mobile-development",
       },
       {
         name: "Web Development",
-        url: "",
+        url: "/web-development",
       },
       {
         name: "API Development",
-        url: "",
+        url: "/api-development",
       },
       {
         name: "Quality Assurance and Testing",
-        url: "",
+        url: "/quality-assurance-and-testing",
       },
     ],
   },
@@ -240,15 +240,15 @@ export const footers = [
     links: [
       {
         name: "Corporate Trainings",
-        url: "",
+        url: "/corporate-trainings",
       },
       {
         name: "Hands-on training",
-        url: "",
+        url: "/hands-on-training",
       },
       {
         name: "Coaching or mentoring",
-        url: "",
+        url: "/coaching-or-mentoring",
       },
     ],
   },
@@ -282,19 +282,19 @@ export const training = [
     id: 1,
     icon: image.js,
     title: "Corporate Trainings",
-    url: "",
+    url: "/corporate-trainings",
   },
   {
     id: 2,
     icon: image.react,
     title: "Hands-on training",
-    url: "",
+    url: "/hands-on-training",
   },
   {
     id: 3,
     icon: image.devOps,
     title: "Coaching or mentoring",
-    url: "",
+    url: "/coaching-or-mentoring",
   },
 ];
 
@@ -303,73 +303,73 @@ export const end = [
     id: 1,
     icon: image.js,
     title: "Javascript",
-    url: "",
+    url: "/javascript",
   },
   {
     id: 2,
     icon: image.react,
     title: "Java",
-    url: "",
+    url: "/java",
   },
   {
     id: 3,
     icon: image.devOps,
     title: "DevOps",
-    url: "",
+    url: "/devops",
   },
   {
     id: 4,
     icon: image.product,
     title: "SecOps",
-    url: "",
+    url: "/sec-ops",
   },
   {
     id: 5,
     icon: image.python,
     title: "Python",
-    url: "",
+    url: "/python",
   },
   {
     id: 6,
     icon: image.devOps,
     title: "DevSecOps",
-    url: "",
+    url: "/dev-sec-o",
   },
   {
     id: 7,
     icon: image.product,
     title: "Discovery workshops ",
-    url: "",
+    url: "/discovery-workshops",
   },
   {
     id: 8,
     icon: image.python,
     title: "System Architect ",
-    url: "",
+    url: "/system-architect",
   },
   {
     id: 9,
     icon: image.python,
     title: "Mobile Development",
-    url: "",
+    url: "/mobile-development",
   },
   {
     id: 10,
     icon: image.devOps,
     title: "Web Development",
-    url: "",
+    url: "/web-development",
   },
   {
     id: 11,
     icon: image.product,
     title: "API Development",
-    url: "",
+    url: "/api-development",
   },
   {
     id: 12,
     icon: image.python,
     title: "Quality Assurance and Testing",
-    url: "",
+    url: "/quality-assurance-and-testing",
   },
 ];
 
@@ -381,7 +381,7 @@ export const expertConsultCard = [
     description:
       " Unlock new possibilities, boost productivity, and automate your business processes. Regardless of what industry you operate in, our machine learning solutions can help you achieve higher levels of efficiency and keep ahead of your competition. ",
     more: "LEARN MORE",
-    url: "",
+    url: "/machine-learning",
   },
   {
     id: 2,
@@ -390,7 +390,7 @@ export const expertConsultCard = [
     description:
       " A lot of day-to-day development separates your initial vision from the finished product. Using the lessons we’ve learned working on similar projects in your business vertical, we’ll come up with a high-level plan to achieve your goals. ",
     more: " CONTACT US",
-    url: "",
+    url: "/cloud-solutions",
   },
   {
     id: 3,
@@ -399,7 +399,7 @@ export const expertConsultCard = [
     description:
       " The financial industry often struggles with challenges such as quantitative problem-solving for pricing or risk and trade management. We’ll look at analytics, compliance, and regulation to come up with the best solutions tailored to your fintech business. ",
     more: " LEARN MORE ",
-    url: "",
+    url: "/data-engineering",
   },
   {
     id: 4,
@@ -408,7 +408,7 @@ export const expertConsultCard = [
     description:
       " Unlock new possibilities, boost productivity, and automate your business processes. Regardless of what industry you operate in, our machine learning solutions can help you achieve higher levels of efficiency and keep ahead of your competition. ",
     more: "LEARN MORE",
-    url: "",
+    url: "/data-analysis",
   },
   {
     id: 5,
@@ -417,7 +417,7 @@ export const expertConsultCard = [
     description:
       " A lot of day-to-day development separates your initial vision from the finished product. Using the lessons we’ve learned working on similar projects in your business vertical, we’ll come up with a high-level plan to achieve your goals. ",
     more: " CONTACT US",
-    url: "",
+    url: "/IT-manage-services",
   },
   {
     id: 6,
@@ -426,6 +426,124 @@ export const expertConsultCard = [
     description:
       " The financial industry often struggles with challenges such as quantitative problem-solving for pricing or risk and trade management. We’ll look at analytics, compliance, and regulation to come up with the best solutions tailored to your fintech business. ",
     more: " LEARN MORE ",
-    url: "",
+    url: "/team-extension",
+  },
+];
+
+export const webDevStack = [
+  {
+    id: 1,
+    icon: image.snowflake,
+    title: "SnowFlake",
+  },
+  {
+    id: 2,
+    icon: image.storm,
+    title: "Storm",
+  },
+  {
+    id: 3,
+    icon: image.powerBI,
+    title: "PowerBI",
+  },
+  {
+    id: 4,
+    icon: image.oracle,
+    title: "oracle",
+  },
+  {
+    id: 5,
+    icon: image.mongoDB,
+    title: "mongoDB",
+  },
+  {
+    id: 6,
+    icon: image.aws,
+    title: "aws",
+  },
+  {
+    id: 7,
+    icon: image.airflow,
+    title: "airflow",
+  },
+  {
+    id: 8,
+    icon: image.azure,
+    title: "azure",
+  },
+  {
+    id: 9,
+    icon: image.bigQuery,
+    title: "bigQuery",
+  },
+  {
+    id: 10,
+    icon: image.dataBrick,
+    title: "dataBrick",
+  },
+  {
+    id: 11,
+    icon: image.dataFlow,
+    title: "dataFlow",
+  },
+  {
+    id: 12,
+    icon: image.flink,
+    title: "flink",
+  },
+  {
+    id: 13,
+    icon: image.gcp,
+    title: "gcp",
+  },
+  {
+    id: 14,
+    icon: image.hadoop,
+    title: "hadoop",
+  },
+  {
+    id: 15,
+    icon: image.hive,
+    title: "hive",
+  },
+  {
+    id: 16,
+    icon: image.hBase,
+    title: "hBase",
+  },
+  {
+    id: 17,
+    icon: image.kafka,
+    title: "kafka",
+  },
+  {
+    id: 18,
+    icon: image.kinesis,
+    title: "kinesis",
+  },
+  {
+    id: 19,
+    icon: image.mySql,
+    title: "mySql",
+  },
+  {
+    id: 20,
+    icon: image.postGreSql,
+    title: "postGreSql",
+  },
+  {
+    id: 21,
+    icon: image.presto,
+    title: "presto",
+  },
+  {
+    id: 22,
+    icon: image.pySpark,
+    title: "pySpark",
+  },
+  {
+    id: 23,
+    icon: image.redShift,
+    title: "redShift",
   },
 ];

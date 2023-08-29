@@ -1,10 +1,6 @@
 import React from "react";
-import Training from "./Training";
-import End from "./End";
-import Expert from "./Expert";
-import MarqueeSlider from "../components/MarqueeSlider";
 
-const Services = () => {
+const MobileDevelopment = () => {
   return (
     <section className="bg-Footer ">
       <div className=" section__bg ">
@@ -22,23 +18,9 @@ const Services = () => {
             meet your needs.
           </p>
         </div>
-
-        <MarqueeSlider />
-      </div>
-
-      <div className="bg-white  sm:pt-[100px] pt-[50px] pb-[40px]">
-        <Expert />
-      </div>
-
-      <div className="section ">
-        <End />
-      </div>
-
-      <div className="section pt-5">
-        <Training />
       </div>
     </section>
   );
 };
 
-export default Services;
+export default MobileDevelopment;

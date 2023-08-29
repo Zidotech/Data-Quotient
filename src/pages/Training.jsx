@@ -14,7 +14,7 @@ const Training = () => {
         <hr className="  border-black sm:w-[55%] w-[35%] " />
       </div>
 
-      <div className="sm:pt-[100px] pt-[40px]">
+      <div className="sm:pt-[50px] pt-[40px]">
         <div className="flex justify-between flex-col sm:flex-row">
           <div className="sm:w-[45%] w-[100%]">
             <img src={image.serviceT} alt="" />
@@ -45,14 +45,14 @@ const Training = () => {
       </div>
 
       <div className=" mt-5 lg:-mt-[120px] relative ">
-        <div className="bg-white lg:w-[900px] w-[100%] py-[48px] px-[30px] rounded-2xl">
+        <div className="bg-white lg:w-[900px] w-[100%] py-[48px] sm:px-[30px] rounded-2xl">
           <div className="pb-[32px] pl-1">
             <h2 className="text-[22px] leading-[31px] font-Montserrat font-bold">
               We can help with:
             </h2>
           </div>
 
-          <div>
+          <div className="">
             <ul className="flex flex-wrap">
               {training.map((card) => (
                 <li key={card.id} className="p-[12px] w-[100%] md:w-fit">

@@ -49,7 +49,7 @@ const End = () => {
           </h3>
         </div>
 
-        <div>
+        <div className="">
           <ul className="flex flex-wrap">
             {end.map((card) => (
               <li key={card.id} className="p-[12px] w-[100%] sm:w-fit">

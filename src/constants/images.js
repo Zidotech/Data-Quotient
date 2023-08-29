@@ -19,6 +19,7 @@ import section_bg from "../assets/pexels-lukas-669612.jpg";
 import join from "../assets/joinpython.png";
 import group from "../assets/group.svg";
 import mouse from "../assets/mouse.svg";
+import mouse2 from "../assets/mouse2.svg";
 import serviceT from "../assets/stx-next-services-team-extension-main-photo.png";
 import endT from "../assets/stx-next-end-to-end-servies-photo-2.png";
 import consultT from "../assets/stx-next-services-counslting-main-photo.png";
@@ -30,6 +31,32 @@ import devOps from "../assets/icon-devops.svg";
 import fintech from "../assets/icon-fintech.svg";
 import machine from "../assets/icon-machine-learning.svg";
 import products from "../assets/icon-product-strategy.svg";
+import webdevpic from "../assets/comments-2.jpg";
+import webdevelopment from "../assets/icon-web-development (1).svg";
+
+import snowflake from "../assets/Snowflake.webp";
+import storm from "../assets/Storm.webp";
+import powerBI from "../assets/PowerBI.webp";
+import oracle from "../assets/Oracle.webp";
+import mongoDB from "../assets/MongoDB.webp";
+import aws from "../assets/aws.webp";
+import airflow from "../assets/Airflow.webp";
+import azure from "../assets/azure.webp";
+import bigQuery from "../assets/Bigquery.webp";
+import dataBrick from "../assets/Databricks.webp";
+import dataFlow from "../assets/Dataflow.webp";
+import flink from "../assets/Flink.webp";
+import gcp from "../assets/GCP.png";
+import hadoop from "../assets/Hadoop.webp";
+import hive from "../assets/Hive.webp";
+import hBase from "../assets/Hbase.webp";
+import kafka from "../assets/kafka.webp";
+import kinesis from "../assets/Kinesis.webp";
+import mySql from "../assets/MySQL.webp";
+import postGreSql from "../assets/PostgreSQL.webp";
+import presto from "../assets/Presto.webp";
+import pySpark from "../assets/PySpark.webp";
+import redShift from "../assets/Redshift.webp";
 
 export default {
   logo,
@@ -64,4 +91,31 @@ export default {
   fintech,
   machine,
   products,
+  mouse2,
+  webdevpic,
+  webdevelopment,
+
+  snowflake,
+  storm,
+  powerBI,
+  oracle,
+  mongoDB,
+  aws,
+  airflow,
+  azure,
+  bigQuery,
+  dataBrick,
+  dataFlow,
+  flink,
+  gcp,
+  hadoop,
+  hive,
+  hBase,
+  kafka,
+  kinesis,
+  mySql,
+  postGreSql,
+  presto,
+  pySpark,
+  redShift,
 };
