@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Training = () => {
   return (
-    <section className="pb-5">
+    <section className="pb-[50px]">
       <div className="flex justify-between items-end w-[100%] ">
         <h2 className="lg:text-[60px] text-[25px] lg:leading-[75px] leading-[20px] font-bold w-[65%] sm:w-[50%] ">
           Training

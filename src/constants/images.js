@@ -33,6 +33,9 @@ import machine from "../assets/icon-machine-learning.svg";
 import products from "../assets/icon-product-strategy.svg";
 import webdevpic from "../assets/comments-2.jpg";
 import webdevelopment from "../assets/icon-web-development (1).svg";
+import qualitytesting from "../assets/icon-testing-2.svg";
+import dataengineering from "../assets/data-engineering LARGE.svg";
+import mobiledevelopment from "../assets/icon-mobile-development-1.svg";
 
 import snowflake from "../assets/Snowflake.webp";
 import storm from "../assets/Storm.webp";
@@ -94,6 +97,9 @@ export default {
   mouse2,
   webdevpic,
   webdevelopment,
+  qualitytesting,
+  dataengineering,
+  mobiledevelopment,
 
   snowflake,
   storm,

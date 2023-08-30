@@ -12,7 +12,7 @@ const WebDevelopment = () => {
         {/* Black color overlay */}
         <div className="absolute inset-0 bg-black opacity-70"></div>
         {/* Your content */}
-        <div className="text-white sm:text-left text-center md:w-[90%] px-2 md:px-0 w-full  absolute top-[50%]  sm:top-[58%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  ">
+        <div className="text-white sm:text-left text-center px-2 md:px-0 absolute section top-[60%] sm:top-[58%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  ">
           <div className="flex justify-between sm:flex-row flex-col gap-y-6 sm:gap-y-0">
             <div className="sm:pt-[50px] sm:w-[47%] w-[100%] ">
               <h1 className="md:text-[60px] text-[30px] sm:leading-[74px]  font-bold">

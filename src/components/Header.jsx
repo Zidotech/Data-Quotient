@@ -8,7 +8,7 @@ const Header = () => {
       {/* Black color overlay */}
       <div className="absolute inset-0 bg-black opacity-80"></div>
       {/* Your content */}
-      <div className="absolute top-44 md:top-1/2  sm:left-[15%] md:left-[30%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 flex gap-3">
+      <div className="absolute top-[20%] md:top-1/2  sm:left-[15%] md:left-[30%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 flex gap-3">
         <div className="md:block hidden">
           <img src={image.mouse} alt="" />
         </div>

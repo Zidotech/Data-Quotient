@@ -4,18 +4,18 @@ import Button from "../components/Button";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 
-const MobileDevelopment = () => {
+const ITManage = () => {
   return (
     <section className="bg-Footer ">
       <div className=" section__bg ">
         {/* Black color overlay */}
         <div className="absolute inset-0 bg-black opacity-70"></div>
         {/* Your content */}
-        <div className="text-white sm:text-left text-center  px-2 md:px-0 absolute section top-[60%] sm:top-[58%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  ">
+        <div className="text-white sm:text-left text-center  px-2 md:px-0   absolute section top-[60%]  sm:top-[58%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  ">
           <div className="flex justify-between sm:flex-row flex-col gap-y-6 sm:gap-y-0">
             <div className="sm:pt-[50px] sm:w-[47%] w-[100%] ">
               <h1 className="md:text-[60px] text-[30px] sm:leading-[74px]  font-bold">
-                Mobile Development Services
+                IT Manage Service
               </h1>
               <div className="pt-[70px] sm:block hidden">
                 <Button
@@ -65,10 +65,10 @@ const MobileDevelopment = () => {
           <div className="flex sm:flex-row flex-col gap-y-8 sm:gap-y-0">
             <div className="flex gap-3">
               <h2 className="md:text-[60px] sm:text-[45px] text-[25px] font-bold leading-[40px] sm:leading-[75px]">
-                Why choose Mobile Development?
+                Why choose IT Manage Service?
               </h2>
               <img
-                src={image.mobiledevelopment}
+                src={image.webdevelopment}
                 alt=""
                 className="w-[100px] sm:hidden block"
               />
@@ -76,7 +76,7 @@ const MobileDevelopment = () => {
 
             <div className="sm:w-[49%] w-[100%] flex flex-col justify-between items-end">
               <img
-                src={image.mobiledevelopment}
+                src={image.webdevelopment}
                 alt=""
                 className="w-[133px] sm:block hidden"
               />
@@ -124,7 +124,7 @@ const MobileDevelopment = () => {
           <div className="flex">
             <div className="sm:w-[58%] w-[100%]">
               <h2 className="sm:text-[60px] text-[30px] font-bold sm:leading-[75px] leading-[40px]">
-                Mobile Development services we’ve provided
+                IT Manage Service services we’ve provided
               </h2>
               <p className="text-[20px] font-medium leading-[35px]">
                 to our clients
@@ -176,7 +176,7 @@ const MobileDevelopment = () => {
         <div className="pb-[80px]">
           <div className="flex justify-between items-end w-[100%] ">
             <h2 className="sm:text-[60px] text-[25px] sm:leading-[75px] leading-[25px] font-bold w-[85%] sm:w-[70%] ">
-              Our Mobile Development tech stack
+              Our IT Manage Service tech stack
             </h2>
 
             <hr className="  border-black sm:w-[45%] w-[15%] " />
@@ -205,4 +205,4 @@ const MobileDevelopment = () => {
   );
 };
 
-export default MobileDevelopment;
+export default ITManage;
