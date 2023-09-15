@@ -14,6 +14,12 @@ import ApiDevelopment from "./ApiDevelopment";
 import SystemAnalysis from "./SystemAnalysis";
 import DiscoveryWorkshop from "./DiscoveryWorkshop";
 import QualityTesting from "./QualityTesting";
+import CorporateTraining from "./CorporateTraining";
+import Coaching from "./Coaching";
+import HandsOnTraining from "./HandsOnTraining";
+import Team from "./Team";
+import Services from "./Services";
+import WhyDq from "./WhyDq";
 
 export {
   MobileDevelopment,
@@ -32,4 +38,10 @@ export {
   SystemAnalysis,
   DiscoveryWorkshop,
   QualityTesting,
+  CorporateTraining,
+  Coaching,
+  HandsOnTraining,
+  Team,
+  Services,
+  WhyDq,
 };

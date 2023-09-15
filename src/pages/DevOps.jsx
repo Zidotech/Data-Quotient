@@ -61,7 +61,7 @@ const DevOps = () => {
       </div>
 
       <div className="section">
-        <div className="sm:pt-[140px] pt-[50px] pb-[100px]">
+        <div className="sm:pt-[140px] pt-[50px] sm:pb-[100px] pb-[50px]">
           <div className="flex sm:flex-row flex-col gap-y-8 sm:gap-y-0">
             <div className="flex gap-3">
               <h2 className="md:text-[60px] sm:text-[45px] text-[25px] font-bold leading-[40px] sm:leading-[75px]">
@@ -120,7 +120,7 @@ const DevOps = () => {
         </div>
 
         {/* service we've provided */}
-        <div className="pb-[100px]">
+        <div className="sm:pb-[100px] pb-[50px]">
           <div className="flex">
             <div className="sm:w-[58%] w-[100%]">
               <h2 className="sm:text-[60px] text-[30px] font-bold sm:leading-[75px] leading-[40px]">

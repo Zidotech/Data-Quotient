@@ -11,6 +11,7 @@ import telegraph from "../assets/the-telegraph-logo.webp";
 import sunday from "../assets/the-sunday-times-logo.png";
 import fortune from "../assets/fortune-logo.webp";
 import kitchen from "../assets/photo-kitchen.jpg";
+import kitchen2 from "../assets/photo-kitchen2.webp";
 import speak from "../assets/icon-speak.svg";
 import perfect from "../assets/icon-perfect-size.svg";
 import framework from "../assets/icon-framework-all.svg";
@@ -74,6 +75,7 @@ export default {
   sunday,
   fortune,
   kitchen,
+  kitchen2,
   room,
   framework,
   speak,

@@ -83,7 +83,7 @@ const Navbar = () => {
                   </Link>
                   {nav.text === "Services" && hoveredIndex === index && (
                     <div className="services-hover-content">
-                      <div className="w-full md:mt-0 mt-5">
+                      <div className="w-full ">
                         <div className=" flex flex-row justify-around  gap-2 mt-5 ">
                           {footers.map((footerlink) => (
                             <div
@@ -97,6 +97,7 @@ const Navbar = () => {
                                 {footerlink.links.map((link, index) => (
                                   <li
                                     key={link.name}
+                                    onClick={() => handleMouseOut(index)}
                                     className={` text-[16px] leading-[24px] font-Lato marker text-Ash  hover:text-Blue ${
                                       index !== footerlink.links.length - 1
                                         ? "mb-4"
@@ -200,6 +201,7 @@ const Navbar = () => {
                     {links1.map((nav, index) => (
                       <li
                         key={nav.id}
+                        onClick={() => setToggle(false)}
                         className={` mb-4 border-Dark pb-4 w-full ${
                           index === 1 ? "border-b-[0px]" : "border-b-[1px]"
                         }  `}

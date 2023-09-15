@@ -14,7 +14,7 @@ import img10 from "../images/ten.png";
 const MarqueeSlider = () => {
   return (
     <div>
-      <div className="text-center md:w-[80%] px-2 md:px-0 w-full  absolute top-[90%] md:top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="text-center md:w-[80%] px-2 md:px-0 w-full   absolute top-[90%] md:top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <Marquee direction="right" speed={40} delay={1} pauseOnHover={true}>
           <div className="image_wrapper">
             <img src={img1} alt="" />
@@ -28,7 +28,7 @@ const MarqueeSlider = () => {
           <div className="image_wrapper">
             <img src={img4} alt="" />
           </div>
-          <div>
+          <div className="image_wrapper">
             <img src={img5} alt="" />
           </div>
           <div className="image_wrapper">

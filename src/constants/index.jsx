@@ -23,7 +23,7 @@ export const links = [
   },
   {
     id: 3,
-    url: "/ydq",
+    url: "/why_dq",
     text: "Why DQ",
   },
 ];
@@ -545,5 +545,126 @@ export const webDevStack = [
     id: 23,
     icon: image.redShift,
     title: "redShift",
+  },
+];
+
+export const valuesCard = [
+  {
+    id: 1,
+    icon: image.room,
+    title: "Continuous Improvement",
+    text: "We foster a feedback culture both within the organization and when working with our partners. Using Agile and Scrum, we implement feedback early and often. We also keep adding new offices, new roles, new services, new technologies, and new partnerships to the STX Next roster.",
+  },
+  {
+    id: 2,
+    icon: image.framework,
+    title: "Team Power",
+    text: "The best collaboration happens when one team can work on one project, fully focused. We have made teams the most important unit of the STX Next structure, and we have a dedicated budget for teams to go on workstations and integration events.",
+  },
+  {
+    id: 3,
+    icon: image.perfect,
+    title: "Win-Win",
+    text: "In any situation where we need to establish clear rules and expectations, we expect a win-win deal or no deal at all. We follow this value when negotiating contracts, starting new partnerships, or considering changes at the company.",
+  },
+  {
+    id: 4,
+    icon: image.speak,
+    title: "Software Craftsmanship",
+    text: "The code we deliver should be not only functional, but well-crafted. To ensure this, we set high recruitment standards, we keep refining the ways we work, and we serve as teachers for the community.",
+  },
+];
+
+export const expert_faqs = [
+  {
+    id: 1,
+    question: "Cloud Solutions",
+    answer: " Harness the power of the cloud to scale and innovate.",
+  },
+  {
+    id: 2,
+    question: "Machine Learning",
+    answer: "Leverage data-driven insights with cutting-edge ML technologies.",
+  },
+  {
+    id: 3,
+    question: "Data Engineering",
+    answer: "Build robust data pipelines for efficient data processing.",
+  },
+  {
+    id: 4,
+    question: " Team Extension",
+    answer: "Augment your in-house team with our skilled professionals.",
+  },
+  {
+    id: 5,
+    question: "IT Managed Services",
+    answer: "Ensure seamless operations with our comprehensive IT support.",
+  },
+  {
+    id: 6,
+    question: " Data Analysis",
+    answer: "Transform raw data into actionable insights.",
+  },
+];
+
+export const end_faqs = [
+  {
+    id: 1,
+    question: "Java, JavaScript, Python",
+    answer: "Expertise in the most versatile programming languages.",
+  },
+  {
+    id: 2,
+    question: "DevOps, SecOps, DevSecOps",
+    answer: "Ensuring efficiency, security, and compliance.",
+  },
+  {
+    id: 3,
+    question: "Discovery Workshops",
+    answer: "Crafting a blueprint for your project's success.",
+  },
+  {
+    id: 4,
+    question: " System Architecture",
+    answer: " Designing scalable and future-proof systems.",
+  },
+  {
+    id: 5,
+    question: "Mobile Development",
+    answer: "Creating user-friendly, cross-platform mobile apps.",
+  },
+  {
+    id: 6,
+    question: " Quality Assurance and Testing",
+    answer: "  Ensuring the highest standards of quality.",
+  },
+  {
+    id: 7,
+    question: "API Development",
+    answer: "Building robust APIs for seamless integration.",
+  },
+  {
+    id: 8,
+    question: " Web Development",
+    answer: " Crafting visually appealing and responsive websites.",
+  },
+];
+
+export const training_faqs = [
+  {
+    id: 1,
+    question: "Corporate Trainings",
+    answer: " Customized training programs to upskill your workforce.",
+  },
+  {
+    id: 2,
+    question: "Hands-on Training",
+    answer: "Practical learning experiences to enhance proficiency.",
+  },
+  {
+    id: 3,
+    question: "Coaching and Mentoring",
+    answer: "Personalized guidance for professional growth.",
   },
 ];

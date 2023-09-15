@@ -1,26 +1,31 @@
 import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Services from "./pages/Services";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import {
   ApiDevelopment,
   CloudSolutions,
+  Coaching,
+  CorporateTraining,
   DataAnalysis,
   DataEngineering,
   DevOps,
   DevSecOps,
   DiscoveryWorkshop,
+  HandsOnTraining,
   ITManage,
   Javascript,
   MachineLearning,
   MobileDevelopment,
   QualityTesting,
   SecOps,
+  Services,
   SystemAnalysis,
+  Team,
   TeamExtension,
   WebDevelopment,
+  WhyDq,
 } from "./pages";
 
 function App() {
@@ -37,6 +42,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/why_dq" element={<WhyDq />} />
         <Route path="/javascript" element={<Javascript />} />
         <Route path="/web-development" element={<WebDevelopment />} />
         <Route path="/mobile-development" element={<MobileDevelopment />} />
@@ -56,6 +63,9 @@ function App() {
           path="/quality-assurance-and-testing"
           element={<QualityTesting />}
         />
+        <Route path="/corporate-trainings" element={<CorporateTraining />} />
+        <Route path="/coaching-or-mentoring" element={<Coaching />} />
+        <Route path="/hands-on-training" element={<HandsOnTraining />} />
       </Routes>
 
       <Footer />
