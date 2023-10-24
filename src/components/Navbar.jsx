@@ -55,14 +55,14 @@ const Navbar = () => {
             active ? "" : ""
           }`}
         >
+          <Link to="/">
+            <img
+              src={image.logo}
+              alt="logo-icon"
+              className="sm:w-[160px] w-[200px] md:w-[295px]  cursor-pointer object-cover "
+            />
+          </Link>
           <div className="flex gap-x-5 lg:h-[85px] h-[55px] justify-center items-center  ">
-            <Link to="/">
-              <img
-                src={image.logo}
-                alt="logo-icon"
-                className="sm:w-[160px] w-[200px] md:w-[295px]  cursor-pointer object-cover "
-              />
-            </Link>
             <ul className="list-none lg:flex hidden justify-end items-center h-full">
               {links.map((nav, index) => (
                 <li
@@ -119,31 +119,23 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="lg:block hidden  h-[85px]">
-            <ul className="list-none  flex  h-full ">
-              {links1.map((nav) => (
-                <li key={nav.id} className={`h-full mr-7 `}>
-                  <Link
-                    to={nav.url}
-                    className={`text-black text-[17px] font-semibold h-full flex flex-col justify-center items-center link ${
-                      active ? "text-white" : ""
-                    }`}
-                  >
-                    {nav.text}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           <div className=" hidden lg:block ">
-            <div className="flex justify-center items-center  gap-[30px]">
-              <div>
-                <AiOutlineSearch
-                  className={`text-[30px] cursor-pointer ${
-                    active ? "text-white" : ""
-                  }`}
-                />
+            <div className="flex justify-center items-center  gap-[20px]">
+              <div className="lg:block hidden  h-[85px]">
+                <ul className="list-none  flex  h-full ">
+                  {links1.map((nav) => (
+                    <li key={nav.id} className={`h-full mr-7 `}>
+                      <Link
+                        to={nav.url}
+                        className={`text-black text-[17px] font-semibold h-full flex flex-col justify-center items-center link ${
+                          active ? "text-white" : ""
+                        }`}
+                      >
+                        {nav.text}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
               <Button
                 text={"Let's Talk "}

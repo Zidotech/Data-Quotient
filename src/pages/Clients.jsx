@@ -1,25 +1,33 @@
 import React from "react";
-import {
-  client,
-  client1,
-  client2,
-  image,
-  numbers,
-  numbers2,
-} from "../constants";
+import { image, numbers, numbers2 } from "../constants";
+import ClientM from "../components/ClientM";
 
 const Clients = () => {
   return (
     <section className="mt-5 ">
       <div className="section ">
         <div className="flex flex-col">
-          <div className="">
-            <img
-              src={image.client}
-              alt="client_Bg"
-              className="w-full sm:h-[60vh] mx-auto rounded-lg object-cover"
-              style={{ maxWidth: "80vw" }}
-            />
+          <div className="flex justify-between items-center sm:flex-row flex-col ">
+            <div className="sm:w-[45%] w-full">
+              <img
+                src={image.client}
+                alt="client_Bg"
+                className="w-full  rounded-lg object-cover"
+              />
+            </div>
+            <div className="sm:w-[50%] w-full">
+              <p className="text-[18px] leading-8">
+                At Data Quotient, we understand that selecting the right partner
+                for your technology, data, and development needs is a critical
+                decision. With a plethora of options available, it's essential
+                to know why DQ should be your top choice. Data Quotient (DQ)
+                stands out as the ideal partner for your technology, data, and
+                development needs due to our expertise, customization,
+                data-driven approach, scalability, commitment to quality, and
+                client-centric approach. We are dedicated to helping your
+                business thrive through innovative and cost-effective solutions.
+              </p>
+            </div>
           </div>
 
           {/*section of numbers */}
@@ -33,7 +41,7 @@ const Clients = () => {
                       index === 1 ? "" : ""
                     } border-b border-gray-300`}
                   >
-                    <div className="h-[130px] md:h-[120px] flex flex-col justify-between ">
+                    <div className="h-[175px] md:h-[120px] flex flex-col justify-between ">
                       <div className=" h-[90%]">
                         <p
                           className={`font-bold md:text-[36px] text-[25px] leading-[54px] ${
@@ -61,7 +69,7 @@ const Clients = () => {
                       index === 1 ? "" : ""
                     } border-b border-gray-300`}
                   >
-                    <div className="h-[130px] md:h-[120px] flex flex-col justify-between ">
+                    <div className="h-[175px] md:h-[120px] flex flex-col justify-between ">
                       <div className=" h-[90%]">
                         <p className="font-bold md:text-[36px] text-[25px] leading-[54px]">
                           {card.title}
@@ -84,40 +92,11 @@ const Clients = () => {
             <div className=" pt-[52px] pb-[40px] lg:px-[20px] px-[10px] rounded-lg w-[95%] mx-auto flex flex-col items-center bg-white1">
               <div className="pb-[40px]">
                 <h2 className=" font-bold text-[22px] leading-8 text-center">
-                  Our clients
+                  Clients & Partners
                 </h2>
               </div>
-              <div className=" flex flex-wrap justify-center sm:justify-around w-[100%] ">
-                <div className=" flex  ">
-                  {client.map((card) => (
-                    <div
-                      key={card.id}
-                      className=" lg:py-10  px-4 py-4 block text-center   "
-                    >
-                      <img src={card.icon} alt="" className="w-[full]" />
-                    </div>
-                  ))}
-                </div>
-                <div className=" flex ">
-                  {client1.map((card) => (
-                    <div
-                      key={card.id}
-                      className=" lg:py-10 lg:px-5 px-4 py-4 block text-center   "
-                    >
-                      <img src={card.icon} alt="" className="w-[full]" />
-                    </div>
-                  ))}
-                </div>
-                <div className=" flex justify-center">
-                  {client2.map((card) => (
-                    <div
-                      key={card.id}
-                      className=" lg:py-7  py-4 block text-center   "
-                    >
-                      <img src={card.icon} alt="" className="w-[full]" />
-                    </div>
-                  ))}
-                </div>
+              <div>
+                <ClientM />
               </div>
             </div>
           </div>

@@ -62,6 +62,19 @@ import presto from "../assets/Presto.webp";
 import pySpark from "../assets/PySpark.webp";
 import redShift from "../assets/Redshift.webp";
 
+// images of marquee header slider
+import Sjava from "../assets/java-4.svg";
+import Ssnowflake from "../assets/Snowflake_Logo.svg";
+import Spython from "../assets/python-3.svg";
+import Sgcl from "../assets/Google_Cloud_logo.svg";
+import Saws from "../assets/aws-svgrepo-com.svg";
+import Sazure from "../assets/azure-svgrepo-com.svg";
+
+
+
+// images of team members
+import team1 from '../assets/teammember1.png'
+
 export default {
   logo,
   end,
@@ -126,4 +139,15 @@ export default {
   presto,
   pySpark,
   redShift,
+
+  // images of marquee header slider
+  Sjava,
+  Ssnowflake,
+  Spython,
+  Sgcl,
+  Saws,
+  Sazure,
+
+  // images of team members
+  team1,
 };

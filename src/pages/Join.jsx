@@ -1,5 +1,6 @@
 import React from "react";
 import { image } from "../constants";
+import { Link } from "react-router-dom";
 import Button from "../components/Button";
 
 const Join = () => {
@@ -22,24 +23,25 @@ const Join = () => {
                 We’re hiring!
               </h2>
               <p className="sm:text-[60px] text-[40px] font-bold sm:leading-[75px] leading-[50px]">
-                Join the Python Powerhouse
+                Join the Development Powerhouse
               </p>
             </div>
             <div className="pt-[30px]">
               <p className="text-[16px] font-Lato leading-[26px]">
-                If you care about team power, software craftsmanship, and
-                continuous improvement, you’ll find a home with STX Next. Join
-                one of our six offices and be part of the finest Python
-                development company in Europe.
+                If you appreciate team cohesion, data and platform engineering,
+                and continuous advancement, DQ is your destination. Join our
+                dynamic,leading development company.
               </p>
             </div>
             <div className="pt-[40px]">
-              <Button
-                text={"VIEW ALL JOB OFFERS "}
-                styles={
-                  "  bg-Blue  rounded-[150px] font-semibold text-[12px] uppercase p-[20px] w-[209px] text-center text-white"
-                }
-              />
+              <Link to={"/careers"}>
+                <Button
+                  text={"VIEW ALL JOB OFFERS "}
+                  styles={
+                    "  bg-Blue  rounded-[150px] font-semibold text-[12px] uppercase p-[20px] w-[209px] text-center text-white"
+                  }
+                />
+              </Link>
             </div>
           </div>
         </div>

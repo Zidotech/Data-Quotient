@@ -1,51 +1,26 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import img1 from "../images/one.png";
-import img2 from "../images/two.png";
-import img3 from "../images/three.png";
-import img4 from "../images/four.png";
-import img5 from "../images/five.png";
-import img6 from "../images/six.png";
-import img7 from "../images/seven.png";
-import img8 from "../images/eight.png";
-import img9 from "../images/nine.png";
-import img10 from "../images/ten.png";
+import { SliderCard, image } from "../constants";
 
 const MarqueeSlider = () => {
   return (
     <div>
       <div className="text-center md:w-[80%] px-2 md:px-0 w-full   absolute top-[90%] md:top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <Marquee direction="right" speed={40} delay={1} pauseOnHover={true}>
-          <div className="image_wrapper">
-            <img src={img1} alt="" />
-          </div>
-          <div className="image_wrapper">
-            <img src={img2} alt="" />
-          </div>
-          <div className="image_wrapper">
-            <img src={img3} alt="" />
-          </div>
-          <div className="image_wrapper">
-            <img src={img4} alt="" />
-          </div>
-          <div className="image_wrapper">
-            <img src={img5} alt="" />
-          </div>
-          <div className="image_wrapper">
-            <img src={img6} alt="" />
-          </div>
-          <div className="image_wrapper">
-            <img src={img7} alt="" />
-          </div>
-          <div className="image_wrapper">
-            <img src={img8} alt="" />
-          </div>
-          <div className="image_wrapper">
-            <img src={img9} alt="" />
-          </div>
-          <div className="image_wrapper">
-            <img src={img10} alt="" />
-          </div>
+          {SliderCard.map((card, index) => (
+            <div
+              key={card.id}
+              className="flex items-center justify-center h-full mx-10"
+            >
+              <img
+                src={card.img}
+                alt=""
+                className={`${card.id === 4 ? "w-[70px]" : "w-[200px]"} ${
+                  card.id === 1 ? "w-[80px] sm:w-[140px]" : ""
+                }`}
+              />
+            </div>
+          ))}
         </Marquee>
       </div>
     </div>

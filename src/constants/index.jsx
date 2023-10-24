@@ -23,21 +23,43 @@ export const links = [
   },
   {
     id: 3,
-    url: "/why_dq",
-    text: "Why DQ",
+    url: "/careers",
+    text: "Careers",
   },
 ];
 
 export const links1 = [
   {
     id: 1,
-    url: "/careers",
-    text: "Careers",
+    url: "/contact",
+    text: "Contact",
+  },
+];
+
+export const SliderCard = [
+  {
+    id: 1,
+    img: image.Saws,
   },
   {
     id: 2,
-    url: "/contact",
-    text: "Contact",
+    img: image.Sazure,
+  },
+  {
+    id: 3,
+    img: image.Sgcl,
+  },
+  {
+    id: 4,
+    img: image.Sjava,
+  },
+  {
+    id: 5,
+    img: image.Spython,
+  },
+  {
+    id: 6,
+    img: image.Ssnowflake,
   },
 ];
 
@@ -47,7 +69,7 @@ export const serviceCard = [
     title: "Expert Consulting",
     icon: image.consult,
     description:
-      " Solving your problems or improving your product with the help of subject matter experts ",
+      "Whether you require specialized technical expertise currently absent within your team, or seek to augment your team's capabilities for expedited time-to-market and efficient resolution of technical obstacles, we stand ready to be your essential missing link, offering dedicated support to augment your team as required.",
     more: " LEARN MORE ",
     url: "",
   },
@@ -56,7 +78,7 @@ export const serviceCard = [
     title: "End-to-End Development",
     icon: image.end,
     description:
-      "   Full development team taking your project all the way from discovery to deployment ",
+      " As a dedicated development company, our team of proficient technical experts will manage your project from the initial discovery phase to the final deployment. We take great pride in our proven track record of success and the significant impact we have in the industry. Whether you have a new, ongoing, or legacy project, we'll be delighted to assist. ",
     more: " LEARN MORE ",
     url: "",
   },
@@ -65,7 +87,7 @@ export const serviceCard = [
     title: "Training",
     icon: image.team,
     description:
-      " If you’re short on tech specialists, missing deadlines, or going over budget—we’re here for you. ",
+      "We are committed to assisting you in raising your team to the requisite level of technical expertise essential for organizational success. Our tailored, industry standard and best-practice training are calibrated to effectively aid organizations and individuals in bridging knowledge gaps within their teams. ",
     more: " LEARN MORE ",
     url: "",
   },
@@ -74,17 +96,17 @@ export const serviceCard = [
 export const numbers = [
   {
     id: 1,
-    title: "18 years",
+    title: "10 years",
     span: "of market experience",
   },
   {
     id: 2,
-    title: "300+",
+    title: "80+",
     span: "clients served",
   },
   {
     id: 3,
-    title: "3.5+ years",
+    title: "2+ years",
     span: "average partnership",
   },
 ];
@@ -92,17 +114,17 @@ export const numbers = [
 export const numbers2 = [
   {
     id: 1,
-    title: "500+",
-    span: "professionals on board",
+    title: "7+ years",
+    span: "Data and Platform Engineering",
   },
   {
     id: 2,
     title: "6.5 years",
-    span: "average experience of our Python developers",
+    span: "4 years average experience of our Java, Python and Javascript developers",
   },
   {
     id: 3,
-    title: "350+",
+    title: "100+",
     span: "developers",
   },
 ];
@@ -116,23 +138,17 @@ export const client = [
     id: 2,
     icon: image.forbes,
   },
-];
-
-export const client1 = [
   {
-    id: 1,
+    id: 3,
+    icon: image.sunday,
+  },
+  {
+    id: 4,
     icon: image.telegraph,
   },
   {
-    id: 2,
-    icon: image.fortune,
-  },
-];
-
-export const client2 = [
-  {
     id: 5,
-    icon: image.sunday,
+    icon: image.fortune,
   },
 ];
 
@@ -141,26 +157,26 @@ export const hiring = [
     id: 1,
     icon: image.room,
     title:
-      "Onboard an exclusive team for your project: one team, one room, one client—full focus",
-    text: "We believe teams work best when they’re single-tasking. And you can always visit our offices and meet your team in person.",
+      "Enlist an exclusive team for your project: a unified team, a single workspace, and unwavering focus on one client's needs.",
+    text: "We firmly believe that teams perform to visit our at their best when they are single-tasking. Plus, you are always welcome to visit our offices and personally meet dedicated team ",
   },
   {
     id: 2,
     icon: image.framework,
-    title: "Get the tech stack you need, not the tech stack we like",
-    text: "We’ll use the exact tools and frameworks your project requires without forcing our favorites.",
+    title: "Opt for the tech stack that fits your needs, not our preferences",
+    text: "We'll employ the precise tools and framework your project demands, without imposing our personal preferences.",
   },
   {
     id: 3,
     icon: image.perfect,
-    title: "Scale up and down easily with a tech partner that cares",
-    text: "We’re large enough to support ambitious projects, yet small enough to still care about personal relationships.",
+    title: "Effortless scalability, supported by a  caring tech partner.",
+    text: "We offer support for ambitious projects while preserving the value of personal relationships, striking balance between scale and care.",
   },
   {
     id: 4,
     icon: image.speak,
-    title: "Ridiculously easy cooperation",
-    text: "We’ll help you clarify and prioritize features, we report on progress constantly, and we speak flawless English.",
+    title: "Seamless and effortless cooperation",
+    text: "We'll help you clarify and prioritize features, deliver regular  progress reports, and, above all, maintain effective communication.",
   },
 ];
 
@@ -168,14 +184,6 @@ export const footers = [
   {
     title: "Expert Consulting",
     links: [
-      {
-        name: "DevOps",
-        url: "/devops",
-      },
-      {
-        name: "SecOps",
-        url: "/sec-ops",
-      },
       {
         name: "DevSecOps",
         url: "/dev-sec-ops",
@@ -196,38 +204,18 @@ export const footers = [
         name: "Data Analysis",
         url: "/data-analysis",
       },
-      {
-        name: "IT manage Services",
-        url: "/IT-manage-services",
-      },
-      {
-        name: "Team Extension",
-        url: "/team-extension",
-      },
     ],
   },
   {
     title: "End-to-End Development",
     links: [
       {
-        name: "Discovery workshops",
-        url: "/discovery-workshops",
+        name: "Software Development",
+        url: "/software-development",
       },
       {
-        name: "System Analysis",
-        url: "/system-analysis",
-      },
-      {
-        name: "Mobile Development",
-        url: "/mobile-development",
-      },
-      {
-        name: "Web Development",
-        url: "/web-development",
-      },
-      {
-        name: "API Development",
-        url: "/api-development",
+        name: "Team Extension",
+        url: "/team-extension",
       },
       {
         name: "Quality Assurance and Testing",
@@ -666,5 +654,88 @@ export const training_faqs = [
     id: 3,
     question: "Coaching and Mentoring",
     answer: "Personalized guidance for professional growth.",
+  },
+];
+
+export const teamMembers = [
+  {
+    id: 1,
+    img: image.team1,
+    name: "John Doe",
+    position: "SEO Manager",
+  },
+  {
+    id: 2,
+    img: image.team1,
+    name: "John Doe",
+    position: "SEO Manager",
+  },
+  {
+    id: 3,
+    img: image.team1,
+    name: "John Doe",
+    position: "SEO Manager",
+  },
+  {
+    id: 4,
+    img: image.team1,
+    name: "John Doe",
+    position: "SEO Manager",
+  },
+];
+
+export const TeamvaluesCard = [
+  {
+    id: 1,
+    icon: image.room,
+    title: "Continuous Improvement",
+    text: "We promote a culture of feedback, both within our organization and when collaborating with partners. Utilizing Agile and Serum methodologies, we incorporate feedback early and frequently.",
+  },
+  {
+    id: 3,
+    icon: image.perfect,
+    title: "Win-Win",
+    text: "In any scenario where we need to set forth defined rules and expectations, we uphold the principle of a win-win deal or no deal at all, This value guides us in negotiations, forging new partnerships, and assessing company modifications,.",
+  },
+  {
+    id: 4,
+    icon: image.speak,
+    title: "Software Craftsmanship",
+    text: "Our delivered code must not only be functional but also well-crafted. To guarantee this, we maintain stringent recruitment standards, continually refine our work processes, and actively contribute as educators in the community.",
+  },
+];
+
+export const TeamQoutesCard = [
+  {
+    id: 1,
+    img: image.team1,
+    quote:
+      "Trust is nurtured through openness and fairness. For our clients, it means upholding full transparency through the sharing of detailed monthly time reports.",
+    name: " Tosin Akinbobola ",
+    post: "Chief Operating Officer",
+  },
+  {
+    id: 2,
+    img: image.team1,
+    quote:
+      "Trust is nurtured through openness and fairness. For our clients, it means upholding full transparency through the sharing of detailed monthly time reports.",
+    name: " Tosin Akinbobola ",
+    post: "Chief Operating Officer",
+  },
+  {
+    id: 3,
+    img: image.team1,
+    quote:
+      "Trust is nurtured through openness and fairness. For our clients, it means upholding full transparency through the sharing of detailed monthly time reports.",
+    name: " Tosin Akinbobola ",
+    post: "Chief Operating Officer",
+  },
+  {
+    id: 4,
+    img: image.team1,
+    quote:
+      "Trust is nurtured through openness and fairness. For our clients, it means upholding full transparency through the sharing of detailed monthly time reports.",
+    name: " Tosin Akinbobola ",
+    post: "Chief Operating Officer",
   },
 ];

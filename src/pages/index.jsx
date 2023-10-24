@@ -19,7 +19,7 @@ import Coaching from "./Coaching";
 import HandsOnTraining from "./HandsOnTraining";
 import Team from "./Team";
 import Services from "./Services";
-import WhyDq from "./WhyDq";
+import Careers from "./Careers";
 
 export {
   MobileDevelopment,
@@ -43,5 +43,5 @@ export {
   HandsOnTraining,
   Team,
   Services,
-  WhyDq,
+  Careers,
 };

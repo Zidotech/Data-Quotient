@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import {
   ApiDevelopment,
+  Careers,
   CloudSolutions,
   Coaching,
   CorporateTraining,
@@ -25,7 +26,6 @@ import {
   Team,
   TeamExtension,
   WebDevelopment,
-  WhyDq,
 } from "./pages";
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/team" element={<Team />} />
-        <Route path="/why_dq" element={<WhyDq />} />
+        <Route path="/careers" element={<Careers />} />
         <Route path="/javascript" element={<Javascript />} />
         <Route path="/web-development" element={<WebDevelopment />} />
         <Route path="/mobile-development" element={<MobileDevelopment />} />

@@ -28,35 +28,39 @@ const ServicesCard = () => {
   }, [index]);
 
   return (
-    <section className=" bg-Dark2 border-t-[1px] border-Dark3 flex flex-col justify-center items-center">
+    <section className=" bg-Dark2  flex flex-col justify-center items-center">
       <div className="sm:block hidden section">
         <div className=" flex ">
           {serviceCard.map((card, index) => (
             <div
-              className={` border-Dark3 pb-[40px] pt-[28px] px-[20px] ${
-                index === 2 ? "border-r-[0px] " : "border-r-[1px]"
+              className={`  pb-[40px] pt-[28px] px-[20px] 
               }`}
+              key={index}
             >
-              <div className="flex items-center">
-                <img src={card.icon} alt={card.title} />
-                <h5 className=" text-Blue text-[22px] font-bold leading-8 pl-[32px] ">
-                  {card.title}
-                </h5>
-              </div>
+              <div className=" h-[130px] md:h-[490px] flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center">
+                    <img src={card.icon} alt={card.title} />
+                    <h5 className=" text-Yellow text-[22px] font-bold leading-8 pl-[32px] ">
+                      {card.title}
+                    </h5>
+                  </div>
 
-              <div className="pl-[19px] border-l-[1px] border-Blue mt-[33px]">
-                <p className=" text-white text-[18px] leading-8">
-                  {card.description}
-                </p>
-              </div>
+                  <div className="pl-[19px] border-l-[1px] border-Blue mt-[23px]">
+                    <p className=" text-white text-[18px] leading-8">
+                      {card.description}
+                    </p>
+                  </div>
+                </div>
 
-              <div className="mt-[30px]">
-                <Link
-                  to={card.url}
-                  className="flex items-center text-[12px] font-bold leading-5 text-Blue gap-2"
-                >
-                  {card.more} <BsArrowRight />
-                </Link>
+                <div className="">
+                  <Link
+                    to={card.url}
+                    className="flex items-center text-[12px] font-bold leading-5 text-Yellow gap-2"
+                  >
+                    {card.more} <BsArrowRight />
+                  </Link>
+                </div>
               </div>
             </div>
           ))}

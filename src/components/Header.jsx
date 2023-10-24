@@ -14,13 +14,18 @@ const Header = () => {
         </div>
         <div className="text-white text-center sm:text-left    ">
           <div className=" px-3 md:py-3 flex flex-col gap-y-4 md:gap-y-2 justify-center md:items-start items-center w-full  sm:w-[554px]   ">
-            <h1 className="text-[40px] font-bold text-white leading-[45px]  sm:leading-[57px] text-focus-in">
-              Data Quotient for business sense
-            </h1>
+            <div>
+              <h1 className="text-[40px] font-bold text-white leading-[45px]  sm:leading-[57px] text-focus-in">
+                Data Quotient <br />{" "}
+              </h1>
+              <span className="text-[30px] sm:leading-[40px] text-Yellow text-focus-in">
+                Simplified Data Insights for Smarter Business
+              </span>
+            </div>
             <p className="mt-4 sm:text-[23px] text-[20px] text-focus-in ">
-              We have a number of different teams within our company that
-              specialize in different areas of technology and business so you
-              can be rest assured of quality.
+              We boast a diverse array of specialized teams dedicated to various
+              facets of technology and business, ensuring unwavering commitment
+              to top-notch quality.
             </p>
           </div>
         </div>

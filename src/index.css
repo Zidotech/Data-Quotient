@@ -145,13 +145,47 @@ article.nextSlide {
   margin: 0 auto;
   width: 100vw;
   /* have to have a height */
-  height: 325px;
+  height: 625px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding: 10px 10px;
+}
+
+/* slider css end */
+/* team slider css start */
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98vw;
+  height: 100%;
+  opacity: 0;
+  transition: var(--transition);
+  padding-top: 20px;
+}
+main.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+main.lastSlide {
+  transform: translateX(-100%);
+}
+main.nextSlide {
+  transform: translateX(100%);
+}
+
+.section-center-team {
+  margin: 0 auto;
+  width: 100vw;
+  /* have to have a height */
+  height: 300px;
   position: relative;
   display: flex;
   overflow: hidden;
 }
 
-/* slider css end */
+/* team slider css end */
 
 /* footer list color */
 .marker::marker {
@@ -167,7 +201,8 @@ article.nextSlide {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  height: 80vh;
+  height: max-content;
+  padding-bottom: 40px;
   background-color: white;
   color: black;
   align-items: center;

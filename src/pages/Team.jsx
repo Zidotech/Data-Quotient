@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MarqueeSlider from "../components/MarqueeSlider";
-import { image, valuesCard } from "../constants";
+import { TeamvaluesCard, TeamQoutesCard } from "../constants";
+import TeamMembers from "../components/TeamMembers";
+import TeamMemberSlider from "../components/TeamMemberSlider";
 
 const Team = () => {
+  const [people, setPeople] = useState(TeamQoutesCard);
+  const [index, setIndex] = React.useState(0);
+
+  useEffect(() => {
+    const lastIndex = people.length - 1;
+    if (index < 0) {
+      setIndex(lastIndex);
+    }
+    if (index > lastIndex) {
+      setIndex(0);
+    }
+  }, [index, people]);
+
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 3000);
+    return () => {
+      clearInterval(slider);
+    };
+  }, [index]);
+
   return (
     <section className="bg-Footer pb-[50px]">
       <div className=" section__bg ">
@@ -14,9 +38,10 @@ const Team = () => {
             Team
           </h1>
           <p className="mt-4 text-[18px]  font-Lato leading-8 md:w-[70%] w-[100%] mx-auto ">
-            We’re a family of professionals building the future with the power
-            of Python, one project at a time. Learn about our people, what
-            drives us, and who you’ll be working with as a client or co-worker.
+            We're a professional family shaping the future through the
+            capabilities of Python, project by project. Discover our team, our
+            driving forces, and the individuals you' 11 collaborate with as a
+            client or colleague.
           </p>
         </div>
 
@@ -24,72 +49,34 @@ const Team = () => {
       </div>
 
       <div className="section">
-        <div className="sm:pt-[50px] pt-[40px] pb-[50px]">
-          <div className="flex justify-between items-center flex-col sm:flex-row md:px-0 px-3">
-            <div className="sm:w-[45%] w-[100%]">
-              <img src={image.kitchen2} alt="" />
-            </div>
+        <div className="flex flex-col pt-5 gap-y-10 pb-5">
+          <div>
+            <h2 className="lg:text-[60px] text-[25px] lg:leading-[75px] leading-[20px] font-bold text-Yellow">
+              People{" "}
+              <span className="text-black">
+                are <br />
+                everything.
+              </span>
+            </h2>
+          </div>
 
-            <div className="sm:w-[50%] w-[100%] pt-[40px]">
-              <strong className="text-[16px] font-Lato leading-6 text-Dark4">
-                Are you looking for developers to join your in-house team? Or
-                maybe you need to add specific skills to your roster? Whether
-                it’s extra manpower or top-notch specialists, you’re in good
-                hands with STX Next. We’ll augment your team with the exact
-                people you require in less than 14 days. That commitment is a
-                point of pride for our company.
-              </strong>
-
-              <p className="text-[16px] font-Lato leading-[26px] md:mt-[40px] mt-[20px]">
-                Our people will complement your staff, help you overcome any
-                potential skill gaps, and increase your speed of delivery. The
-                control over the project remains on your end and you keep all
-                the strategic competencies completely in-house, distributing the
-                work among all team members—both in-house and outsourced. Adding
-                the missing skill sets to your existing internal team will allow
-                you to build the most effective team faster, scale up or down at
-                will, and deliver your project on time and within budget.
-              </p>
-            </div>
+          <div>
+            <TeamMembers />
           </div>
         </div>
 
         <div>
-          <div className="flex justify-between items-end w-[100%] ">
-            <h2 className="lg:text-[60px] text-[25px] lg:leading-[75px] leading-[20px] font-bold w-[65%] sm:w-[50%] ">
-              Values
+          <div className="flex justify-between items-end w-[100%] mt-10 ">
+            <h2 className="lg:text-[30px] text-[25px] lg:leading-[75px] leading-[30px] font-bold  ">
+              A culture we can be proud of
             </h2>
-
-            <hr className="  border-black sm:w-[55%] w-[85%] " />
           </div>
           <div className=" flex flex-col md:flex-row mt-5 ">
             {/* left item */}
-            <div className=" lg:w-[414.286px] w-[100%] lg:mx-0 mx-auto">
-              <img
-                src={image.kitchen}
-                alt=""
-                className="lg:w-[471px] w-[100%] z-50"
-              />
-              <div className="bg-black text-white p-[20px]  lg:pt-[50px] lg:pr-[55px] lg:pb-[52px] lg:pl-[92px] lg:h-[430px]">
-                <div>
-                  <h2 className=" font-Montserrat font-bold lg:text-[36px] text-[23px] leading-[35px] lg:leading-[54px]">
-                    Transparency
-                  </h2>
-                  <p className="font-Lato text-[16px] leading-6 mt-5">
-                    Trust is built upon openness and fairness. For our team
-                    members, this means a clear salary formula and codified
-                    development paths. For our clients, it means maintaining
-                    full transparency by sharing detailed monthly time reports.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* right item */}
-            <div className="w-[100%] lg:w-[70%] flex flex-wrap gap-y-2 lg:gap-y-0  lg:pl-[33px] ">
-              {valuesCard.map((card) => (
+            <div className="w-[100%] lg:w-[60%] flex flex-wrap gap-y-2 lg:gap-y-0  border-2 border-red-500  ">
+              {TeamvaluesCard.map((card) => (
                 <div
-                  className="lg:w-[376px] w-[100%]  lg:pt-[15px] pt-[10px] lg:px-[30px] flex gap-y-4 flex-col items-center text-center lg:h-[350px] "
+                  className="lg:w-[336px] w-[100%]  lg:pt-[15px] pt-[10px] lg:px-[30px] flex gap-y-4 flex-col items-center text-center lg:h-[350px] "
                   key={card.id}
                 >
                   <div>
@@ -107,6 +94,13 @@ const Team = () => {
                   </div>
                 </div>
               ))}
+            </div>
+            {/* right item */}
+
+            <div className="w-[30%] sm:mt-0 mt-24">
+              <div className="section-center-team bg-black">
+                <TeamMemberSlider people={people} index={index} />
+              </div>
             </div>
           </div>
         </div>

@@ -14,6 +14,8 @@ export default {
         white2: "hsl(204, 33%, 97%)",
         Ash: "hsl(196, 5%, 55%)",
         Footer: "hsl(204, 33%, 97%)",
+        Yellow: "hsl(51, 99%, 54%)",
+        AkBlue: "hsl(228, 50%, 30%)",
       },
       fontFamily: {
         Montserrat: ["Montserrat", "sans - serif"],
