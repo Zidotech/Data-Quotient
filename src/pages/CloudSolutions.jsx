@@ -1,4 +1,3 @@
-import React from "react";
 import { end, image, webDevStack } from "../constants";
 import Button from "../components/Button";
 import { Link } from "react-router-dom";

@@ -1,4 +1,3 @@
-import React from "react";
 import { end, image } from "../constants";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";

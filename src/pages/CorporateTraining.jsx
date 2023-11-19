@@ -1,7 +1,5 @@
-import React from "react";
-import { end, image, webDevStack } from "../constants";
+import { image } from "../constants";
 import Button from "../components/Button";
-import Marquee from "react-fast-marquee";
 
 const CorporateTraining = () => {
   return (
@@ -38,9 +36,10 @@ const CorporateTraining = () => {
               </p>
               <p className="pt-[24px] text-[17px] font-Lato font-semibold leading-[35px] sm:block hidden ">
                 In the fast-paced world of technology, one-size-fits-all
-                training doesn't work. Effective corporate training in tech
-                involves a meticulous assessment of the company's goals, the
-                specific tech skills required, and the latest industry trends.
+                training doesn&apos;t work. Effective corporate training in tech
+                involves a meticulous assessment of the company&apos;s goals,
+                the specific tech skills required, and the latest industry
+                trends.
               </p>
 
               <div className="sm:block hidden pt-[48px]">
@@ -240,7 +239,7 @@ const CorporateTraining = () => {
                   Feedback Surveys:{" "}
                   <span className="text-[18px] font-normal">
                     Collect feedback from employees to understand their
-                    perception of the training's impact.
+                    perception of the training’s impact.
                   </span>
                 </li>
               </ul>
@@ -270,7 +269,7 @@ const CorporateTraining = () => {
                   Feedback Surveys:{" "}
                   <span className="text-[18px] font-normal">
                     Collect feedback from employees to understand their
-                    perception of the training's impact.
+                    perception of the training’s impact.
                   </span>
                 </li>
               </ul>

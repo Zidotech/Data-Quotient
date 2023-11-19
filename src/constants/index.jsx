@@ -6,8 +6,6 @@ import {
   BiLogoYoutube,
 } from "react-icons/bi";
 
-import { VscAzureDevops } from "react-icons/vsc";
-
 export { image };
 
 export const links = [
@@ -18,21 +16,55 @@ export const links = [
   },
   {
     id: 2,
-    url: "/team",
-    text: "Team",
+    url: "/training",
+    text: "Training",
   },
   {
     id: 3,
-    url: "/careers",
-    text: "Careers",
+    url: "/contact",
+    text: "Contact",
   },
 ];
 
-export const links1 = [
+export const servicelinks = [
   {
     id: 1,
-    url: "/contact",
-    text: "Contact",
+    name: "DevSecOps",
+    url: "/dev-sec-ops",
+  },
+  {
+    id: 2,
+    name: "Cloud Solutions",
+    url: "/cloud-solutions",
+  },
+  {
+    id: 3,
+    name: "Machine Learning",
+    url: "/machine-learning",
+  },
+  {
+    id: 4,
+    name: "Data Engineering",
+    url: "/data-engineering",
+  },
+  {
+    id: 5,
+    name: "Data Analysis",
+    url: "/data-analysis",
+  },
+];
+export const training = [
+  {
+    id: 1,
+    icon: image.js,
+    title: "Corporate Trainings",
+    url: "/corporate-trainings",
+  },
+  {
+    id: 2,
+    icon: image.react,
+    title: "Hands-on training",
+    url: "/hands-on-training",
   },
 ];
 
@@ -66,30 +98,30 @@ export const SliderCard = [
 export const serviceCard = [
   {
     id: 1,
-    title: "Expert Consulting",
+    title: "Cloud Consulting",
     icon: image.consult,
     description:
       "Whether you require specialized technical expertise currently absent within your team, or seek to augment your team's capabilities for expedited time-to-market and efficient resolution of technical obstacles, we stand ready to be your essential missing link, offering dedicated support to augment your team as required.",
     more: " LEARN MORE ",
-    url: "",
+    url: "/cloud-solutions",
   },
   {
     id: 2,
-    title: "End-to-End Development",
+    title: "Data Engineering",
     icon: image.end,
     description:
       " As a dedicated development company, our team of proficient technical experts will manage your project from the initial discovery phase to the final deployment. We take great pride in our proven track record of success and the significant impact we have in the industry. Whether you have a new, ongoing, or legacy project, we'll be delighted to assist. ",
     more: " LEARN MORE ",
-    url: "",
+    url: "/data-engineering",
   },
   {
     id: 3,
-    title: "Training",
+    title: "AI & Machine Learning",
     icon: image.team,
     description:
       "We are committed to assisting you in raising your team to the requisite level of technical expertise essential for organizational success. Our tailored, industry standard and best-practice training are calibrated to effectively aid organizations and individuals in bridging knowledge gaps within their teams. ",
     more: " LEARN MORE ",
-    url: "",
+    url: "/machine-learning",
   },
 ];
 
@@ -180,68 +212,6 @@ export const hiring = [
   },
 ];
 
-export const footers = [
-  {
-    title: "Expert Consulting",
-    links: [
-      {
-        name: "DevSecOps",
-        url: "/dev-sec-ops",
-      },
-      {
-        name: "Cloud Solutions",
-        url: "/cloud-solutions",
-      },
-      {
-        name: "Machine Learning",
-        url: "/machine-learning",
-      },
-      {
-        name: "Data Engineering",
-        url: "/data-engineering",
-      },
-      {
-        name: "Data Analysis",
-        url: "/data-analysis",
-      },
-    ],
-  },
-  {
-    title: "End-to-End Development",
-    links: [
-      {
-        name: "Software Development",
-        url: "/software-development",
-      },
-      {
-        name: "Team Extension",
-        url: "/team-extension",
-      },
-      {
-        name: "Quality Assurance and Testing",
-        url: "/quality-assurance-and-testing",
-      },
-    ],
-  },
-  {
-    title: "Training",
-    links: [
-      {
-        name: "Corporate Trainings",
-        url: "/corporate-trainings",
-      },
-      {
-        name: "Hands-on training",
-        url: "/hands-on-training",
-      },
-      {
-        name: "Coaching or mentoring",
-        url: "/coaching-or-mentoring",
-      },
-    ],
-  },
-];
-
 export const socials = [
   {
     id: 1,
@@ -262,27 +232,6 @@ export const socials = [
     id: 4,
     icon: <BiLogoYoutube />,
     url: "https://www.youtube.com/channel/UCgJ9NVI6Y92gzuE6YW7EubQ ",
-  },
-];
-
-export const training = [
-  {
-    id: 1,
-    icon: image.js,
-    title: "Corporate Trainings",
-    url: "/corporate-trainings",
-  },
-  {
-    id: 2,
-    icon: image.react,
-    title: "Hands-on training",
-    url: "/hands-on-training",
-  },
-  {
-    id: 3,
-    icon: image.devOps,
-    title: "Coaching or mentoring",
-    url: "/coaching-or-mentoring",
   },
 ];
 

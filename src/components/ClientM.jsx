@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from "react";
 import { client } from "../constants";
 
 const ClientM = () => {
   return (
-    <div
-      className=" flex flex-wrap justify-center sm:justify-around w-[100%]"
-      id="marquee-container"
-    >
-      <div className=" flex flex-wrap" id="marquee">
+    <div className=" flex flex-wrap justify-center sm:justify-around w-[100%]">
+      <div className=" flex flex-wrap">
         {client.map((card) => (
           <div
             key={card.id}

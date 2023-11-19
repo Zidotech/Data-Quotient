@@ -37,7 +37,7 @@ const ServicesCard = () => {
               }`}
               key={index}
             >
-              <div className=" h-[130px] md:h-[490px] flex flex-col justify-between">
+              <div className=" h-[130px] md:h-[470px] flex flex-col justify-between">
                 <div>
                   <div className="flex items-center">
                     <img src={card.icon} alt={card.title} />

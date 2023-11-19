@@ -1,4 +1,3 @@
-import React from "react";
 import { image } from "../constants";
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
@@ -23,7 +22,7 @@ const Join = () => {
                 We’re hiring!
               </h2>
               <p className="sm:text-[60px] text-[40px] font-bold sm:leading-[75px] leading-[50px]">
-                Join the Development Powerhouse
+                Join the Data Powerhouse
               </p>
             </div>
             <div className="pt-[30px]">

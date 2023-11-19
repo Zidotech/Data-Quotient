@@ -1,4 +1,3 @@
-import React from "react";
 import { hiring, image } from "../constants";
 
 const Hiring = () => {
@@ -48,7 +47,7 @@ const Hiring = () => {
             <div className="bg-black text-white p-[20px]  lg:pt-[50px] lg:pr-[55px] lg:pb-[52px] lg:pl-[92px] lg:h-[430px]">
               <div>
                 <h2 className=" font-Montserrat font-bold lg:text-[36px] text-[23px] leading-[35px] lg:leading-[54px]">
-                  Partner with Africa largest development house
+                  Partner with Africa largest data house
                 </h2>
                 <p className="font-Lato text-[16px] leading-6 mt-5">
                   with over 100+ technical experts, thanks to our specialisation

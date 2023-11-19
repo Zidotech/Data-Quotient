@@ -51,13 +51,12 @@ const Team = () => {
       <div className="section">
         <div className="flex flex-col pt-5 gap-y-10 pb-5">
           <div>
-            <h2 className="lg:text-[60px] text-[25px] lg:leading-[75px] leading-[20px] font-bold text-Yellow">
-              People{" "}
-              <span className="text-black">
-                are <br />
-                everything.
-              </span>
+            <h2 className="lg:text-[50px] text-[25px] lg:leading-[50px] leading-[20px] font-bold text-Yellow">
+              People <span className="text-black">are</span>
             </h2>
+            <span className="lg:text-[50px] text-[25px] font-bold">
+              everything.
+            </span>
           </div>
 
           <div>
@@ -73,7 +72,7 @@ const Team = () => {
           </div>
           <div className=" flex flex-col md:flex-row mt-5 ">
             {/* left item */}
-            <div className="w-[100%] lg:w-[60%] flex flex-wrap gap-y-2 lg:gap-y-0  border-2 border-red-500  ">
+            <div className="w-[100%] lg:w-[60%] flex flex-wrap gap-y-2 lg:gap-y-0">
               {TeamvaluesCard.map((card) => (
                 <div
                   className="lg:w-[336px] w-[100%]  lg:pt-[15px] pt-[10px] lg:px-[30px] flex gap-y-4 flex-col items-center text-center lg:h-[350px] "
@@ -98,7 +97,7 @@ const Team = () => {
             {/* right item */}
 
             <div className="w-[30%] sm:mt-0 mt-24">
-              <div className="section-center-team bg-black">
+              <div className="section-center-team">
                 <TeamMemberSlider people={people} index={index} />
               </div>
             </div>

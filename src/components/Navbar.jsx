@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HiMenuAlt3 } from "react-icons/hi";
-import { AiOutlineClose, AiOutlineSearch } from "react-icons/ai";
-import { image, links, links1, footers } from "../constants";
+import { AiOutlineClose } from "react-icons/ai";
+import { image, links, servicelinks, training } from "../constants";
 import { motion } from "framer-motion";
 import Button from "./Button";
 
@@ -83,33 +83,40 @@ const Navbar = () => {
                   </Link>
                   {nav.text === "Services" && hoveredIndex === index && (
                     <div className="services-hover-content">
-                      <div className="w-full ">
-                        <div className=" flex flex-row justify-around  gap-2 mt-5 ">
-                          {footers.map((footerlink) => (
-                            <div
-                              key={footerlink.title}
-                              className={`flex flex-col   text-left`}
-                            >
-                              <h4 className="text-[18px] leading-[27px] font-semibold font-Lato text-Blue">
-                                {footerlink.title}
-                              </h4>
-                              <ul className="list-disc mt-4 pl-5 flex md:flex-col flex-wrap gap-x-[30px] md:gap-x-0">
-                                {footerlink.links.map((link, index) => (
-                                  <li
-                                    key={link.name}
-                                    onClick={() => handleMouseOut(index)}
-                                    className={` text-[16px] leading-[24px] font-Lato marker text-Ash  hover:text-Blue ${
-                                      index !== footerlink.links.length - 1
-                                        ? "mb-4"
-                                        : "mb-0"
-                                    }`}
-                                  >
-                                    <Link to={link.url}>{link.name}</Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          ))}
+                      <div className="w-full px-7 py-5  ">
+                        <div className="  ">
+                          <ul>
+                            {servicelinks.map((link, index) => (
+                              <li
+                                key={link.id}
+                                className={` text-[18px]  mb-2 font-Lato hover:text-Blue text-Ash ${
+                                  index === 4 ? "mb-0" : ""
+                                } `}
+                              >
+                                <Link to={link.url}>{link.name}</Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  {nav.text === "Training" && hoveredIndex === index && (
+                    <div className="training-hover-content">
+                      <div className="w-full px-7 py-5  ">
+                        <div className="  ">
+                          <ul>
+                            {training.map((link, index) => (
+                              <li
+                                key={link.id}
+                                className={` text-[18px]  mb-2 font-Lato hover:text-Blue text-Ash ${
+                                  index === 4 ? "mb-0" : ""
+                                } `}
+                              >
+                                <Link to={link.url}>{link.title}</Link>
+                              </li>
+                            ))}
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -121,22 +128,6 @@ const Navbar = () => {
 
           <div className=" hidden lg:block ">
             <div className="flex justify-center items-center  gap-[20px]">
-              <div className="lg:block hidden  h-[85px]">
-                <ul className="list-none  flex  h-full ">
-                  {links1.map((nav) => (
-                    <li key={nav.id} className={`h-full mr-7 `}>
-                      <Link
-                        to={nav.url}
-                        className={`text-black text-[17px] font-semibold h-full flex flex-col justify-center items-center link ${
-                          active ? "text-white" : ""
-                        }`}
-                      >
-                        {nav.text}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
               <Button
                 text={"Let's Talk "}
                 styles={
@@ -177,7 +168,7 @@ const Navbar = () => {
                 } bg-white p-3 bg-DarkBlueMb z-50 absolute top-[70px] left-0 right-0  w-full `}
               >
                 <ul className="list-none  flex justify-end items-start flex-1 flex-col ">
-                  {links.map((nav, index) => (
+                  {links.map((nav) => (
                     <li
                       key={nav.id}
                       onClick={() => setToggle(false)}
@@ -187,27 +178,6 @@ const Navbar = () => {
                     </li>
                   ))}
                 </ul>
-
-                <div className="">
-                  <ul className="list-none  flex flex-col items-start ">
-                    {links1.map((nav, index) => (
-                      <li
-                        key={nav.id}
-                        onClick={() => setToggle(false)}
-                        className={` mb-4 border-Dark pb-4 w-full ${
-                          index === 1 ? "border-b-[0px]" : "border-b-[1px]"
-                        }  `}
-                      >
-                        <Link
-                          to={nav.url}
-                          className="text-black  text-[17px] font-semibold"
-                        >
-                          {nav.text}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
 
                 <Button
                   text={"Let's Talk"}

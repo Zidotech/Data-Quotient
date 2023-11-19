@@ -1,4 +1,3 @@
-import React from "react";
 import { image, numbers, numbers2 } from "../constants";
 import ClientM from "../components/ClientM";
 
@@ -107,55 +106,3 @@ const Clients = () => {
 };
 
 export default Clients;
-
-{
-  /* <div className="flex gap-3 md:pl-5  w-[100%] md:w-[70%] border-2 border-yellow-500">
-              <ul className=" w-[50%]">
-                {numbers.map((card, index) => (
-                  <li
-                    key={card.id}
-                    className={`w-[100%] pl-[10px]   ${
-                      index === 1 ? "" : ""
-                    }  `}
-                  >
-                    <div className="border-2 border-green-500">
-                      <div className={` border-b-2 border-red-600 `}>
-                        <p
-                          className={`font-bold md:text-[36px] text-[25px] leading-[54px] ${
-                            index === 2 ? " md:mt-[5px] " : ""
-                          } `}
-                        >
-                          {card.title}{" "}
-                        </p>
-                        <span
-                          className={`text-[16px]  ${index === 2 ? "  " : ""}`}
-                        >
-                          {card.span}{" "}
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-
-              <ul className=" w-[50%]">
-                {numbers2.map((card, index) => (
-                  <li
-                    key={card.id}
-                    className={`pl-[10px] w-[100%]  ${index === 1 ? "" : ""}  `}
-                  >
-                    <div className=" border-2 border-green-500">
-                      <div className={` border-b-2 border-red-600 `}>
-                        <p className=" font-bold md:text-[36px] text-[25px] leading-[54px]">
-                          {card.title}{" "}
-                        </p>
-                        <span className="text-[16px] leading-[25px]">
-                          {card.span}{" "}
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div> */
-}

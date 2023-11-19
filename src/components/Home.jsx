@@ -1,4 +1,3 @@
-import React from "react";
 import ServicesCard from "../pages/ServicesCard";
 import Header from "../components/Header";
 import Clients from "../pages/Clients";

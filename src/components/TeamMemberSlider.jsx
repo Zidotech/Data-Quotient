@@ -20,9 +20,9 @@ const TeamMemberSlider = ({ people, index }) => {
 
         return (
           <main className={`${position}`} key={id}>
-            <div className=" h-full flex flex-col gap-y-8 px-5 border border-red-500">
-              <div className=" border border-Blue w-[40%]">
-                <p className=" text-white text-[20px] leading-8 pr-10">
+            <div className=" h-full flex flex-col gap-y-8 px-5 ">
+              <div className=" border-l-2 border-Yellow sm:w-[40%] w-[98%] sm:pl-5 pl-3">
+                <p className=" text-black text-[20px] leading-8 pr-10">
                   {quote}
                 </p>
               </div>
@@ -33,8 +33,8 @@ const TeamMemberSlider = ({ people, index }) => {
                 </div>
 
                 <div>
-                  <h3 className=" text-white text-[20px] leading-8">{name}</h3>
-                  <h4 className=" text-white text-[20px] leading-8">{post}</h4>
+                  <h3 className=" text-black text-[19px] leading-8">{name}</h3>
+                  <h4 className=" text-black text-[16px] leading-8">{post}</h4>
                 </div>
               </div>
             </div>
