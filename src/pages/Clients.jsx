@@ -18,13 +18,14 @@ const Clients = () => {
               <p className="text-[18px] leading-8">
                 At Data Quotient, we understand that selecting the right partner
                 for your technology, data, and development needs is a critical
-                decision. With a plethora of options available, it's essential
-                to know why DQ should be your top choice. Data Quotient (DQ)
-                stands out as the ideal partner for your technology, data, and
-                development needs due to our expertise, customization,
-                data-driven approach, scalability, commitment to quality, and
-                client-centric approach. We are dedicated to helping your
-                business thrive through innovative and cost-effective solutions.
+                decision. With a plethora of options available, it&apos;s
+                essential to know why DQ should be your top choice. Data
+                Quotient (DQ) stands out as the ideal partner for your
+                technology, data, and development needs due to our expertise,
+                customization, data-driven approach, scalability, commitment to
+                quality, and client-centric approach. We are dedicated to
+                helping your business thrive through innovative and
+                cost-effective solutions.
               </p>
             </div>
           </div>

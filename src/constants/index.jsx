@@ -688,3 +688,297 @@ export const TeamQoutesCard = [
     post: "Chief Operating Officer",
   },
 ];
+
+// cloud page
+export const CloudSC = [
+  {
+    id: 1,
+    icon: image.product,
+    title: "Cloud architecture design",
+    paragraph:
+      "We create unique cloud-powered architectures based on robust, high-performance, scalable designs that streamline business opportunities.",
+  },
+  {
+    id: 2,
+    icon: image.product,
+    title: "Infrastructure migration",
+    paragraph:
+      "Timely legacy infrastructure modernization and migration help scale and improve tech and business capacities in line with the market growth. ",
+  },
+  {
+    id: 3,
+    icon: image.product,
+    title: "Cloud costs optimization",
+    paragraph:
+      "We analyze existing cloud infrastructures, provide specialized consulting, and implement DevOps techniques that cut costs and optimize expenses. ",
+  },
+  {
+    id: 4,
+    icon: image.product,
+    title: "Devops consulting",
+    paragraph:
+      "Profiled DevOps consulting that we provide in terms of cloud architecture services combines development and operations effort to improve internal process.",
+  },
+];
+
+export const CloudDC = [
+  {
+    id: 1,
+    title: "Assessment",
+    paragraph:
+      "At the first stage, we evaluate and check the state of your infrastructure, its compatibility with the cloud services you want to switch to. Thanks to this, we plan the best way to implement a cloud environment. ",
+  },
+  {
+    id: 2,
+    title: "Roadmap",
+    paragraph:
+      "Moving to the cloud is not easy as you are building a more powerful infrastructure for your business. Therefore, for an effective transition and avoidance of downtime, we create a roadmap. It is designed in detail and shows all the stages of creating a cloud architecture showing which.",
+  },
+  {
+    id: 3,
+    title: "Execution",
+    paragraph:
+      "After a detailed strategy elaboration and roadmap creation, the IT Outpost team proceeds directly to the creation of your cloud architecture. The selected methods are implemented and the best tools are used. ",
+  },
+  {
+    id: 4,
+    title: "Optimization",
+    paragraph:
+      "This phase permits you to increase the performance of your work environment and increase the flexibility, scalability and dependability of your data and infrastructure through cloud computing Improvements of the system take place on the basis of an integrated treatment.",
+  },
+  {
+    id: 5,
+    title: "Support",
+    paragraph:
+      "Experienced specialists of our company provide ongoing support and assistance at your request. This question also touches upon recommendations for improving the architecture, possible risks, and the operation of a balanced system.",
+  },
+];
+
+export const CloudBC = [
+  {
+    id: 1,
+    title: "Get a grip on cloud costs",
+    paragraph:
+      "We help big enterprises and small-mid scale companies alike closely maintain cloud costs and eliminate tons of unnecessary expenses through individually optimized architectures that fully reflect your business capacities.",
+  },
+  {
+    id: 2,
+    title: "Employ scaling opportunities",
+    paragraph:
+      "With a sturdy cloud-based software architecture, you get unlimited scaling opportunities possible only in cloud environments. We build versatile infrastructures that help your business expand naturally. ",
+  },
+  {
+    id: 3,
+    title: "Reinforce software security",
+    paragraph:
+      "Yet another unrivaled advantage of cloud environments is the flexible security opportunities. Remote access opportunities enable reinforced security that simply doesn't leave room for unauthorized interaction attempts.  ",
+  },
+  {
+    id: 4,
+    title: "Minimize cloud downtime",
+    paragraph:
+      "Get a robust cloud architecture designed for you from scratch that runs fast on balanced resources, grants inviting user experience, performs stably in the harshest conditions and pushes workflow efficiency.",
+  },
+];
+
+// machine learning page
+export const MachineWC = [
+  {
+    id: 1,
+    icon: image.product,
+    paragraph:
+      "We help guide you through the art of what's possible in Al and Machine Learning from a decade of knowledge and proven experience ",
+  },
+  {
+    id: 2,
+    icon: image.product,
+    paragraph:
+      "We design and build innovative and custom Machine Learning algorithms that create a competitive edge  ",
+  },
+  {
+    id: 3,
+    icon: image.product,
+    paragraph:
+      "We adopt an efficient and tailored approach to solving automation, insights and prediction needs for your business  ",
+  },
+  {
+    id: 4,
+    icon: image.product,
+    paragraph:
+      "We deliver scalable and flexible Machine Learning models that not only deliver value to your business but can groW with you as your Al needs change",
+  },
+];
+
+export const MLStack = [
+  {
+    id: 1,
+    icon: image.snowflake,
+    title: "SnowFlake",
+  },
+  {
+    id: 2,
+    icon: image.storm,
+    title: "Storm",
+  },
+  {
+    id: 3,
+    icon: image.powerBI,
+    title: "PowerBI",
+  },
+  {
+    id: 4,
+    icon: image.oracle,
+    title: "oracle",
+  },
+  {
+    id: 5,
+    icon: image.mongoDB,
+    title: "mongoDB",
+  },
+  {
+    id: 6,
+    icon: image.aws,
+    title: "aws",
+  },
+  {
+    id: 7,
+    icon: image.airflow,
+    title: "airflow",
+  },
+  {
+    id: 8,
+    icon: image.azure,
+    title: "azure",
+  },
+  {
+    id: 9,
+    icon: image.bigQuery,
+    title: "bigQuery",
+  },
+  {
+    id: 10,
+    icon: image.dataBrick,
+    title: "dataBrick",
+  },
+  {
+    id: 11,
+    icon: image.dataFlow,
+    title: "dataFlow",
+  },
+  {
+    id: 12,
+    icon: image.flink,
+    title: "flink",
+  },
+  {
+    id: 13,
+    icon: image.gcp,
+    title: "gcp",
+  },
+  {
+    id: 14,
+    icon: image.hadoop,
+    title: "hadoop",
+  },
+  {
+    id: 15,
+    icon: image.hive,
+    title: "hive",
+  },
+  {
+    id: 16,
+    icon: image.hBase,
+    title: "hBase",
+  },
+  {
+    id: 17,
+    icon: image.kafka,
+    title: "kafka",
+  },
+  {
+    id: 18,
+    icon: image.kinesis,
+    title: "kinesis",
+  },
+  {
+    id: 19,
+    icon: image.mySql,
+    title: "mySql",
+  },
+  {
+    id: 20,
+    icon: image.postGreSql,
+    title: "postGreSql",
+  },
+  {
+    id: 21,
+    icon: image.presto,
+    title: "presto",
+  },
+  {
+    id: 22,
+    icon: image.pySpark,
+    title: "pySpark",
+  },
+  {
+    id: 23,
+    icon: image.redShift,
+    title: "redShift",
+  },
+  {
+    id: 24,
+    icon: image.redShift,
+    title: "redShift",
+  },
+  {
+    id: 24,
+    icon: image.redShift,
+    title: "redShift",
+  },
+];
+
+// data analytics page
+export const DAfaqs = [
+  {
+    id: 1,
+    question: " Data Analysis Strategy and Consulting",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.",
+  },
+  {
+    id: 2,
+    question: "Data Audit and Quality Assurance",
+    answer:
+      "Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.",
+  },
+  {
+    id: 3,
+    question: "Statistical Data Analysis",
+    answer:
+      "Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.",
+  },
+  {
+    id: 4,
+    question: "Data Modernization",
+    answer:
+      "  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.",
+  },
+  {
+    id: 5,
+    question: "Designing Data Platform and Engineering",
+    answer:
+      "  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.",
+  },
+  {
+    id: 6,
+    question: " Enterprise Data Management",
+    answer:
+      "  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.",
+  },
+  {
+    id: 7,
+    question: "Advanced Analysis and Data Science",
+    answer:
+      "  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.",
+  },
+];

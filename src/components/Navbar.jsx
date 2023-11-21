@@ -130,9 +130,10 @@ const Navbar = () => {
             <div className="flex justify-center items-center  gap-[20px]">
               <Button
                 text={"Let's Talk "}
-                styles={
-                  "  bg-Blue  rounded-[150px] font-semibold text-[12px] uppercase p-[20px] w-[150px] text-center text-white"
-                }
+                styles={`
+                    border-2 border-Blue  rounded-[150px] font-semibold text-[12px] uppercase p-[20px] w-max text-center text-white ${
+                      active ? "" : "bg-Blue"
+                    }`}
               />
             </div>
           </div>

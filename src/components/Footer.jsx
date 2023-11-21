@@ -33,7 +33,7 @@ const Footer = () => {
           <div className=" md:w-[69%] w-[100%] pt-10">
             <div className="md:border-l border-Ash flex justify-between md:flex-row flex-col md:pl-8 ">
               {/*start menu list */}
-              <div className=" w-full md:w-[15%]">
+              <div className=" w-full md:w-[25%]">
                 <h2 className="text-[20px] font-bold text-Ash">Menu</h2>
                 <div className="flex flex-col mt-5">
                   <ul className="list-none  flex justify-end items-start flex-col ">
@@ -53,14 +53,14 @@ const Footer = () => {
               {/* end menu list */}
 
               {/* service list */}
-              <div className=" w-full md:w-auto md:mt-0 mt-5 flex flex-wrap gap-x-1">
+              <div className=" w-full md:w-40% md:mt-0 mt-5 flex flex-wrap gap-x-20">
                 <div>
                   <h2 className="text-[20px] font-bold text-Ash">Services</h2>
-                  <ul className="mt-5">
+                  <ul className="mt-5 list-disc">
                     {servicelinks.map((link) => (
                       <li
                         key={link.id}
-                        className={` text-[18px]  mb-2 font-Lato hover:text-Blue text-Ash `}
+                        className={` text-[18px]  mb-2 font-Lato hover:text-Blue text-Ash marker`}
                       >
                         <Link to={link.url}>{link.name}</Link>
                       </li>
@@ -69,11 +69,11 @@ const Footer = () => {
                 </div>
                 <div className="mt-2 sm:mt-0">
                   <h2 className="text-[20px] font-bold text-Ash">Training</h2>
-                  <ul className="mt-5">
+                  <ul className="mt-5 list-disc">
                     {training.map((link) => (
                       <li
                         key={link.id}
-                        className={` text-[18px]  mb-2 font-Lato hover:text-Blue text-Ash `}
+                        className={` text-[18px]  mb-2 font-Lato hover:text-Blue text-Ash marker`}
                       >
                         <Link to={link.url}>{link.title}</Link>
                       </li>

@@ -194,7 +194,7 @@ main.nextSlide {
 
 /* footer list color */
 .marker::marker {
-  color: hsl(211, 53%, 56%);
+  color: hsl(51, 99%, 54%);
 }
 
 /* service */
@@ -244,7 +244,7 @@ main.nextSlide {
   border-color: transparent;
   width: 2rem;
   height: 2rem;
-  background: var(--clr-grey-special);
+  /* background: var(--clr-grey-special); */
   display: flex;
   align-items: center;
   justify-content: center;

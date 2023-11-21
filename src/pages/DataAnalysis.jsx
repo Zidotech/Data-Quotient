@@ -1,7 +1,6 @@
-import React from "react";
-import { end, image, webDevStack } from "../constants";
-import Button from "../components/Button";
-import { Link } from "react-router-dom";
+import DAFaqs from "../components/DAFaqs";
+import { DAfaqs, image, webDevStack } from "../constants";
+import { AiFillCaretRight } from "react-icons/ai";
 import Marquee from "react-fast-marquee";
 
 const DataAnalysis = () => {
@@ -12,19 +11,12 @@ const DataAnalysis = () => {
         <div className="absolute inset-0 bg-black opacity-70"></div>
         {/* Your content */}
         <div className="text-white sm:text-left text-center px-2 md:px-0 absolute section top-[60%] sm:top-[58%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  ">
-          <div className="flex justify-between sm:flex-row flex-col gap-y-6 sm:gap-y-0">
+          <div className="flex justify-between items-center sm:flex-row flex-col gap-y-6 sm:gap-y-0">
             <div className="sm:pt-[50px] sm:w-[47%] w-[100%] ">
               <h1 className="md:text-[60px] text-[30px] sm:leading-[74px]  font-bold">
-                Data Analysis Services
+                100% Analytics 0% Drama
               </h1>
-              <div className="pt-[70px] sm:block hidden">
-                <Button
-                  text={"CONTACT US "}
-                  styles={
-                    " bg-Blue  rounded-[150px] font-semibold text-[12px] uppercase p-[20px] w-[150px] text-center text-white "
-                  }
-                />
-              </div>
+              <div className="pt-[70px] sm:block hidden"></div>
             </div>
 
             <div className="sm:block hidden">
@@ -32,26 +24,23 @@ const DataAnalysis = () => {
             </div>
 
             <div className="sm:pt-[50px] sm:pl-[20px] sm:w-[48%] w-[100%] ">
-              <p className="text-[20px] font-semibold leading-[35px]">
-                End-to-end development services that will help you digitize your
-                business and disrupt the market, no matter your business size.
-              </p>
-              <p className="pt-[24px] font-Lato leading-[26px] text-[16px]">
-                350+ Python and JavaScript developers are ready to deliver
-                top-quality applications and help you bring your next big idea
-                to life.
+              <p className="text-[20px] font-medium leading-[35px]">
+                Advance analytics platform for{" "}
+                <span className="font-bold">enterprise data teams</span>
               </p>
 
-              <div className="sm:block hidden pt-[48px]">
-                <div className="flex gap-3">
-                  <img
-                    src={image.webdevpic}
-                    alt=""
-                    className="rounded-full w-[53px]"
-                  />
-                  <div>
-                    <p className="text-Blue">MAREK OLEJNICZAK</p>
-                    <span>Director of Technology</span>
+              <div className=" pt-[48px]">
+                <div className="flex flex-col sm:justify-start justify-center items-center sm:items-start gap-y-3">
+                  <p>See it in action</p>
+                  <div className="  flex ">
+                    <input
+                      type="email"
+                      placeholder="Work email*"
+                      className=" text-black w-[280px] py-2 px-5 rounded-full focus:outline-none"
+                    />
+                    <span className="text-2xl bg-orange-600 px-2 flex justify-center items-center -ml-10 rounded-r-full">
+                      <AiFillCaretRight />
+                    </span>
                   </div>
                 </div>
               </div>
@@ -61,7 +50,7 @@ const DataAnalysis = () => {
       </div>
 
       <div className="section">
-        <div className="sm:pt-[140px] pt-[50px] pb-[100px]">
+        <div className="sm:pt-[140px] pt-[50px]  ">
           <div className="flex sm:flex-row flex-col gap-y-8 sm:gap-y-0">
             <div className="flex gap-3">
               <h2 className="md:text-[60px] sm:text-[45px] text-[25px] font-bold leading-[40px] sm:leading-[75px]">
@@ -90,113 +79,134 @@ const DataAnalysis = () => {
             </div>
 
             <div className="md:pr-[43px] sm:w-[60%] w-[100%]">
-              <p className="text-[20px] leading-[35px] font-medium">
-                Without a web app, your business is losing—both money and market
-                share. A web application will give you and your customers a
-                zero-install, centralized, safe, and scalable experience. Using
-                cutting-edge technologies, you’ll get both reliability and
-                better performance.
+              <p className="text-[20px] leading-[35px] font-semibold">
+                Advanced analytics{" "}
+                <span className="font-normal">
+                  on the enterprise scale with
+                </span>{" "}
+                zero backlog
               </p>
 
-              <div className="pt-[40px]">
-                <p className="font-Lato text-[16px] font-bold leading-[25px] mb-5">
-                  If you’re an established company, you can digitize your
-                  processes and cut costs in the spirit of digital
-                  transformation. If you’re a startup, you can build your dream
-                  product and disrupt the market quickly yet sustainably. All
-                  you need to run your business is within your grasp: custom web
-                  applications, CMS (Content Management System), SEO-optimized
-                  websites, and more.
+              <div className="sm:pt-[40px] pt-[20px]">
+                <p className="font-Lato text-[16px] font-medium leading-[25px] mb-5">
+                  Solve complex analytic challenges while responding quicker to
+                  business demands.
                 </p>
-                <p className="text-[14px] font-Lato leading-[22px]">
-                  We can help you find the right solutions for your individual
-                  needs. Save time, streamline your business, reach a wider
-                  audience, and enhance your brand experience with a tailor-made
-                  web app!
-                </p>
+                <ul className="text-[16px] font-Lato leading-[22px] font-medium list-[square] pl-4">
+                  <li className="pl-2 marker">End-to-end solution</li>
+                  <li className="pl-2 marker">Modern architecture</li>
+                  <li className="pl-2 marker">Advanced metrics store</li>
+                  <li className="pl-2 marker">Complete analytics catalog</li>
+                  <li className="pl-2 marker">Granular data governance</li>
+                  <li className="pl-2 marker">Flexible deployment</li>
+                  <li className="pl-2 marker">True self-service</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
 
         {/* service we've provided */}
-        <div className="pb-[100px]">
-          <div className="flex">
-            <div className="sm:w-[58%] w-[100%]">
-              <h2 className="sm:text-[60px] text-[30px] font-bold sm:leading-[75px] leading-[40px]">
-                Data Analysis services we’ve provided
+        <div className="pt-[50px]">
+          <div className="flex justify-between flex-wrap gap-y-8">
+            <div className="sm:w-[47%] flex flex-col gap-y-4 sm:mt-16">
+              <h2 className="font-semibold text-xl">
+                Explore Our Data Analysis Services
               </h2>
-              <p className="text-[20px] font-medium leading-[35px]">
-                to our clients
+              <p className="font-medium">
+                Leverage our{" "}
+                <span className="font-semibold">data analysis services</span> to
+                make effective use of data. We can help you collect, store,
+                cleanse, visualize, analyze and explore large datasets to
+                unearth hidden patterns and meaningful insights.
               </p>
+
+              <button className="bg-Blue py-3 px-8 uppercase text-white1 w-fit">
+                Technical stack
+              </button>
             </div>
 
-            <div className="w-[40%] pl-[40px] sm:block hidden ">
-              <img src={image.consultT} alt="" />
+            <div className="sm:w-1/2">
+              {DAfaqs.map((faq) => {
+                return <DAFaqs key={faq.id} {...faq} />;
+              })}
             </div>
-          </div>
-
-          <div className="sm:block hidden ">
-            <ul className="flex flex-wrap">
-              {end.map((card) => (
-                <li key={card.id} className="p-[12px] w-[100%] sm:w-fit ">
-                  <Link className=" hover:scale-105 hover:shadow-lg flex items-center justify-between px-4 border rounded-md border-Ash sm:w-[250px] w-[100%] h-[80px] bg-white ">
-                    <div className="flex items-center">
-                      <img src={card.icon} alt="" className="mr-3 w-[50px]" />
-                      <p className="text-[14px] font-Lato leading-[21px] font-semibold">
-                        {card.title}
-                      </p>
-                    </div>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="sm:hidden block mt-5">
-            <ul className="flex">
-              <Marquee>
-                {end.map((card) => (
-                  <li key={card.id} className="mx-6">
-                    <Link className="  flex items-center justify-between px-4 border rounded-md border-Ash w-[220px]  h-[80px] bg-white ">
-                      <img src={card.icon} alt="" className="mr-3 w-[50px]" />
-                      <p className="text-[14px] font-Lato leading-[21px] font-semibold">
-                        {card.title}
-                      </p>
-                    </Link>
-                  </li>
-                ))}
-              </Marquee>
-            </ul>
           </div>
         </div>
         {/* service we provided end */}
 
         {/* tech stack */}
-        <div className="pb-[80px]">
-          <div className="flex justify-between items-end w-[100%] ">
-            <h2 className="sm:text-[60px] text-[25px] sm:leading-[75px] leading-[25px] font-bold w-[85%] sm:w-[70%] ">
-              Our Data Analysis tech stack
-            </h2>
-
-            <hr className="  border-black sm:w-[45%] w-[15%] " />
+        <div className="py-[50px]">
+          <div className="text-center sm:w-[70%] mx-auto">
+            <h3 className="sm:text-[43px] text-[25px] ">
+              Our Tech Stack For Data Analysis
+            </h3>
+            <p>
+              We leverage our skills to utilize cutting-edge data analysis tools
+              and technologies to provide high-quality data analysis services.
+            </p>
           </div>
 
-          <div className="mt-[50px]">
-            <ul className="flex flex-wrap justify-center items-center sm:justify-normal">
-              {webDevStack.map((card) => (
-                <li
-                  key={card.id}
-                  className="py-[15px] px-[10px] sm:w-[150px]  w-[100px]  "
-                >
-                  <div className="flex items-center justify-center flex-col">
-                    <img src={card.icon} alt="" className=" w-[50px]" />
-                    <p className="text-[14px] font-Lato capitalize font-semibold">
-                      {card.title}
-                    </p>
-                  </div>
-                </li>
-              ))}
+          <div className="mt-[30px] flex items-center justify-between flex-wrap">
+            <h4 className="font-medium text-[25px]">Database</h4>
+            <ul className="flex  justify-center items-center sm:justify-normal sm:w-[70%]">
+              <Marquee>
+                {webDevStack.map((card) => (
+                  <li
+                    key={card.id}
+                    className="py-[15px] px-[10px] sm:w-[150px]  w-[100px]  "
+                  >
+                    <div className="flex items-center justify-center flex-col">
+                      <img src={card.icon} alt="" className=" w-[50px]" />
+                      <p className="text-[14px] font-Lato capitalize font-semibold">
+                        {card.title}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </Marquee>
+            </ul>
+          </div>
+
+          <div className="mt-[30px] flex items-center justify-between flex-wrap">
+            <h4 className="font-medium text-[25px]">Programming Language</h4>
+            <ul className="flex  justify-center items-center sm:justify-normal sm:w-[70%]">
+              <Marquee>
+                {webDevStack.map((card) => (
+                  <li
+                    key={card.id}
+                    className="py-[15px] px-[10px] sm:w-[150px]  w-[100px]  "
+                  >
+                    <div className="flex items-center justify-center flex-col">
+                      <img src={card.icon} alt="" className=" w-[50px]" />
+                      <p className="text-[14px] font-Lato capitalize font-semibold">
+                        {card.title}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </Marquee>
+            </ul>
+          </div>
+
+          <div className="mt-[30px] flex items-center justify-between flex-wrap">
+            <h4 className="font-medium text-[25px]">Data Analysis Tools</h4>
+            <ul className="flex  justify-center items-center sm:justify-normal sm:w-[70%]">
+              <Marquee>
+                {webDevStack.map((card) => (
+                  <li
+                    key={card.id}
+                    className="py-[15px] px-[10px] sm:w-[150px]  w-[100px]  "
+                  >
+                    <div className="flex items-center justify-center flex-col">
+                      <img src={card.icon} alt="" className=" w-[50px]" />
+                      <p className="text-[14px] font-Lato capitalize font-semibold">
+                        {card.title}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </Marquee>
             </ul>
           </div>
         </div>

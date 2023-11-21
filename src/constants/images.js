@@ -70,10 +70,11 @@ import Sgcl from "../assets/Google_Cloud_logo.svg";
 import Saws from "../assets/aws-svgrepo-com.svg";
 import Sazure from "../assets/azure-svgrepo-com.svg";
 
-
-
 // images of team members
-import team1 from '../assets/teammember1.png'
+import team1 from "../assets/teammember1.png";
+
+// images of cloud page
+import cloud_bg from "../assets/cloud-hero.jpg";
 
 export default {
   logo,
@@ -150,4 +151,7 @@ export default {
 
   // images of team members
   team1,
+
+  // cloud page
+  cloud_bg,
 };
