@@ -982,3 +982,159 @@ export const DAfaqs = [
       "  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.",
   },
 ];
+
+// data engineering page
+export const DataPC = [
+  {
+    id: 1,
+    icon: image.product,
+    title: "Combining data",
+    paragraph:
+      "Integrating data from multiple sources including structured and unstructured data. ",
+  },
+  {
+    id: 2,
+    icon: image.product,
+    title: "Centralization",
+    paragraph:
+      "Data automation using data pipelines (ETL, ELT, streaming, batch, cloud native, open source). ",
+  },
+  {
+    id: 3,
+    icon: image.product,
+    title: "Improved data quality and data lineage",
+    paragraph:
+      "To meet regulatory requirements (GDPR, IFRS) and FCA submissions.  ",
+  },
+  {
+    id: 4,
+    icon: image.product,
+    title: "Increased value",
+    paragraph:
+      "Data can be understood by those using it to gain insights and support decision-making.",
+  },
+];
+export const DataMC = [
+  {
+    id: 1,
+    icon: image.product,
+    title: "Data Review / Health Check ",
+  },
+  {
+    id: 2,
+    icon: image.product,
+    title: "Migration Programme Design ",
+  },
+  {
+    id: 3,
+    icon: image.product,
+    title: "Migration Programme Implementation ",
+  },
+  {
+    id: 4,
+    icon: image.product,
+    title: "Project Management",
+  },
+  {
+    id: 5,
+    icon: image.product,
+    title: "Migration Test Strategy",
+  },
+];
+
+export const DataDC = [
+  {
+    id: 1,
+    icon: image.product,
+    title: "Transparency",
+    paragraph:
+      "DDMA makes the migration process more transparent for validation and QA purposes. ",
+  },
+  {
+    id: 2,
+    icon: image.product,
+    title: "Reduce risk",
+    paragraph:
+      "The risk of your data migration project over-running is minimised. ",
+  },
+  {
+    id: 3,
+    icon: image.product,
+    title: "Time and cost-efficient",
+    paragraph:
+      "Accurate results delivered in a shorter timeframe with reduced costs.",
+  },
+];
+
+export const DataWC = [
+  {
+    id: 1,
+    icon: image.product,
+    title: "Finance",
+  },
+  {
+    id: 2,
+    icon: image.product,
+    title: "HR ",
+  },
+  {
+    id: 3,
+    icon: image.product,
+    title: "Operations ",
+  },
+  {
+    id: 4,
+    icon: image.product,
+    title: "Marketing & Sales",
+  },
+  {
+    id: 5,
+    icon: image.product,
+    title: "R&D",
+  },
+];
+
+export const DataBC = [
+  {
+    id: 1,
+    icon: image.product,
+    title: "Aggregated data",
+    paragraph:
+      "The ability to combine data from multiple sources, enabling analysis across your entire organisation.  ",
+  },
+  {
+    id: 2,
+    icon: image.product,
+    title: "Maintain change history",
+    paragraph:
+      "All data changes and updates are maintained, so performance can be compared over time.  ",
+  },
+  {
+    id: 3,
+    icon: image.product,
+    title: "Gain a single view",
+    paragraph:
+      "Providing a single version of the truth that represents the entire business - not just one department. ",
+  },
+  {
+    id: 4,
+    icon: image.product,
+    title: "Use different tools",
+    paragraph:
+      "For the creation of various types of reports and dashboards, bringing more variation and flexibility.  ",
+  },
+  {
+    id: 5,
+    icon: image.product,
+    title: "Separate reporting",
+    paragraph:
+      "Reporting is separated from transactional functions so the core business is not affected when reports run.  ",
+  },
+  {
+    id: 6,
+    icon: image.product,
+    title: "Control data access",
+    paragraph:
+      "You can control which users, or user groups, can access certain types of data to improve your security.",
+  },
+];
