@@ -376,7 +376,7 @@ const DataEngineering = () => {
         {/* service we provided end */}
 
         {/* tech stack */}
-        <div className="pt-[50px]">
+        <div className="py-[50px]">
           <div className="text-center sm:w-[70%] mx-auto">
             <h3 className="sm:text-[43px] text-[25px] ">
               Our Tech Stack For Data Engineering
