@@ -33,7 +33,7 @@ const ServicesCard = () => {
         <div className=" flex ">
           {serviceCard.map((card, index) => (
             <div
-              className={`  pb-[40px] pt-[28px] px-[20px] 
+              className={`   pt-[28px] px-[20px] 
               }`}
               key={index}
             >

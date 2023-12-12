@@ -52,9 +52,9 @@ const DataAnalysis = () => {
       <div className="section">
         <div className="sm:pt-[140px] pt-[50px]  ">
           <div className="flex sm:flex-row flex-col gap-y-8 sm:gap-y-0">
-            <div className="flex gap-3">
-              <h2 className="md:text-[60px] sm:text-[45px] text-[25px] font-bold leading-[40px] sm:leading-[75px]">
-                Why choose Data Analysis?
+            <div className="flex justify-between">
+              <h2 className=" sm:text-[45px] text-[25px] font-bold leading-[40px] sm:leading-[75px]">
+                Why Data Analysis?
               </h2>
               <img
                 src={image.webdevelopment}
@@ -75,7 +75,7 @@ const DataAnalysis = () => {
 
           <div className="flex justify-between gap-y-9 sm:gap-y-0 sm:flex-row flex-col sm:pt-[100px] pt-[30px]">
             <div className="md:w-[45%] w-[100%] md:pr-[100px] sm:pr-[20px]  ">
-              <img src={image.endT} alt="" />
+              <img src={image.Data_analysis} alt="" />
             </div>
 
             <div className="md:pr-[43px] sm:w-[60%] w-[100%]">

@@ -43,8 +43,8 @@ const DataEngineering = () => {
         <div className="sm:pt-[140px] pt-[50px]">
           <div className="flex sm:flex-row flex-col gap-y-8 sm:gap-y-0">
             <div className="flex gap-3">
-              <h2 className="md:text-[60px] sm:text-[45px] text-[25px] font-bold leading-[40px] sm:leading-[75px]">
-                Why choose Data Engineering?
+              <h2 className=" sm:text-[45px] text-[25px] font-bold leading-[40px] sm:leading-[75px]">
+                Why Data Engineering?
               </h2>
               <img
                 src={image.dataengineering}
@@ -64,11 +64,11 @@ const DataEngineering = () => {
           </div>
 
           <div className="flex justify-between gap-y-9 sm:gap-y-0 sm:flex-row flex-col sm:pt-[100px] pt-[30px]">
-            <div className="md:w-[45%] w-[100%] md:pr-[100px] sm:pr-[20px]  ">
-              <img src={image.endT} alt="" />
+            <div className="md:w-[50%] w-[100%]  sm:pr-[20px]  ">
+              <img src={image.Data_engineering} alt="" />
             </div>
 
-            <div className="md:pr-[43px] sm:w-[60%] w-[100%]">
+            <div className="md:pr-[43px] sm:w-[50%] w-[100%]">
               <p className="text-[20px] leading-[35px] font-medium">
                 Most enterprises are struggling to deliver timely insights for a
                 wide range of reasons, some of which include multiple data
@@ -111,7 +111,14 @@ const DataEngineering = () => {
 
         {/* service we've provided */}
         <section className="pt-[50px]">
-          <div className="flex justify-between items-center sm:flex-row flex-col-reverse ">
+          <div className="flex justify-around items-center sm:flex-row flex-col ">
+            <div className="sm:w-[20%] w-full">
+              <img
+                src={image.BigData}
+                alt="client_Bg"
+                className="w-full  rounded-lg object-cover"
+              />
+            </div>
             <div className="sm:w-[50%] w-full sm:mt-0 mt-7">
               <h2 className=" text-[25px] sm:text-[30px] font-semibold leading">
                 Big Data Storage
@@ -134,41 +141,39 @@ const DataEngineering = () => {
                 decision making
               </span>
             </div>
-
-            <div className="sm:w-[45%] w-full">
-              <img
-                src={image.client}
-                alt="client_Bg"
-                className="w-full  rounded-lg object-cover"
-              />
-            </div>
           </div>
 
           <div className="mt-[40px]">
-            <div className=" sm:mt-0 my-7">
-              <h2 className="text-[25px] sm:text-[30px] font-semibold">
-                Data Pipeline
-              </h2>
-              <p className="text-[20px] font-medium leading-[25px]">
-                Data Pipelines enable data to flow harmoniously
-              </p>
+            <h2 className="text-[25px] sm:text-[30px] font-semibold">
+              Data Pipeline
+            </h2>
+            <div className="flex sm:flex-row justify-around items-center flex-col pt-5">
+              <div className="sm:w-[40%]">
+                <img src={image.Dp} alt="" />
+              </div>
 
-              <p className="mt-2 font-normal sm:text-[22px] text-[18px]">
-                Dufrain has a strong reputation as experts in building Data
-                Pipelines. We can help you connect valuable data within your
-                business from data source to data warehouse, data lake,
-                analytics platform, or payment processing system.
-              </p>
-              <p className="mt-2 font-normal sm:text-[22px] text-[18px]">
-                Building efficient and automated Data Pipelines is arguably the
-                most critical aspect of successful data engineering. Your
-                organisation can benefit from our wealth of experience in
-                delivering intricate and cross-business Data Pipelines, Big Data
-                Pipelines, data integrations, real time streaming, batch and
-                event driven processing, and implementing scalable solutions.
-              </p>
+              <div className=" sm:mt-0 my-7 sm:w-[47%] ">
+                <p className="text-[20px] font-medium leading-[25px]">
+                  Data Pipelines enable data to flow harmoniously
+                </p>
+
+                <p className="mt-2 font-normal  text-[18px]">
+                  Dufrain has a strong reputation as experts in building Data
+                  Pipelines. We can help you connect valuable data within your
+                  business from data source to data warehouse, data lake,
+                  analytics platform, or payment processing system.
+                </p>
+                <p className="mt-2 font-normal  text-[18px]">
+                  Building efficient and automated Data Pipelines is arguably
+                  the most critical aspect of successful data engineering. Your
+                  organisation can benefit from our wealth of experience in
+                  delivering intricate and cross-business Data Pipelines, Big
+                  Data Pipelines, data integrations, real time streaming, batch
+                  and event driven processing, and implementing scalable
+                  solutions.
+                </p>
+              </div>
             </div>
-
             <div>
               <h3 className="text-center text-[25px] font-semibold">
                 Data Pipelines bring key benefits
@@ -195,33 +200,40 @@ const DataEngineering = () => {
           </div>
 
           <div className="mt-[40px]">
-            <div className=" sm:mt-0 my-7">
-              <h2 className="text-[25px] sm:text-[30px] font-semibold ">
-                Data Migration
-              </h2>
-              <p className="text-[20px] font-medium leading-[25px] ">
-                Seamless Data Migration
-              </p>
+            <h2 className="text-[25px] sm:text-[30px] font-semibold ">
+              Data Migration
+            </h2>
 
-              <p className="mt-2 font-normal sm:text-[22px] text-[18px]">
-                Your data drives your business. If you are planning to migrate
-                data from one system or environment to another, including the
-                cloud, you need a partner with the right level of expertise.
-              </p>
-              <p className="mt-2 font-normal sm:text-[22px] text-[18px]">
-                With a deep understanding of data and the complexities
-                associated with large scale projects, our Data Migration
-                consultants deliver secure, cost-efficient and accurate
-                solutions for clients across a range of industries.
-              </p>
+            <div className="flex sm:flex-row justify-around items-center flex-col pt-5">
+              <div className=" sm:mt-0 mb-7 sm:w-[47%]">
+                <p className="text-[20px] font-medium leading-[25px] ">
+                  Seamless Data Migration
+                </p>
+
+                <p className="mt-2 font-normal  text-[18px]">
+                  Your data drives your business. If you are planning to migrate
+                  data from one system or environment to another, including the
+                  cloud, you need a partner with the right level of expertise.
+                </p>
+                <p className="mt-2 font-normal  text-[18px]">
+                  With a deep understanding of data and the complexities
+                  associated with large scale projects, our Data Migration
+                  consultants deliver secure, cost-efficient and accurate
+                  solutions for clients across a range of industries.
+                </p>
+              </div>
+
+              <div className="sm:w-[40%]">
+                <img src={image.DM} alt="" />
+              </div>
             </div>
 
-            <div className="bg-white1 pt-5 pb-10">
+            <div className="bg-white1 pt-5 pb-10 mt-5">
               <h3 className="text-center text-[25px] font-semibold">
                 Data Migration Framework
               </h3>
 
-              <p className="text-center sm:text-[20px] text-[18px] font-normal sm:px-[50px]">
+              <p className="sm:text-center sm:text-[20px] px-2 mt-3  text-[18px] font-normal sm:px-[50px]">
                 We have successfully delivered hundreds of complex Data
                 Migration projects. Our comprehensive process ensures the
                 projects we undertake are on-time, within budget and quality
@@ -242,8 +254,8 @@ const DataEngineering = () => {
                 ))}
               </div>
 
-              <div className=" text-black pt-5 pb-10 sm:px-10 px-4 mt-6">
-                <div className="flex flex-col gap-y-2">
+              <div className=" text-black pt-5 pb-10 sm:px-10  mt-6">
+                <div className="flex flex-col gap-y-2 px-4">
                   <ul className="list-[square] pl-5">
                     <li className="marker">
                       <h4>THE BENEFITS</h4>
@@ -265,9 +277,13 @@ const DataEngineering = () => {
                   {DataDC.map((card) => (
                     <div
                       key={card.id}
-                      className="sm:w-[30%] w-[100%]  px-2 rounded-lg flex gap-x-4"
+                      className="sm:w-[30%] w-[100%] sm:px-2 px-1 rounded-lg flex gap-x-4"
                     >
-                      <img src={card.icon} alt="" className="w-[170px] " />
+                      <img
+                        src={card.icon}
+                        alt=""
+                        className="sm:w-[170px] w-[200px] "
+                      />
                       <div>
                         <h4 className=" font-normal text-[18px] text-yellow-300">
                           {card.title}
@@ -282,34 +298,42 @@ const DataEngineering = () => {
           </div>
 
           <div className="mt-[40px]">
-            <div className=" sm:mt-0 my-7">
-              <h2 className="text-[25px] sm:text-[30px] font-semibold ">
-                Data Warehousing
-              </h2>
-              <p className="text-[20px] font-medium leading-[25px] ">
-                What is Data Warehousing?
-              </p>
+            <h2 className="text-[25px] sm:text-[30px] font-semibold ">
+              Data Warehousing
+            </h2>
 
-              <p className="mt-2 font-normal sm:text-[22px] text-[18px] ">
-                Data warehouses combine data from different sources into one
-                central and consistent data store to provide a “single version
-                of the truth”. This aggregated data means organisations can run
-                powerful data analytics and business intelligence to drive
-                better-informed business decisions.
-              </p>
-              <p className="mt-2 font-normal sm:text-[22px] text-[18px] ">
-                Our experienced team design and build Data Warehousing solutions
-                that integrate, cleanse and present data for querying.
-              </p>
-              <p className="mt-2 font-normal sm:text-[22px] text-[18px] ">
-                Dufrain’s Data Warehouse will enable your organisation to
-                perform reliable analytics on large volumes of historical data.
-                In addition, it can provide storage for petabytes of
-                information.
-              </p>
+            <div className="flex sm:flex-row justify-around items-center flex-col pt-5">
+              <div className="sm:w-[40%]">
+                <img src={image.DW2} alt="" />
+              </div>
+
+              <div className=" sm:mt-0 my-7 sm:w-[47%]">
+                <p className="text-[20px] font-medium leading-[25px] ">
+                  What is Data Warehousing?
+                </p>
+
+                <p className="mt-2 font-normal  text-[18px] ">
+                  Data warehouses combine data from different sources into one
+                  central and consistent data store to provide a “single version
+                  of the truth”. This aggregated data means organisations can
+                  run powerful data analytics and business intelligence to drive
+                  better-informed business decisions.
+                </p>
+                <p className="mt-2 font-normal  text-[18px] ">
+                  Our experienced team design and build Data Warehousing
+                  solutions that integrate, cleanse and present data for
+                  querying.
+                </p>
+                <p className="mt-2 font-normal  text-[18px] ">
+                  Dufrain’s Data Warehouse will enable your organisation to
+                  perform reliable analytics on large volumes of historical
+                  data. In addition, it can provide storage for petabytes of
+                  information.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-Dark2 text-white1 pt-5 pb-10">
+            <div className="bg-Dark2 text-white1 pt-5 pb-10 mt-10">
               <h3 className="text-center text-[25px] font-semibold text-Blue">
                 Your business data is disparate
               </h3>

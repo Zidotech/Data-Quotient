@@ -73,6 +73,9 @@ import Sazure from "../assets/azure-svgrepo-com.svg";
 // images of team members
 import team1 from "../assets/teammember1.png";
 
+// images of DevSecOps page
+import DevSecOps from "../assets/DevSecOps.png";
+
 // images of cloud page
 import CAD from "../assets/CLD-removebg-preview.png";
 import IM from "../assets/IM-removebg-preview.png";
@@ -81,7 +84,21 @@ import DC from "../assets/DC-removebg-preview.png";
 import CAS from "../assets/Cloud Architecture Services.png";
 import CADS from "../assets/Cloud_Architecture_Design.png";
 
+// images of ML page
+import MLC1 from "../assets/MLC1.png";
+import MLC2 from "../assets/MLC2.png";
+import MLC3 from "../assets/MLC3.png";
+import MLC4 from "../assets/MLC4.png";
+
+// images of data analytics page
+import Data_analysis from "../assets/Data_analysis.png";
+
 // images of data engineering page
+import Data_engineering from "../assets/Data-engineering-course.png";
+import Dp from "../assets/Dp.gif";
+import DW2 from "../assets/DW.png";
+import DM from "../assets/DM.png";
+import BigData from "../assets/BigData.png";
 import AD from "../assets/aggregate-removebg-preview.png";
 import MCH from "../assets/change-removebg-preview.png";
 import GSV from "../assets/single-removebg-preview.png";
@@ -183,6 +200,9 @@ export default {
   // images of team members
   team1,
 
+  // DevSecOps page
+  DevSecOps,
+
   // cloud page
   CAD,
   IM,
@@ -191,14 +211,28 @@ export default {
   CAS,
   CADS,
 
+  // ML page
+  MLC1,
+  MLC2,
+  MLC3,
+  MLC4,
+
+  // images of data analytics page
+  Data_analysis,
+
   //engineering page
+  Data_engineering,
+  BigData,
+  Dp,
+  DW,
+  DM,
   AD,
   MCH,
   GSV,
   UDT,
   SR,
   CDA,
-  DW,
+  DW2,
   Finance,
   HR,
   Operations,

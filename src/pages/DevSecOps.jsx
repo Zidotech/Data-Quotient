@@ -10,7 +10,7 @@ const DevSecOps = () => {
         <div className="absolute inset-0 bg-black opacity-70"></div>
         {/* Your content */}
         <div className="text-white sm:text-left text-center  px-2 md:px-0 section top-[60%] absolute sm:top-[58%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  ">
-          <div className="flex justify-between sm:flex-row flex-col gap-y-6 sm:gap-y-0">
+          <div className="flex justify-between sm:flex-row sm:items-center flex-col gap-y-6 sm:gap-y-0">
             <div className="sm:pt-[50px] sm:w-[47%] w-[100%] ">
               <h1 className="md:text-[60px] uppercase text-[30px] sm:leading-[74px]  font-bold">
                 DevSecOps Platform
@@ -36,25 +36,16 @@ const DevSecOps = () => {
                 warden
               </p>
             </div>
-
-            <span className="pt-[30px] sm:hidden block mx-auto">
-              <Button
-                text={"Download Product sheet"}
-                styles={
-                  " border-2 border-Blue  rounded-[150px] font-semibold text-[12px] uppercase p-[20px] w-max text-center text-white "
-                }
-              />
-            </span>
           </div>
         </div>
       </div>
 
       <div className="section">
         <div className="sm:pt-[140px] pt-[50px] pb-[100px]">
-          <div className="flex sm:flex-row flex-col gap-y-8 sm:gap-y-0">
+          <div className="flex sm:flex-row flex-col justify-between gap-y-8 sm:gap-y-0">
             <div className="flex gap-3">
-              <h2 className="md:text-[60px] sm:text-[45px] text-[25px] font-bold leading-[40px] sm:leading-[75px]">
-                Why choose DevSecOps?
+              <h2 className="md:text-[50px] sm:text-[45px] text-[25px] font-bold leading-[40px] sm:leading-[75px]">
+                Why DevSecOps?
               </h2>
               <img
                 src={image.webdevelopment}
@@ -75,7 +66,7 @@ const DevSecOps = () => {
 
           <div className="flex justify-between items-center gap-y-9 sm:gap-y-0 sm:flex-row flex-col sm:pt-[100px] pt-[30px]">
             <div className="md:w-[45%] w-[100%] md:pr-[100px] sm:pr-[20px]  ">
-              <img src={image.endT} alt="" />
+              <img src={image.DevSecOps} alt="" />
             </div>
 
             <div className="md:pr-[43px] sm:w-[60%] w-[100%]">
@@ -98,7 +89,7 @@ const DevSecOps = () => {
         {/* tech stack */}
         <div className="pb-[80px]">
           <div className="flex justify-between items-end w-[100%] ">
-            <h2 className="sm:text-[60px] text-[25px] sm:leading-[75px] leading-[25px] font-bold w-[85%] sm:w-[70%] ">
+            <h2 className="sm:text-[40px] text-[25px] sm:leading-[75px] leading-[25px] font-bold w-[85%] sm:w-[70%] ">
               Our DevSecOps tech stack
             </h2>
 

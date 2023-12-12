@@ -9,7 +9,7 @@ const MachineLearning = () => {
         <div className="absolute inset-0 bg-black opacity-70"></div>
         {/* Your content */}
         <div className="text-white sm:text-left text-center section px-2 md:px-0 absolute top-[60%] sm:top-[58%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  ">
-          <div className="flex justify-between sm:flex-row flex-col gap-y-6 sm:gap-y-0">
+          <div className="flex justify-between sm:flex-row sm:items-center flex-col gap-y-6 sm:gap-y-0">
             <div className="sm:pt-[50px] sm:w-[47%] w-[100%] ">
               <h1 className="md:text-[60px] text-[30px] sm:leading-[74px]  font-bold">
                 Machine Learning Services
@@ -49,7 +49,7 @@ const MachineLearning = () => {
             {MachineWC.map((card) => (
               <div
                 key={card.id}
-                className="sm:w-[22%] w-[100%] sm:mr-5 bg-white1 p-5 rounded-lg flex flex-col items-center justify-center text-center"
+                className="sm:w-[22%] w-[100%] sm:mr-5 bg-white1 p-5 rounded-lg flex flex-col items-center justify-center text-center border-t-2 border-yellow-300"
               >
                 <img src={card.icon} alt="" />
                 <p className="pt-4">{card.paragraph}</p>

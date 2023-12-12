@@ -788,25 +788,25 @@ export const CloudBC = [
 export const MachineWC = [
   {
     id: 1,
-    icon: image.product,
+    icon: image.MLC1,
     paragraph:
       "We help guide you through the art of what's possible in Al and Machine Learning from a decade of knowledge and proven experience ",
   },
   {
     id: 2,
-    icon: image.product,
+    icon: image.MLC2,
     paragraph:
       "We design and build innovative and custom Machine Learning algorithms that create a competitive edge  ",
   },
   {
     id: 3,
-    icon: image.product,
+    icon: image.MLC3,
     paragraph:
       "We adopt an efficient and tailored approach to solving automation, insights and prediction needs for your business  ",
   },
   {
     id: 4,
-    icon: image.product,
+    icon: image.MLC4,
     paragraph:
       "We deliver scalable and flexible Machine Learning models that not only deliver value to your business but can groW with you as your Al needs change",
   },

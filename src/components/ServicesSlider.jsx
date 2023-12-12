@@ -19,7 +19,7 @@ const ServicesSlider = ({ people, index }) => {
 
         return (
           <article className={`${position} pl-[5px] sm:pl-0`} key={id}>
-            <div className=" pb-[40px] pt-[20px] px-[20px] h-max">
+            <div className="  pt-[20px] px-[20px] h-fit">
               <div className="flex items-center">
                 <img src={icon} alt={title} className="w-[90px]" />
                 <h5 className=" text-Blue text-[30px] font-bold leading-8 pl-[32px] ">

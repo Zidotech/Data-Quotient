@@ -114,7 +114,7 @@ const CloudSolutions = () => {
                 key={card.id}
                 className="sm:w-[40%] w-[100%] sm:mr-7 sm:py-8 sm:px-5 rounded-lg flex gap-x-3"
               >
-                <span className="bg-yellow-300 rounded-full w-fit h-fit p-3 text-3xl">
+                <span className="bg-yellow-300 rounded-full w-fit h-fit p-3 text-3xl text-Blue">
                   <IoCheckmark />
                 </span>
                 <div>
