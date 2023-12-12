@@ -1,5 +1,6 @@
 import {
   DataBC,
+  DataBC2,
   DataDC,
   DataMC,
   DataPC,
@@ -173,15 +174,15 @@ const DataEngineering = () => {
                 Data Pipelines bring key benefits
               </h3>
 
-              <div className="w-full flex justify-around flex-wrap gap-y-10  mt-[30px]">
+              <div className="w-full flex justify-around flex-wrap gap-y-5  mt-[30px]">
                 {DataPC.map((card) => (
                   <div
                     key={card.id}
-                    className="sm:w-[22%] w-[100%] sm:mr-5 bg-white1 p-5 rounded-lg"
+                    className="sm:w-[22%] w-[100%] sm:mr-5 bg-white1 p-5 rounded-lg border-t-2 border-Blue"
                   >
                     <div>
                       <img src={card.icon} alt="" />
-                      <h4 className="pt-4 font-semibold text-xl">
+                      <h4 className="pt-4 font-semibold text-[16px]">
                         {card.title}
                       </h4>
                     </div>
@@ -234,47 +235,48 @@ const DataEngineering = () => {
                     className="sm:w-[20%] w-[45%] bg-white1  p-2 rounded-lg flex flex-col items-center justify-center"
                   >
                     <img src={card.icon} alt="" />
-                    <h4 className="pt-4 font-normal text-[18px] text-center">
+                    <h4 className="pt-4 sm:text-[18px] text-[16px] text-center text-Blue font-medium">
                       {card.title}
                     </h4>
                   </div>
                 ))}
               </div>
-            </div>
 
-            <div className="bg-Dark2 text-white1 pt-5 pb-10 sm:px-10 px-4 mt-6">
-              <div className="flex flex-col gap-y-2">
-                <ul className="list-[square] pl-5">
-                  <li className="marker">
-                    <h4>THE BENEFITS</h4>
-                  </li>
-                </ul>
-                <h2 className="sm:text-2xl text-Blue">
-                  Dufrain Data Migration Accelerator
-                </h2>
-                <p>
-                  Many data migration projects over-run due to various
-                  challenges such as data quality, coding of mapping, and
-                  inconsistent transformations. To mitigate these issues, we
-                  have developed the Dufrain Data Migration Accelerator (DDMA).
-                </p>
-              </div>
+              <div className=" text-black pt-5 pb-10 sm:px-10 px-4 mt-6">
+                <div className="flex flex-col gap-y-2">
+                  <ul className="list-[square] pl-5">
+                    <li className="marker">
+                      <h4>THE BENEFITS</h4>
+                    </li>
+                  </ul>
+                  <h2 className="sm:text-2xl text-Blue">
+                    Dufrain Data Migration Accelerator
+                  </h2>
+                  <p>
+                    Many data migration projects over-run due to various
+                    challenges such as data quality, coding of mapping, and
+                    inconsistent transformations. To mitigate these issues, we
+                    have developed the Dufrain Data Migration Accelerator
+                    (DDMA).
+                  </p>
+                </div>
 
-              <div className="w-full flex flex-wrap justify-around gap-y-5 mt-[30px]">
-                {DataDC.map((card) => (
-                  <div
-                    key={card.id}
-                    className="sm:w-[30%] w-[100%]  px-2 rounded-lg flex gap-x-4"
-                  >
-                    <img src={card.icon} alt="" className="w-[170px] " />
-                    <div>
-                      <h4 className=" font-normal text-[18px] ">
-                        {card.title}
-                      </h4>
-                      <p className="pt-1">{card.paragraph}</p>
+                <div className="w-full flex flex-wrap justify-around gap-y-5 mt-[30px]">
+                  {DataDC.map((card) => (
+                    <div
+                      key={card.id}
+                      className="sm:w-[30%] w-[100%]  px-2 rounded-lg flex gap-x-4"
+                    >
+                      <img src={card.icon} alt="" className="w-[170px] " />
+                      <div>
+                        <h4 className=" font-normal text-[18px] text-yellow-300">
+                          {card.title}
+                        </h4>
+                        <p className="pt-1">{card.paragraph}</p>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -319,7 +321,7 @@ const DataEngineering = () => {
                     className="sm:w-[20%] w-[45%]  p-2 rounded-lg flex flex-col items-center justify-center "
                   >
                     <img src={card.icon} alt="" />
-                    <h4 className="pt-4 font-normal text-[18px] text-center text-Blue">
+                    <h4 className="pt-4 font-normal text-[18px] text-center text-yellow-300">
                       {card.title}
                     </h4>
                   </div>
@@ -342,7 +344,7 @@ const DataEngineering = () => {
               </div>
             </div>
 
-            <div className="bg-Dark2 text-white1 pt-5 pb-10 sm:px-10 px-4 mt-6">
+            <div className="bg-Dark2 text-white1 pt-5 pb-10  px-4 ">
               <div className="flex flex-col gap-y-2">
                 <ul className="list-[square] pl-5">
                   <li className="marker">
@@ -354,21 +356,42 @@ const DataEngineering = () => {
                 </h2>
               </div>
 
-              <div className="w-full flex flex-wrap justify-around gap-y-8 mt-[30px]">
-                {DataBC.map((card) => (
-                  <div
-                    key={card.id}
-                    className="sm:w-[30%] w-[100%]  px-2 rounded-lg flex gap-x-4"
-                  >
-                    <img src={card.icon} alt="" className="w-[170px] " />
-                    <div>
-                      <h4 className=" font-normal text-[18px] ">
-                        {card.title}
-                      </h4>
-                      <p className="pt-1">{card.paragraph}</p>
+              <div className="w-full flex justify-around sm:flex-row flex-col gap-y-5 pt-10">
+                <div className="sm:w-[40%] flex flex-col gap-y-5 ">
+                  {DataBC.map((card) => (
+                    <div
+                      key={card.id}
+                      className=" w-[100%]  rounded-lg flex gap-x-4"
+                    >
+                      <img src={card.icon} alt="" className="w-[170px] " />
+                      <div>
+                        <h4 className=" font-normal text-[18px] text-yellow-300 ">
+                          {card.title}
+                        </h4>
+                        <p className="pt-1">{card.paragraph}</p>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
+                {/* <div className="w-[30%] h-[250px] border">
+                  <img src={image.DW} alt="" className="w-full h-full" />
+                </div> */}
+                <div className="sm:w-[40%] flex flex-col gap-y-5">
+                  {DataBC2.map((card) => (
+                    <div
+                      key={card.id}
+                      className=" w-[100%]  rounded-lg flex gap-x-4"
+                    >
+                      <img src={card.icon} alt="" className="w-[170px] " />
+                      <div>
+                        <h4 className=" font-normal text-[18px] text-yellow-300 ">
+                          {card.title}
+                        </h4>
+                        <p className="pt-1">{card.paragraph}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

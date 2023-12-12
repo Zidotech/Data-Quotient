@@ -6,17 +6,20 @@ import {
   BiLogoYoutube,
 } from "react-icons/bi";
 
+import { TfiLocationPin } from "react-icons/tfi";
+import { CiMail } from "react-icons/ci";
+import { MdPhoneInTalk } from "react-icons/md";
+import { BsClockHistory } from "react-icons/bs";
+
 export { image };
 
 export const links = [
   {
     id: 1,
-    url: "/services",
     text: "Services",
   },
   {
     id: 2,
-    url: "/training",
     text: "Training",
   },
   {
@@ -693,28 +696,28 @@ export const TeamQoutesCard = [
 export const CloudSC = [
   {
     id: 1,
-    icon: image.product,
+    icon: image.CAD,
     title: "Cloud architecture design",
     paragraph:
       "We create unique cloud-powered architectures based on robust, high-performance, scalable designs that streamline business opportunities.",
   },
   {
     id: 2,
-    icon: image.product,
+    icon: image.IM,
     title: "Infrastructure migration",
     paragraph:
       "Timely legacy infrastructure modernization and migration help scale and improve tech and business capacities in line with the market growth. ",
   },
   {
     id: 3,
-    icon: image.product,
+    icon: image.CCO,
     title: "Cloud costs optimization",
     paragraph:
       "We analyze existing cloud infrastructures, provide specialized consulting, and implement DevOps techniques that cut costs and optimize expenses. ",
   },
   {
     id: 4,
-    icon: image.product,
+    icon: image.DC,
     title: "Devops consulting",
     paragraph:
       "Profiled DevOps consulting that we provide in terms of cloud architecture services combines development and operations effort to improve internal process.",
@@ -987,28 +990,28 @@ export const DAfaqs = [
 export const DataPC = [
   {
     id: 1,
-    icon: image.product,
+    icon: image.Combining,
     title: "Combining data",
     paragraph:
       "Integrating data from multiple sources including structured and unstructured data. ",
   },
   {
     id: 2,
-    icon: image.product,
+    icon: image.Centralization,
     title: "Centralization",
     paragraph:
       "Data automation using data pipelines (ETL, ELT, streaming, batch, cloud native, open source). ",
   },
   {
     id: 3,
-    icon: image.product,
+    icon: image.data_lineage,
     title: "Improved data quality and data lineage",
     paragraph:
       "To meet regulatory requirements (GDPR, IFRS) and FCA submissions.  ",
   },
   {
     id: 4,
-    icon: image.product,
+    icon: image.value,
     title: "Increased value",
     paragraph:
       "Data can be understood by those using it to gain insights and support decision-making.",
@@ -1017,27 +1020,27 @@ export const DataPC = [
 export const DataMC = [
   {
     id: 1,
-    icon: image.product,
+    icon: image.DR,
     title: "Data Review / Health Check ",
   },
   {
     id: 2,
-    icon: image.product,
+    icon: image.MPD,
     title: "Migration Programme Design ",
   },
   {
     id: 3,
-    icon: image.product,
+    icon: image.MPI,
     title: "Migration Programme Implementation ",
   },
   {
     id: 4,
-    icon: image.product,
+    icon: image.PM,
     title: "Project Management",
   },
   {
     id: 5,
-    icon: image.product,
+    icon: image.MTS,
     title: "Migration Test Strategy",
   },
 ];
@@ -1045,21 +1048,21 @@ export const DataMC = [
 export const DataDC = [
   {
     id: 1,
-    icon: image.product,
+    icon: image.Transparency,
     title: "Transparency",
     paragraph:
       "DDMA makes the migration process more transparent for validation and QA purposes. ",
   },
   {
     id: 2,
-    icon: image.product,
+    icon: image.Risk,
     title: "Reduce risk",
     paragraph:
       "The risk of your data migration project over-running is minimised. ",
   },
   {
     id: 3,
-    icon: image.product,
+    icon: image.TCE,
     title: "Time and cost-efficient",
     paragraph:
       "Accurate results delivered in a shorter timeframe with reduced costs.",
@@ -1069,27 +1072,27 @@ export const DataDC = [
 export const DataWC = [
   {
     id: 1,
-    icon: image.product,
+    icon: image.Finance,
     title: "Finance",
   },
   {
     id: 2,
-    icon: image.product,
+    icon: image.HR,
     title: "HR ",
   },
   {
     id: 3,
-    icon: image.product,
+    icon: image.Operations,
     title: "Operations ",
   },
   {
     id: 4,
-    icon: image.product,
+    icon: image.MS,
     title: "Marketing & Sales",
   },
   {
     id: 5,
-    icon: image.product,
+    icon: image.RD,
     title: "R&D",
   },
 ];
@@ -1097,44 +1100,77 @@ export const DataWC = [
 export const DataBC = [
   {
     id: 1,
-    icon: image.product,
+    icon: image.AD,
     title: "Aggregated data",
     paragraph:
       "The ability to combine data from multiple sources, enabling analysis across your entire organisation.  ",
   },
   {
     id: 2,
-    icon: image.product,
+    icon: image.MCH,
     title: "Maintain change history",
     paragraph:
       "All data changes and updates are maintained, so performance can be compared over time.  ",
   },
   {
     id: 3,
-    icon: image.product,
+    icon: image.GSV,
     title: "Gain a single view",
     paragraph:
       "Providing a single version of the truth that represents the entire business - not just one department. ",
   },
+];
+
+export const DataBC2 = [
   {
-    id: 4,
-    icon: image.product,
+    id: 1,
+    icon: image.UDT,
     title: "Use different tools",
     paragraph:
       "For the creation of various types of reports and dashboards, bringing more variation and flexibility.  ",
   },
   {
-    id: 5,
-    icon: image.product,
+    id: 2,
+    icon: image.SR,
     title: "Separate reporting",
     paragraph:
       "Reporting is separated from transactional functions so the core business is not affected when reports run.  ",
   },
   {
-    id: 6,
-    icon: image.product,
+    id: 3,
+    icon: image.CDA,
     title: "Control data access",
     paragraph:
       "You can control which users, or user groups, can access certain types of data to improve your security.",
+  },
+];
+
+// contact card
+export const ContactCard = [
+  {
+    id: 1,
+    icon: <TfiLocationPin />,
+    title: "Address:",
+    paragraph:
+      "244. Brixal 2nd cross St, California City. United States - 90005  ",
+  },
+  {
+    id: 2,
+    icon: <CiMail />,
+    title: "Email Address:",
+    paragraph: "infogexample.com",
+  },
+  {
+    id: 3,
+    icon: <MdPhoneInTalk />,
+    title: "Phone:",
+    paragraph:
+      "Office: (+321) 567 89 0123. 890 12 3456  Customer-care: 1800-456-78-9012",
+  },
+  {
+    id: 4,
+    icon: <BsClockHistory />,
+    title: "Working Hours:",
+    paragraph: "Mon - Sat Day: o9.0o to 18.00  ",
   },
 ];

@@ -6,7 +6,8 @@ import DataAnalysis from "./DataAnalysis";
 import CorporateTraining from "./CorporateTraining";
 import Team from "./Team";
 import Services from "./Services";
-import Careers from "./Careers";
+import Contact from "./Contact";
+
 import HandsOnTraining from "./HandsOnTraining";
 
 export {
@@ -18,6 +19,6 @@ export {
   CorporateTraining,
   Team,
   Services,
-  Careers,
   HandsOnTraining,
+  Contact,
 };

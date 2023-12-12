@@ -44,7 +44,7 @@ const Clients = () => {
                     <div className="h-[175px] md:h-[120px] flex flex-col justify-between ">
                       <div className=" h-[90%]">
                         <p
-                          className={`font-bold md:text-[36px] text-[25px] leading-[54px] ${
+                          className={`font-bold md:text-[30px] text-[25px] leading-[54px] ${
                             index === 2 ? "md:mt-[5px]" : ""
                           }`}
                         >
@@ -71,7 +71,7 @@ const Clients = () => {
                   >
                     <div className="h-[175px] md:h-[120px] flex flex-col justify-between ">
                       <div className=" h-[90%]">
-                        <p className="font-bold md:text-[36px] text-[25px] leading-[54px]">
+                        <p className="font-bold md:text-[30px] text-[25px] leading-[54px]">
                           {card.title}
                         </p>
                         <span className="text-[16px] ">{card.span}</span>

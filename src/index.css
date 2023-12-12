@@ -45,6 +45,14 @@ body {
   background-position: center;
 }
 
+.contact__bg {
+  position: relative;
+  height: 45vh; /* Make the container take the full viewport height */
+  background-image: url("./assets/service.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .link:hover {
   border-bottom: 3px solid hsl(211, 53%, 56%);
   color: hsl(211, 53%, 56%);
@@ -80,6 +88,12 @@ body {
   }
   .section__bg {
     height: 80vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .contact__bg {
+    height: 30vh;
     background-size: cover;
     background-position: center;
   }
@@ -203,8 +217,8 @@ main.nextSlide {
   display: block;
   position: absolute;
   top: 85px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 61%;
+  transform: translateX(-62%);
   width: max-content;
   height: max-content;
   background-color: white;
@@ -220,7 +234,7 @@ main.nextSlide {
   display: block;
   position: absolute;
   top: 85px;
-  left: 50%;
+  left: 60%;
   transform: translateX(-10%);
   width: max-content;
   height: max-content;
@@ -254,4 +268,9 @@ main.nextSlide {
   margin-left: 1rem;
   align-self: center;
   min-width: 2rem;
+}
+
+/*cloud design */
+.slick-slide > div {
+  margin: 0 10px;
 }

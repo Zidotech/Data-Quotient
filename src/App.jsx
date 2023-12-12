@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import {
   CloudSolutions,
+  Contact,
   CorporateTraining,
   DataAnalysis,
   DataEngineering,
@@ -28,6 +29,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
 
         <Route path="/dev-sec-ops" element={<DevSecOps />} />
         <Route path="/cloud-solutions" element={<CloudSolutions />} />

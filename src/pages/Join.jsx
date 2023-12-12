@@ -37,7 +37,7 @@ const Join = () => {
                 <Button
                   text={"VIEW ALL JOB OFFERS "}
                   styles={
-                    "  bg-Blue  rounded-[150px] font-semibold text-[12px] uppercase p-[20px] w-[209px] text-center text-white"
+                    "bg-Blue rounded-[150px] font-semibold text-[12px] uppercase p-[20px] w-[209px] text-center text-white"
                   }
                 />
               </Link>

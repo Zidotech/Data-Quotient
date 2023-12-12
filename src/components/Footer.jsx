@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { links, servicelinks, socials, training } from "../constants";
+import { servicelinks, socials, training } from "../constants";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex md:flex-row justify-between flex-col ">
           <div className="md:w-[30%] w-[100%] pt-10  flex  flex-col gap-7  px-2 md:px-0">
             <div className="text-Ash">
-              <h2 className="text-[25px]">Locations</h2>
+              <h2 className="text-[25px]">Contacts</h2>
               <p>6 Mojidi Street,</p>
               <p>Off Toyin Street,Ikeja,Lagos, Nigeria.</p>
               <p> Nigeria tel: +234 703 204 9855</p>
@@ -30,28 +30,8 @@ const Footer = () => {
           </div>
 
           {/* left item start */}
-          <div className=" md:w-[69%] w-[100%] pt-10">
-            <div className="md:border-l border-Ash flex justify-between md:flex-row flex-col md:pl-8 ">
-              {/*start menu list */}
-              <div className=" w-full md:w-[25%]">
-                <h2 className="text-[20px] font-bold text-Ash">Menu</h2>
-                <div className="flex flex-col mt-5">
-                  <ul className="list-none  flex justify-end items-start flex-col ">
-                    {links.map((nav) => (
-                      <li
-                        key={nav.id}
-                        className={` text-[18px]  mb-2 font-Lato hover:text-Blue text-Ash `}
-                      >
-                        <Link to={nav.url}>{nav.text}</Link>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <ul className="list-none  flex justify-end items-start  flex-col "></ul>
-                </div>
-              </div>
-              {/* end menu list */}
-
+          <div className=" md:w-[50%] w-[100%] pt-10 ">
+            <div className="  md:pl-[78px] ">
               {/* service list */}
               <div className=" w-full md:w-40% md:mt-0 mt-5 flex flex-wrap gap-x-20">
                 <div>

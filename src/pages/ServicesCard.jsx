@@ -37,29 +37,27 @@ const ServicesCard = () => {
               }`}
               key={index}
             >
-              <div className=" h-[130px] md:h-[470px] flex flex-col justify-between">
+              <div className=" h-[130px] md:h-[420px] flex flex-col justify-between ">
                 <div>
                   <div className="flex items-center">
                     <img src={card.icon} alt={card.title} />
-                    <h5 className=" text-Yellow text-[22px] font-bold leading-8 pl-[32px] ">
+                    <h5 className=" text-Yellow text-[20px] font-bold leading-8 pl-[32px] ">
                       {card.title}
                     </h5>
                   </div>
 
                   <div className="pl-[19px] border-l-[1px] border-Blue mt-[23px]">
-                    <p className=" text-white text-[18px] leading-8">
+                    <p className=" text-white text-[16px] leading-8">
                       {card.description}
                     </p>
-                  </div>
-                </div>
 
-                <div className="">
-                  <Link
-                    to={card.url}
-                    className="flex items-center text-[12px] font-bold leading-5 text-Yellow gap-2"
-                  >
-                    {card.more} <BsArrowRight />
-                  </Link>
+                    <Link
+                      to={card.url}
+                      className="flex items-center text-[12px] font-bold leading-5 text-Yellow gap-2 mt-3"
+                    >
+                      {card.more} <BsArrowRight />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

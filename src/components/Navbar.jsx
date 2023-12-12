@@ -4,6 +4,7 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import { image, links, servicelinks, training } from "../constants";
 import { motion } from "framer-motion";
+import MobileNav from "./MobileNav";
 import Button from "./Button";
 
 const containerVariants = {
@@ -62,71 +63,71 @@ const Navbar = () => {
               className="sm:w-[160px] w-[200px] md:w-[295px]  cursor-pointer object-cover "
             />
           </Link>
-          <div className="flex gap-x-5 lg:h-[85px] h-[55px] justify-center items-center  ">
-            <ul className="list-none lg:flex hidden justify-end items-center h-full">
-              {links.map((nav, index) => (
-                <li
-                  key={nav.id}
-                  className={`cursor-pointer h-full ${
-                    index === links.length - 1 ? "mr-0" : "mr-7"
-                  }`}
-                  onMouseOver={() => handleMouseOver(index)}
-                  onMouseOut={() => handleMouseOut(index)}
-                >
-                  <Link
-                    to={nav.url}
-                    className={`text-black h-full flex flex-col justify-center items-center link text-[17px] font-semibold transition-colors duration-300 ${
-                      active ? "text-white" : ""
-                    }`}
-                  >
-                    {nav.text}
-                  </Link>
-                  {nav.text === "Services" && hoveredIndex === index && (
-                    <div className="services-hover-content">
-                      <div className="w-full px-7 py-5  ">
-                        <div className="  ">
-                          <ul>
-                            {servicelinks.map((link, index) => (
-                              <li
-                                key={link.id}
-                                className={` text-[18px]  mb-2 font-Lato hover:text-Blue text-Ash ${
-                                  index === 4 ? "mb-0" : ""
-                                } `}
-                              >
-                                <Link to={link.url}>{link.name}</Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                  {nav.text === "Training" && hoveredIndex === index && (
-                    <div className="training-hover-content">
-                      <div className="w-full px-7 py-5  ">
-                        <div className="  ">
-                          <ul>
-                            {training.map((link, index) => (
-                              <li
-                                key={link.id}
-                                className={` text-[18px]  mb-2 font-Lato hover:text-Blue text-Ash ${
-                                  index === 4 ? "mb-0" : ""
-                                } `}
-                              >
-                                <Link to={link.url}>{link.title}</Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
 
-          <div className=" hidden lg:block ">
+          <div className=" hidden lg:flex justify-evenly  w-1/2 ">
+            <div className="flex gap-x-5 lg:h-[85px] h-[55px] justify-center items-center  ">
+              <ul className="list-none lg:flex hidden justify-end items-center h-full">
+                {links.map((nav, index) => (
+                  <li
+                    key={nav.id}
+                    className={`cursor-pointer h-full ${
+                      index === links.length - 1 ? "mr-0" : "mr-7"
+                    }`}
+                    onMouseOver={() => handleMouseOver(index)}
+                    onMouseOut={() => handleMouseOut(index)}
+                  >
+                    <Link
+                      to={nav.url}
+                      className={`text-black h-full flex flex-col justify-center items-center link text-[17px] font-semibold transition-colors duration-300 ${
+                        active ? "text-white" : ""
+                      }`}
+                    >
+                      {nav.text}
+                    </Link>
+                    {nav.text === "Services" && hoveredIndex === index && (
+                      <div className="services-hover-content">
+                        <div className="w-full px-7 py-5  ">
+                          <div className="  ">
+                            <ul>
+                              {servicelinks.map((link, index) => (
+                                <li
+                                  key={link.id}
+                                  className={` text-[18px]  mb-2 font-Lato hover:text-Blue text-Ash ${
+                                    index === 4 ? "mb-0" : ""
+                                  } `}
+                                >
+                                  <Link to={link.url}>{link.name}</Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                    {nav.text === "Training" && hoveredIndex === index && (
+                      <div className="training-hover-content">
+                        <div className="w-full px-7 py-5  ">
+                          <div className="  ">
+                            <ul>
+                              {training.map((link, index) => (
+                                <li
+                                  key={link.id}
+                                  className={` text-[18px]  mb-2 font-Lato hover:text-Blue text-Ash ${
+                                    index === 4 ? "mb-0" : ""
+                                  } `}
+                                >
+                                  <Link to={link.url}>{link.title}</Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
             <div className="flex justify-center items-center  gap-[20px]">
               <Button
                 text={"Let's Talk "}
@@ -166,26 +167,9 @@ const Navbar = () => {
                 animate="visible"
                 className={`${
                   toggle ? "block" : "hidden"
-                } bg-white p-3 bg-DarkBlueMb z-50 absolute top-[70px] left-0 right-0  w-full `}
+                } bg-white p-3 bg-DarkBlueMb z-50 absolute top-[55px] left-0 right-0  w-full `}
               >
-                <ul className="list-none  flex justify-end items-start flex-1 flex-col ">
-                  {links.map((nav) => (
-                    <li
-                      key={nav.id}
-                      onClick={() => setToggle(false)}
-                      className={`font-poppins font-semibold cursor-pointer text-[18px] w-full mb-4 border-b-[1px] border-Dark pb-4  `}
-                    >
-                      <Link to={nav.url}>{nav.text}</Link>
-                    </li>
-                  ))}
-                </ul>
-
-                <Button
-                  text={"Let's Talk"}
-                  styles={
-                    " bg-Blue mt-6 rounded-[150px] text-[20px] uppercase px-[18px] py-[14px] w-full text-center text-white"
-                  }
-                />
+                <MobileNav setToggle={setToggle} />
               </motion.div>
             )}
           </div>

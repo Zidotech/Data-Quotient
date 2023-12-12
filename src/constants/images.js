@@ -74,7 +74,38 @@ import Sazure from "../assets/azure-svgrepo-com.svg";
 import team1 from "../assets/teammember1.png";
 
 // images of cloud page
-import cloud_bg from "../assets/cloud-hero.jpg";
+import CAD from "../assets/CLD-removebg-preview.png";
+import IM from "../assets/IM-removebg-preview.png";
+import CCO from "../assets/CCO-removebg-preview.png";
+import DC from "../assets/DC-removebg-preview.png";
+import CAS from "../assets/Cloud Architecture Services.png";
+import CADS from "../assets/Cloud_Architecture_Design.png";
+
+// images of data engineering page
+import AD from "../assets/aggregate-removebg-preview.png";
+import MCH from "../assets/change-removebg-preview.png";
+import GSV from "../assets/single-removebg-preview.png";
+import UDT from "../assets/tools-removebg-preview.png";
+import SR from "../assets/reporting-removebg-preview.png";
+import CDA from "../assets/data_access-removebg-preview.png";
+import DW from "../assets/data warehousing.jpg";
+import Finance from "../assets/finance-removebg-preview.png";
+import HR from "../assets/hr-removebg-preview.png";
+import Operations from "../assets/operations-removebg-preview.png";
+import MS from "../assets/marketing-removebg-preview.png";
+import RD from "../assets/rd-removebg-preview.png";
+import Combining from "../assets/combining-removebg-preview.png";
+import Centralization from "../assets/centralisation-removebg-preview.png";
+import data_lineage from "../assets/data_lineage-removebg-preview.png";
+import value from "../assets/value-removebg-preview.png";
+import Transparency from "../assets/transparency-removebg-preview.png";
+import Risk from "../assets/reduce_risk-removebg-preview.png";
+import TCE from "../assets/time-removebg-preview.png";
+import DR from "../assets/review-removebg-preview.png";
+import MPD from "../assets/migration-removebg-preview.png";
+import MPI from "../assets/migrationi-removebg-preview.png";
+import PM from "../assets/project-removebg-preview.png";
+import MTS from "../assets/migration_test-removebg-preview.png";
 
 export default {
   logo,
@@ -153,5 +184,36 @@ export default {
   team1,
 
   // cloud page
-  cloud_bg,
+  CAD,
+  IM,
+  CCO,
+  DC,
+  CAS,
+  CADS,
+
+  //engineering page
+  AD,
+  MCH,
+  GSV,
+  UDT,
+  SR,
+  CDA,
+  DW,
+  Finance,
+  HR,
+  Operations,
+  MS,
+  RD,
+  Combining,
+  Centralization,
+  data_lineage,
+  value,
+  Transparency,
+  Risk,
+  TCE,
+  DR,
+  MPD,
+  MPI,
+  PM,
+  MTS,
 };
