@@ -1174,3 +1174,122 @@ export const ContactCard = [
     paragraph: "Mon - Sat Day: o9.0o to 18.00  ",
   },
 ];
+
+// de tech stack
+export const DeStack = [
+  {
+    id: 1,
+    icon: image.snowflake,
+    title: "SnowFlake",
+  },
+  {
+    id: 2,
+    icon: image.storm,
+    title: "Storm",
+  },
+  {
+    id: 3,
+    icon: image.powerBI,
+    title: "PowerBI",
+  },
+  {
+    id: 4,
+    icon: image.oracle,
+    title: "oracle",
+  },
+  {
+    id: 5,
+    icon: image.mongoDB,
+    title: "mongoDB",
+  },
+  {
+    id: 6,
+    icon: image.aws,
+    title: "aws",
+  },
+  {
+    id: 7,
+    icon: image.airflow,
+    title: "airflow",
+  },
+  {
+    id: 8,
+    icon: image.azure,
+    title: "azure",
+  },
+  {
+    id: 9,
+    icon: image.bigQuery,
+    title: "bigQuery",
+  },
+  {
+    id: 10,
+    icon: image.dataBrick,
+    title: "dataBrick",
+  },
+  {
+    id: 11,
+    icon: image.dataFlow,
+    title: "dataFlow",
+  },
+  {
+    id: 12,
+    icon: image.flink,
+    title: "flink",
+  },
+  {
+    id: 13,
+    icon: image.gcp,
+    title: "gcp",
+  },
+  {
+    id: 14,
+    icon: image.hadoop,
+    title: "hadoop",
+  },
+  {
+    id: 15,
+    icon: image.hive,
+    title: "hive",
+  },
+  {
+    id: 16,
+    icon: image.hBase,
+    title: "hBase",
+  },
+  {
+    id: 17,
+    icon: image.kafka,
+    title: "kafka",
+  },
+  {
+    id: 18,
+    icon: image.kinesis,
+    title: "kinesis",
+  },
+  {
+    id: 19,
+    icon: image.mySql,
+    title: "mySql",
+  },
+  {
+    id: 20,
+    icon: image.postGreSql,
+    title: "postGreSql",
+  },
+  {
+    id: 21,
+    icon: image.presto,
+    title: "presto",
+  },
+  {
+    id: 22,
+    icon: image.pySpark,
+    title: "pySpark",
+  },
+  {
+    id: 23,
+    icon: image.redShift,
+    title: "redShift",
+  },
+];

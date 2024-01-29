@@ -123,6 +123,7 @@ import MPD from "../assets/migration-removebg-preview.png";
 import MPI from "../assets/migrationi-removebg-preview.png";
 import PM from "../assets/project-removebg-preview.png";
 import MTS from "../assets/migration_test-removebg-preview.png";
+import DFM from "../assets/dfm.webp";
 
 export default {
   logo,
@@ -250,4 +251,5 @@ export default {
   MPI,
   PM,
   MTS,
+  DFM,
 };

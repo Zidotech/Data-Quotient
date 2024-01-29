@@ -45,7 +45,7 @@ const CloudDesignSlider = () => {
         {CloudDC.map((card) => (
           <div
             key={card.id}
-            className="sm:w-[22%] w-[100%] sm:mr-7 bg-Dark2 text-white1 p-5 rounded-lg"
+            className="sm:w-[22%] w-[100%] sm:mr-7 bg-Dark2 text-white1 p-5 rounded-lg h-[290px]"
           >
             <div>
               <h4 className="pt-4 font-semibold text-xl">{card.title}</h4>

@@ -61,12 +61,18 @@ body {
 .section {
   width: 94%;
   margin: 0 auto;
-  /* border: 2px solid green; */
+}
+.dfm {
+  position: relative;
+  height: 45vh; /* Make the container take the full viewport height */
+  background-image: url("./assets/dfm.webp");
+  background-size: cover;
+  background-position: center;
 }
 
 @media screen and (min-width: 1400px) {
   .section {
-    width: 80%;
+    width: 89%;
   }
   .services-hover-content {
     width: 80%;

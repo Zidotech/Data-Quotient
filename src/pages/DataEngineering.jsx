@@ -1,3 +1,4 @@
+import Marquee from "react-fast-marquee";
 import {
   DataBC,
   DataBC2,
@@ -228,32 +229,38 @@ const DataEngineering = () => {
               </div>
             </div>
 
-            <div className="bg-white1 pt-5 pb-10 mt-5">
+            <div className="my-10">
               <h3 className="text-center text-[25px] font-semibold">
                 Data Migration Framework
               </h3>
 
-              <p className="sm:text-center sm:text-[20px] px-2 mt-3  text-[18px] font-normal sm:px-[50px]">
-                We have successfully delivered hundreds of complex Data
-                Migration projects. Our comprehensive process ensures the
-                projects we undertake are on-time, within budget and quality
-                controlled.
-              </p>
+              <div className="flex sm:flex-row flex-col gap-y-8 pt-7 items-center ">
+                <p className=" sm:text-[20px] px-2   text-[18px] font-normal sm:w-[45%]">
+                  We have successfully delivered hundreds of complex Data
+                  Migration projects. Our comprehensive process ensures the
+                  projects we undertake are on-time, within budget and quality
+                  controlled.
+                </p>
 
-              <div className="w-full flex flex-wrap justify-around gap-y-3 mt-[30px]">
-                {DataMC.map((card) => (
-                  <div
-                    key={card.id}
-                    className="sm:w-[20%] w-[45%] bg-white1  p-2 rounded-lg flex flex-col items-center justify-center"
-                  >
-                    <img src={card.icon} alt="" />
-                    <h4 className="pt-4 sm:text-[18px] text-[16px] text-center text-Blue font-medium">
-                      {card.title}
-                    </h4>
-                  </div>
-                ))}
+                <div className="w-full sm:w-[50%] flex flex-wrap justify-around gap-y-3  ">
+                  <Marquee>
+                    {DataMC.map((card, index) => (
+                      <div
+                        key={card.id}
+                        className={`w-fit h-[180px] p-4 rounded-lg flex flex-col items-center justify-center bg-white mx-5 border-t-2 border-Blue`}
+                      >
+                        <img src={card.icon} alt="" className="w-[90px]" />
+                        <h4 className="pt-4 text-[16px] text-center font-medium">
+                          {card.title}
+                        </h4>
+                      </div>
+                    ))}
+                  </Marquee>
+                </div>
               </div>
+            </div>
 
+            <div className="bg-white1 pt-5 pb-10 mt-10">
               <div className=" text-black pt-5 pb-10 sm:px-10  mt-6">
                 <div className="flex flex-col gap-y-2 px-4">
                   <ul className="list-[square] pl-5">
@@ -333,13 +340,30 @@ const DataEngineering = () => {
               </div>
             </div>
 
-            <div className="bg-Dark2 text-white1 pt-5 pb-10 mt-10">
-              <h3 className="text-center text-[25px] font-semibold text-Blue">
-                Your business data is disparate
-              </h3>
+            <div className="bg-Dark2 text-white1 pt-5 pb-10 mt-[50px] flex justify-around sm:flex-row flex-col items-center gap-y-4 sm:gap-y-0">
+              <div className="sm:w-[45%] flex flex-col gap-y-5 px-4 sm:px-0">
+                <h3 className="text-[35px] font-semibold text-Blue">
+                  Your business <br /> Data is disparate
+                </h3>
 
-              <div className="w-full flex flex-wrap justify-around gap-y-3 mt-[30px] pb-10">
-                {DataWC.map((card) => (
+                <div className="">
+                  <p className=" sm:text-[18px] text-[16px] font-normal ">
+                    Each area of your organisation is unique and different
+                    departments interact in different ways. This creates
+                    inconsistencies and data complexity, making it difficult to
+                    see the big picture across the whole business.
+                  </p>
+                  <p className=" sm:text-[18px] text-[16px] font-normal  mt-2">
+                    Our Data Warehousing combines data from all departments into
+                    one consistent system. We can help you to run advanced data
+                    analytics and business intelligence across your entire
+                    organisation.
+                  </p>
+                </div>
+              </div>
+
+              <div className="w-full  sm:w-[45%] ">
+                {/* {DataWC.map((card) => (
                   <div
                     key={card.id}
                     className="sm:w-[20%] w-[45%]  p-2 rounded-lg flex flex-col items-center justify-center "
@@ -349,27 +373,39 @@ const DataEngineering = () => {
                       {card.title}
                     </h4>
                   </div>
-                ))}
-              </div>
+                ))} */}
 
-              <div className="sm:w-[85%] mx-auto w-full">
-                <p className="text-center sm:text-[20px] text-[18px] font-normal sm:px-[50px]">
-                  Each area of your organisation is unique and different
-                  departments interact in different ways. This creates
-                  inconsistencies and data complexity, making it difficult to
-                  see the big picture across the whole business.
-                </p>
-                <p className="text-center sm:text-[20px] text-[18px] font-normal sm:px-[50px] mt-2">
-                  Our Data Warehousing combines data from all departments into
-                  one consistent system. We can help you to run advanced data
-                  analytics and business intelligence across your entire
-                  organisation.
-                </p>
+                <div className="flex justify-around">
+                  <div className=" text-center">
+                    <img src={image.Finance} alt="" />
+                    <p>Finance</p>
+                  </div>
+                  <div className=" text-center">
+                    <img src={image.HR} alt="" />
+                    <p>HR</p>
+                  </div>
+                </div>
+                <div className="flex justify-center">
+                  <div className=" text-center">
+                    <img src={image.Operations} alt="" />
+                    <p>Operations</p>
+                  </div>
+                </div>
+                <div className="flex justify-around">
+                  <div className=" text-center">
+                    <img src={image.MS} alt="" />
+                    <p>Marketing & Sales</p>
+                  </div>
+                  <div className=" text-center">
+                    <img src={image.RD} alt="" />
+                    <p>R&D</p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="bg-Dark2 text-white1 pt-5 pb-10  px-4 ">
-              <div className="flex flex-col gap-y-2">
+            <div className=" text-black mt-12 pt-5 pb-10  ">
+              <div className="flex flex-col gap-y-2  px-4">
                 <ul className="list-[square] pl-5">
                   <li className="marker">
                     <h4>THE BENEFITS</h4>
@@ -380,39 +416,47 @@ const DataEngineering = () => {
                 </h2>
               </div>
 
-              <div className="w-full flex justify-around sm:flex-row flex-col gap-y-5 pt-10">
-                <div className="sm:w-[40%] flex flex-col gap-y-5 ">
+              <div className="w-full flex flex-col sm:gap-y-12 gap-y-6 pt-10 ">
+                <div className=" flex justify-between flex-wrap gap-y-4   ">
                   {DataBC.map((card) => (
                     <div
                       key={card.id}
-                      className=" w-[100%]  rounded-lg flex gap-x-4"
+                      className="p-4 w-[100%] sm:w-[32%] flex flex-col gap-y-3 border-Blue border-t-[3px] bg-white"
                     >
-                      <img src={card.icon} alt="" className="w-[170px] " />
                       <div>
-                        <h4 className=" font-normal text-[18px] text-yellow-300 ">
+                        <img src={card.icon} alt="" className={`w-[90px]`} />
+                        <h4 className=" font-medium text-[18px] mt-4">
                           {card.title}
                         </h4>
-                        <p className="pt-1">{card.paragraph}</p>
                       </div>
+                      <hr className="border-yellow-200  w-24" />
+                      <p className="pt-1">{card.paragraph}</p>
                     </div>
                   ))}
                 </div>
                 {/* <div className="w-[30%] h-[250px] border">
                   <img src={image.DW} alt="" className="w-full h-full" />
                 </div> */}
-                <div className="sm:w-[40%] flex flex-col gap-y-5">
-                  {DataBC2.map((card) => (
+                <div className=" flex justify-between  flex-wrap gap-y-4   ">
+                  {DataBC2.map((card, index) => (
                     <div
                       key={card.id}
-                      className=" w-[100%]  rounded-lg flex gap-x-4"
+                      className="p-4 w-[100%] sm:w-[32%] flex flex-col gap-y-3 border-Yellow border-t-[3px] bg-white"
                     >
-                      <img src={card.icon} alt="" className="w-[170px] " />
                       <div>
-                        <h4 className=" font-normal text-[18px] text-yellow-300 ">
+                        <img
+                          src={card.icon}
+                          alt=""
+                          className={`${
+                            index === 1 ? "w-[105px]" : "w-[90px]"
+                          }`}
+                        />
+                        <h4 className=" font-medium text-[18px] mt-4">
                           {card.title}
                         </h4>
-                        <p className="pt-1">{card.paragraph}</p>
                       </div>
+                      <hr className="border-Blue  w-24" />
+                      <p className="pt-1">{card.paragraph}</p>
                     </div>
                   ))}
                 </div>
@@ -435,21 +479,42 @@ const DataEngineering = () => {
             </p>
           </div>
 
-          <div className="mt-[50px]">
-            <ul className="flex flex-wrap justify-center items-center sm:justify-normal">
-              {webDevStack.map((card) => (
-                <li
-                  key={card.id}
-                  className="py-[15px] px-[10px] sm:w-[150px]  w-[100px]  "
-                >
-                  <div className="flex items-center justify-center flex-col">
-                    <img src={card.icon} alt="" className=" w-[50px]" />
-                    <p className="text-[14px] font-Lato capitalize font-semibold">
-                      {card.title}
-                    </p>
-                  </div>
-                </li>
-              ))}
+          <div className="mt-[50px] mx-auto w-full ">
+            <ul className="flex flex-wrap justify-center items-center sm:justify-normal sm:gap-x-2 sm:pl-1">
+              <Marquee pauseOnHover={true}>
+                {webDevStack.map((card) => (
+                  <li
+                    key={card.id}
+                    className="py-[15px] px-[10px] sm:w-[150px]  w-[100px]  "
+                  >
+                    <div className="flex items-center justify-center flex-col">
+                      <img src={card.icon} alt="" className=" w-[50px]" />
+                      <p className="text-[14px] font-Lato capitalize font-semibold">
+                        {card.title}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </Marquee>
+            </ul>
+          </div>
+          <div className="mt-[50px] mx-auto w-full ">
+            <ul className="flex flex-wrap justify-center items-center sm:justify-normal sm:gap-x-2 sm:pl-1">
+              <Marquee direction="right" pauseOnHover={true}>
+                {webDevStack.map((card) => (
+                  <li
+                    key={card.id}
+                    className="py-[15px] px-[10px] sm:w-[150px]  w-[100px]  "
+                  >
+                    <div className="flex items-center justify-center flex-col">
+                      <img src={card.icon} alt="" className=" w-[50px]" />
+                      <p className="text-[14px] font-Lato capitalize font-semibold">
+                        {card.title}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </Marquee>
             </ul>
           </div>
         </div>
