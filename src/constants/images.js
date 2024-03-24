@@ -81,8 +81,8 @@ import CAD from "../assets/CLD-removebg-preview.png";
 import IM from "../assets/IM-removebg-preview.png";
 import CCO from "../assets/CCO-removebg-preview.png";
 import DC from "../assets/DC-removebg-preview.png";
-import CAS from "../assets/Cloud Architecture Services.png";
-import CADS from "../assets/Cloud_Architecture_Design.png";
+import CAS from "../assets/Cloud_Architecture_Services1.png";
+import CADS from "../assets/Cloud_Architecture_Design1.png";
 
 // images of ML page
 import MLC1 from "../assets/MLC1.png";

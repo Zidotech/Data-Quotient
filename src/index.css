@@ -216,6 +216,9 @@ main.nextSlide {
 .marker::marker {
   color: hsl(51, 99%, 54%);
 }
+.marker_yellow::marker {
+  color: hsl(211, 42%, 28%);
+}
 
 /* service */
 

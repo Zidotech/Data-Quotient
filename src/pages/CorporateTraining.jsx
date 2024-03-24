@@ -64,7 +64,7 @@ const CorporateTraining = () => {
         <div className="sm:pt-[140px] pt-[50px] sm:pb-[100px] pb-[50px]">
           <div className="flex sm:flex-row flex-col gap-y-8 sm:gap-y-0">
             <div className="flex gap-3">
-              <h2 className="md:text-[60px] sm:text-[45px] text-[25px] font-bold leading-[40px] sm:leading-[75px]">
+              <h2 className="md:text-[48px] sm:text-[40px] text-[25px] font-bold leading-[40px] sm:leading-[55px]">
                 Overview of Corporate Training Programs
               </h2>
               <img
@@ -117,37 +117,37 @@ const CorporateTraining = () => {
         <div className="sm:pb-[100px] pb-[50px]">
           <div className="flex">
             <div className="sm:w-[58%] w-[100%]">
-              <h2 className="sm:text-[60px] text-[30px] font-bold sm:leading-[75px] leading-[40px]">
+              <h2 className="sm:text-[35px] text-[30px] font-bold sm:leading-[43px] leading-[40px]">
                 Types of Corporate Training
               </h2>
-              <p className="text-[20px] font-medium leading-[35px]">
+              <p className="text-[20px] font-medium leading-[35px] mt-2">
                 Corporate training encompasses a wide array of areas, including:
               </p>
 
-              <div className="pt-5 ">
-                <ul className="">
-                  <li className="text-[20px] font-semibold mb-3">
+              <div className="pt-5 pl-8 ">
+                <ul className="list-disc">
+                  <li className="text-[20px] font-semibold mb-3 marker_yellow">
                     Leadership Training:{" "}
                     <span className="text-[18px] font-normal">
                       Developing leadership skills to inspire and guide teams
                       effectively.
                     </span>
                   </li>
-                  <li className="text-[20px] font-semibold mb-3">
+                  <li className="text-[20px] font-semibold mb-3 marker_yellow">
                     Communication Training:{" "}
                     <span className="text-[18px] font-normal">
                       Enhancing communication skills for effective collaboration
                       and client interactions.
                     </span>
                   </li>
-                  <li className="text-[20px] font-semibold mb-3">
+                  <li className="text-[20px] font-semibold mb-3 marker_yellow ">
                     Technical and Skills Training:{" "}
                     <span className="text-[18px] font-normal">
                       Providing employees with the technical skills required for
                       their roles.
                     </span>
                   </li>
-                  <li className="text-[20px] font-semibold">
+                  <li className="text-[20px] font-semibold marker_yellow">
                     Compliance and Ethics Training:{" "}
                     <span className="text-[18px] font-normal">
                       Ensuring adherence to legal and ethical standards.
@@ -170,7 +170,7 @@ const CorporateTraining = () => {
               <img src={image.endT} alt="" />
             </div>
             <div className="sm:w-[58%] w-[100%]">
-              <h2 className="sm:text-[50px] text-[27px] font-bold sm:leading-[65px] leading-[40px]">
+              <h2 className="sm:text-[35px] text-[27px] font-bold sm:leading-[43px] leading-[40px]">
                 Benefits of Corporate Training for Organizations
               </h2>
               <p className="text-[20px] font-medium leading-[35px] mt-2">
@@ -178,30 +178,30 @@ const CorporateTraining = () => {
                 organizations, including:
               </p>
 
-              <div className="pt-5 ">
-                <ul className="">
-                  <li className="text-[20px] font-semibold mb-3">
+              <div className="pt-5 pl-8 ">
+                <ul className=" list-disc">
+                  <li className="text-[20px] font-semibold mb-3 marker_yellow">
                     Enhanced Employee Performance:{" "}
                     <span className="text-[18px] font-normal">
                       Training equips employees with the skills needed to excel
                       in their roles.
                     </span>
                   </li>
-                  <li className="text-[20px] font-semibold mb-3">
+                  <li className="text-[20px] font-semibold mb-3 marker_yellow">
                     Improved Employee Engagement:{" "}
                     <span className="text-[18px] font-normal">
                       Training programs show employees that their development is
                       valued.
                     </span>
                   </li>
-                  <li className="text-[20px] font-semibold mb-3">
+                  <li className="text-[20px] font-semibold mb-3 marker_yellow">
                     Talent Retention:{" "}
                     <span className="text-[18px] font-normal">
                       Investing in employee growth encourages them to stay with
                       the company.
                     </span>
                   </li>
-                  <li className="text-[20px] font-semibold">
+                  <li className="text-[20px] font-semibold marker_yellow">
                     Increased Efficiency:{" "}
                     <span className="text-[18px] font-normal">
                       Well-trained employees work more efficiently, saving time
@@ -219,25 +219,27 @@ const CorporateTraining = () => {
       <div className=" bg-black py-5 text-white mb-5">
         <div className="section flex justify-between sm:flex-row flex-col sm:gap-y-0 gap-y-4">
           <div className="sm:w-[45%] w-[100%] ">
-            <h2 className="sm:text-[35px] text-[27px] font-bold sm:leading-[45px] leading-[40px]">
-              Measuring the Effectiveness of Corporate Training
-            </h2>
-            <p className="text-[20px] font-medium leading-[35px] mt-2">
-              Measuring the effectiveness of corporate training involves:
-            </p>
+            <div>
+              <h2 className="sm:text-[30px] text-[27px] font-bold sm:leading-[45px] leading-[40px]">
+                Measuring the Effectiveness of Corporate Training
+              </h2>
+              <p className="text-[21px] font-medium leading-[35px] mt-2">
+                Measuring the effectiveness of corporate training involves:
+              </p>
+            </div>
 
             <div className="pt-5 pl-5">
               <ul className="list-disc">
-                <li className="text-[20px] font-semibold marker  mb-3 pl-2">
+                <li className="text-[19px] font-semibold marker  mb-3 pl-2">
                   Assessment and Evaluation:{" "}
-                  <span className="text-[18px] font-normal">
+                  <span className="text-[17px] font-normal">
                     Conduct assessments to gauge knowledge retention and
                     evaluate skill development.
                   </span>
                 </li>
-                <li className="text-[20px] font-semibold marker  mb-3 pl-2">
+                <li className="text-[19px] font-semibold marker  mb-3 pl-2">
                   Feedback Surveys:{" "}
-                  <span className="text-[18px] font-normal">
+                  <span className="text-[17px] font-normal">
                     Collect feedback from employees to understand their
                     perception of the training’s impact.
                   </span>
@@ -252,22 +254,27 @@ const CorporateTraining = () => {
 
           {/* when to choose mentoring */}
           <div className="sm:w-[45%] w-[100%] ">
-            <h2 className="sm:text-[35px] text-[27px] font-bold sm:leading-[45px] leading-[40px]">
-              Steps to Implementing a Corporate Training Program
-            </h2>
+            <div>
+              <h2 className="sm:text-[30px] text-[27px] font-bold sm:leading-[45px] leading-[40px]">
+                Steps to Implementing a Corporate Training Program
+              </h2>
+              <p className="text-[21px] font-medium leading-[35px] mt-2">
+                Steps to follow when implementing a corporate training program
+              </p>
+            </div>
 
             <div className="pt-5 pl-5">
               <ul className="list-disc">
-                <li className="text-[20px] font-semibold marker  mb-3 pl-2">
+                <li className="text-[19px] font-semibold marker  mb-3 pl-2">
                   Identify Training Needs:{" "}
-                  <span className="text-[18px] font-normal">
+                  <span className="text-[17px] font-normal">
                     Conduct assessments to gauge knowledge retention and
                     evaluate skill development.
                   </span>
                 </li>
-                <li className="text-[20px] font-semibold marker  mb-3 pl-2">
+                <li className="text-[19px] font-semibold marker  mb-3 pl-2">
                   Feedback Surveys:{" "}
-                  <span className="text-[18px] font-normal">
+                  <span className="text-[17px] font-normal">
                     Collect feedback from employees to understand their
                     perception of the training’s impact.
                   </span>
@@ -282,7 +289,7 @@ const CorporateTraining = () => {
       <div className="py-[50px] section">
         <div className="flex">
           <div className="sm:w-[58%] w-[100%]">
-            <h2 className="sm:text-[40px] text-[27px] font-bold sm:leading-[45px] leading-[40px]">
+            <h2 className="sm:text-[35px] text-[27px] font-bold sm:leading-[45px] leading-[40px]">
               Successful Corporate Training Case Studies
             </h2>
             <p className="text-[20px] font-medium leading-[35px]">
